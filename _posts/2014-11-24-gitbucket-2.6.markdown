@@ -1,0 +1,41 @@
+---
+layout: post
+title: "GitBucket 2.6 released!"
+date: 2014-11-24 00:00:00
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 2.6](https://github.com/takezoe/gitbucket/releases/tag/2.5)!
+
+## Search box at issues and pull requests
+
+Search box is added at the top of the issues and pull requests.
+
+![Search box]({{site.baseurl}}/images/gitbucket-2.6/searchbox.png)
+
+## Information from administrator
+
+Administrator can edit information message such as about system maintenance in the system configuration page, and it's displayed at the top page of GitBucket.
+
+![Information message]({{site.baseurl}}/images/gitbucket-2.6/information.png)
+
+## Pull request UI has been updated
+
+New issue UI has not been applied to the pull request detail page until 2.5. In 2.6, the pull request detail page UI has been updated as same as issues.
+
+![Pull request UI update]({{site.baseurl}}/images/gitbucket-2.6/pullreq.png)
+
+
+## Move to TravisCI from Buildhive
+
+We moved our continuous integration to TravisCI from Buildhive.
+
+- https://travis-ci.org/takezoe/gitbucket
+
+![TravisCI]({{site.baseurl}}/images/gitbucket-2.6/travis.png)
+
+----
+
+In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=is%3Aissue+milestone%3A2.6+is%3Aclosed) to know details.
+
+Enjoy GitBucket!
