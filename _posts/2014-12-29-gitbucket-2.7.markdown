@@ -1,0 +1,20 @@
+---
+layout: post
+title: "GitBucket 2.7 released!"
+date: 2014-12-29 00:00:00
+categories: gitbucket
+---
+
+At the end of 2014, we've released new version of Scala based GitHub clone [GitBucket 2.7](https://github.com/takezoe/gitbucket/releases/tag/2.7)!
+
+This is a final release in this year. We could continue monthly release this year. Thanks for GitBucket team, all contributors and users.
+
+In this release, comment for commit and diff is available. We can use this feature for code review.
+
+![Comment for commit and diff]({{site.baseurl}}/images/gitbucket-2.7/comment.png)
+
+This big feature is [contributed by Shintaro Murakami](https://github.com/takezoe/gitbucket/pull/564). Great Thanks!
+
+In addition, some bug fix, improvements and security fix are contained in this release. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=is%3Aissue+milestone%3A2.7+is%3Aclosed) to know details. Also [a security issue in markdown processing](https://github.com/takezoe/gitbucket/issues/577) had been fixed in this release. Therefore we highly recommend upgrading your GitBucket to 2.7.
+
+Enjoy GitBucket!
