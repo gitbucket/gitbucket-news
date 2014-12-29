@@ -36,6 +36,6 @@ We moved our continuous integration to TravisCI from Buildhive.
 
 ----
 
-In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=is%3Aissue+milestone%3A2.6+is%3Aclosed) to know details.
+In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=milestone%3A2.6+is%3Aclosed) to know details.
 
 Enjoy GitBucket!
