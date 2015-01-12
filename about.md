@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+![GitBucket Logo]({{site.baseurl}}/images/gitbucket_logo.png)
+
 GitBucket is the easily installable open-source Github clone written with Scala.
 
 It's provide Github like UI and features such as Git repository hosting via HTTP and SSH,
