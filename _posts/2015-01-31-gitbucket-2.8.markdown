@@ -1,0 +1,50 @@
+---
+layout: post
+title: "GitBucket 2.8 released!"
+date: 2015-01-31 00:00:00
+categories: gitbucket
+---
+
+We've released new version of Scala based GitHub clone [GitBucket 2.8](https://github.com/takezoe/gitbucket/releases/tag/2.8) today! This is a first release in 2015.
+
+## New logo and icons
+
+New logo and icons are available. Of course, favicon has been also updated.
+
+**The Instant Git Server** is our new concept of GitBucket. We will continue to add many features to GitBucket, but we have to keep this concept in its process.
+
+![GitBucket Logo]({{site.baseurl}}/images/gitbucket-2.8/gitbucket_logo.png)
+
+## New system setting options
+
+2 new options to control visibility had been added to system settings.
+
+Default visibility of new repository has been configurable at the system setting. If you enable this option, the initial state of visibility at the new repository creation page becomes private.
+
+And an option to deny anonymous (i.e. unauthorized) access has been added also. If this option is enabled, sign-in is required to access to GitBucket.
+
+![New system setting options]({{site.baseurl}}/images/gitbucket-2.8/new_system_settings.png)
+
+## Comment for side-by-side diff
+
+In GitBucket 2.7, we provided comment for changeset. However it was available only unified style. In 2.8, it's available for side-by-side view also.
+
+![Comment for changeset in side-by-side style]({{site.baseurl}}/images/gitbucket-2.8/comment_side_by_side.png)
+
+## Information message on sign-in page
+
+Displays the information message box on top of the sign-in page not only at the sidebar of dashboard.
+
+![Information box at the sign-in page]({{site.baseurl}}/images/gitbucket-2.8/signin_information.png)
+
+## Fork group selector
+
+Until GitBucket 2.7, we can fork repository by only sign-in user. In 2.8, the fork group became selectable. This selector is not displayed if you don't belong to any groups.
+
+![Fork group selector]({{site.baseurl}}/images/gitbucket-2.8/fork_group_selector.png)
+
+----
+
+In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=milestone%3A2.8+is%3Aclosed) to know details.
+
+Enjoy GitBucket!
