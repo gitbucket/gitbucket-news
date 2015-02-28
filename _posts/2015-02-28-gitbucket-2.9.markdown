@@ -35,6 +35,12 @@ The Branch UI has been similar to GitHub it. Now it shows number of ahead and be
 
 ![New branch UI]({{site.baseurl}}/images/gitbucket-2.9/new_branch_ui.png)
 
+## Compare between specified commit ids
+
+The compare view now provides diff for specified commit ids at `REPOSITORY_URL/compare/from...to`, not only branch names.
+
+![Compare commit ids]({{site.baseurl}}/images/gitbucket-2.9/compare_commit_id.png)
+
 In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=is%3Aclosed+milestone%3A2.9) to know details.
 
 Enjoy GitBucket!
