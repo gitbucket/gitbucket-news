@@ -1,0 +1,38 @@
+---
+layout: post
+title: "GitBucket 2.9 released!"
+date: 2015-02-28 00:00:00
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 2.9](https://github.com/takezoe/gitbucket/releases/tag/2.9)!
+
+## New Plug-in system
+
+GitBucket 2.9 includes the new plug-in system.
+
+We can now make plug-in as standard SBT project. Plug-ins are completely integrated to GitBucket, So we can use all capability of GitBucket in plug-in. For example, we can write a plug-in controller as Scalatra controller and also we can use Slick in plug-in.
+
+We've also released [gitbucket-gist-plugin](https://github.com/takezoe/gitbucket-gist-plugin) which provides Gists like code snippet repository as a practical plug-in example.
+
+![Gist plug-in]({{site.baseurl}}/images/gitbucket-2.9/gist_plugin.png)
+
+You can install this plug-in by following procedure:
+
+1. Hit `./sbt.sh` package in the root directory of this repository.
+2. Copy `target/scala-2.11/gitbucket-gist-plugin_2.11-1.0.jar` into `GITBUCKET_HOME/plugins`.
+3. Restart GitBucket.
+
+## Connection pooling
+
+Added connection pooling by c3p0 to improve performance.
+
+In the near future, GitBucket will move to Slick3. It supports connection pooling by HikariCP. c3p0 based connection pooling might be temporary solution.
+
+## New branch UI
+
+![New branch UI]({{site.baseurl}}/images/gitbucket-2.9/new_branch_ui.png)
+
+In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=is%3Aclosed+milestone%3A2.9) to know details.
+
+Enjoy GitBucket!
