@@ -1,21 +1,21 @@
 ---
 layout: post
-title: "GitBucket 2.9 released!"
-date: 2015-02-28 00:00:00
+title: "GitBucket 3.0 released!"
+date: 2015-03-02 00:00:00
 categories: gitbucket
 ---
 
-Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 2.9](https://github.com/takezoe/gitbucket/releases/tag/2.9)!
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.0](https://github.com/takezoe/gitbucket/releases/tag/3.0)!
 
 ## New Plug-in system
 
-GitBucket 2.9 includes the new plug-in system.
+GitBucket 3.0 includes the new plug-in system.
 
 We can now make plug-in as standard SBT project. Plug-ins are completely integrated to GitBucket, So we can use all capability of GitBucket in plug-in. For example, we can write a plug-in controller as Scalatra controller and also we can use Slick in plug-in.
 
 We've also released [gitbucket-gist-plugin](https://github.com/takezoe/gitbucket-gist-plugin) which provides Gists like code snippet repository as a practical plug-in example.
 
-![Gist plug-in]({{site.baseurl}}/images/gitbucket-2.9/gist_plugin.png)
+![Gist plug-in]({{site.baseurl}}/images/gitbucket-3.0/gist_plugin.png)
 
 You can install this plug-in by following procedure:
 
@@ -33,14 +33,14 @@ In the near future, GitBucket will move to Slick3. It supports connection poolin
 
 The Branch UI has been similar to GitHub it. Now it shows number of ahead and behind commits also.
 
-![New branch UI]({{site.baseurl}}/images/gitbucket-2.9/new_branch_ui.png)
+![New branch UI]({{site.baseurl}}/images/gitbucket-3.0/new_branch_ui.png)
 
 ## Compare between specified commit ids
 
 The compare view now provides diff for specified commit ids at `REPOSITORY_URL/compare/from...to`, not only branch names.
 
-![Compare commit ids]({{site.baseurl}}/images/gitbucket-2.9/compare_commit_id.png)
+![Compare commit ids]({{site.baseurl}}/images/gitbucket-3.0/compare_commit_id.png)
 
-In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=is%3Aclosed+milestone%3A2.9) to know details.
+In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=is%3Aclosed+milestone%3A3.0) to know details.
 
 Enjoy GitBucket!
