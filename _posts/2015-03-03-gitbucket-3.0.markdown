@@ -21,7 +21,7 @@ We've also released [gitbucket-gist-plugin](https://github.com/takezoe/gitbucket
 
 You can install this plug-in by following procedure:
 
-1. Hit `./sbt.sh` package in the root directory of this repository.
+1. Hit `./sbt.sh package` in the root directory of this repository.
 2. Copy `target/scala-2.11/gitbucket-gist-plugin_2.11-1.0.jar` into `GITBUCKET_HOME/plugins`.
 3. Restart GitBucket.
 
