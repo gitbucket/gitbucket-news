@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GitBucket 3.0 released!"
-date: 2015-03-02 00:00:00
+date: 2015-03-03 00:00:00
 categories: gitbucket
 ---
 
@@ -12,6 +12,8 @@ Today, we are pleased to announce the availability of new version of Scala based
 GitBucket 3.0 includes the new plug-in system.
 
 We can now make plug-in as standard SBT project. Plug-ins are completely integrated to GitBucket, So we can use all capability of GitBucket in plug-in. For example, we can write a plug-in controller as Scalatra controller and also we can use Slick in plug-in.
+
+Please note, all classes are moved to `gitbucket.core` to separate from plug-in classes explicitly.
 
 We've also released [gitbucket-gist-plugin](https://github.com/takezoe/gitbucket-gist-plugin) which provides Gists like code snippet repository as a practical plug-in example.
 
