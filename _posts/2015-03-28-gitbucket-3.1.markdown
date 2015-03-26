@@ -1,0 +1,28 @@
+---
+layout: post
+title: "GitBucket 3.1 released!"
+date: 2015-03-28 00:00:00
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.1](https://github.com/takezoe/gitbucket/releases/tag/3.1)!
+
+## New Web APIs
+
+Some Web APIs are supported in 3.1. They bring possibility to work Jenkins github pull-request builder with GitBucket.
+
+![Jenkins github pull-request builder]({{site.baseurl}}/images/gitbucket-3.1/jenkins.png)
+
+## Improved Diff View
+
+The diff view has been renewed with many improvement such as character level diff and ignoring whitespaces. File renaming is also detected in the diff view.
+
+![Improved Diff View]({{site.baseurl}}/images/gitbucket-3.1/diff.png)
+
+## Bump Scalatra to 2.3.1, sbt to 0.13.8
+
+Upgrade Scalatra which includes security fix related to `scala.xml.XML` library.
+
+In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=is%3Aclosed+milestone%3A3.1) to know details.
+
+Enjoy GitBucket!
