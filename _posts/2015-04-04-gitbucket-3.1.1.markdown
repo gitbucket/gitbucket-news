@@ -1,0 +1,16 @@
+---
+layout: post
+title: "GitBucket 3.1.1 released!"
+date: 2015-04-04 00:00:00
+categories: gitbucket
+---
+
+Today, We released [GitBucket 3.1.1](https://github.com/takezoe/gitbucket/releases/tag/3.1.1).
+
+In GitBucket 3.1, included H2 causes version compatibility issue for some environments. Therefore H2 version is rolled back in this release. If you have trouble in upgrading to GitBucket 3.1, please try this release.
+
+This release also contains small improvement for plug-ins. `Plugin` became possible to access `ServletContext` in `initialize()` and `shutdown()`. By this change, [Gist plug-in](https://github.com/takezoe/gitbucket-gist-plugin) became to provide correct URL in the header.
+
+In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=is%3Aclosed+milestone%3A3.1.1) to know details.
+
+Enjoy GitBucket!
