@@ -1,0 +1,38 @@
+---
+layout: post
+title: "GitBucket 3.2 released!"
+date: 2015-05-03 00:00:00
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.2](https://github.com/takezoe/gitbucket/releases/tag/3.2)!
+
+This release contains some improvements of the repository viewer as below:
+
+## Directory history button
+
+GitHub's "Browse commits for this branch" button has been added at the file list view.
+
+![Directory history]({{site.baseurl}}/images/gitbucket-3.2/directory_history.png)
+
+## Compare / pull request button
+
+Compare button has been added at left of the branch selector.
+
+![Compare button]({{site.baseurl}}/images/gitbucket-3.2/compare_button_2.png)
+
+If the current branch has been already sent as the pull request, this button is linked to that pull request.
+
+![Pull request button]({{site.baseurl}}/images/gitbucket-3.2/compare_button_1.png)
+
+In addition, some bug fix and improvements are contained in this release. One of them is [resolving DB connection error in development mode](https://github.com/takezoe/gitbucket/pull/709). This fix is very helpful for GitBucket developers.
+
+## Limit of activity log
+
+GitBucket records all activity log in default but huge activity logs makes GitBucket is heavy. In GitBucket 3.2, we can set a limit of activity log. If number of activity logs is over this limit, old logs are deleted.
+
+![Activity log limit configuration]({{site.baseurl}}/images/gitbucket-3.2/activity_limit.png)
+
+See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=is%3Aclosed+milestone%3A3.2) to know details.
+
+Enjoy GitBucket!
