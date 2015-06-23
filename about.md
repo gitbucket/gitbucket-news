@@ -12,3 +12,11 @@ It's provide GitHub like UI and features such as Git repository hosting via HTTP
 repository viewer, issues, wiki and pull request.
 
 Please visit [GitHub](https://github.com/takezoe/gitbucket) to get more information.
+
+Sponsorship
+--------
+
+GitBucket is supported by
+
+[![IntelliJ IDEA](https://www.jetbrains.com/idea/docs/logo_intellij_idea.png)](https://www.jetbrains.com/idea/)
+
