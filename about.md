@@ -13,10 +13,7 @@ repository viewer, issues, wiki and pull request.
 
 Please visit [GitHub](https://github.com/takezoe/gitbucket) to get more information.
 
-Sponsorship
+Sponsors
 --------
-
-GitBucket is supported by
-
 [![IntelliJ IDEA](https://www.jetbrains.com/idea/docs/logo_intellij_idea.png)](https://www.jetbrains.com/idea/)
 
