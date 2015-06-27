@@ -1,0 +1,50 @@
+---
+layout: post
+title: "GitBucket 3.4 released!"
+date: 2015-06-27 00:00:00
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.4](https://github.com/takezoe/gitbucket/releases/tag/3.4)!
+
+## Plug-in API enhancement
+
+Declarative style plug-in definition is available.
+
+```scala
+class Plugin extends gitbucket.core.plugin.Plugin {
+
+  override val pluginId: String = "gist"
+  
+  override val pluginName: String = "Gist Plugin"
+  
+  override val description: String = "Provides Gist feature on GitBucket."
+  
+  override val versions: List[Version] = List(Version(1, 2), Version(1, 0))
+  
+  override val images = Seq(
+    "images/menu-revisions-active.png" -> fromClassPath("images/menu-revisions-active.png"),
+    "images/menu-revisions.png"        -> fromClassPath("images/menu-revisions.png"),
+    "images/snippet.png"               -> fromClassPath("snippet.png")
+  )
+  
+  override val controllers = Seq(
+    "/*" -> new GistController()
+  )
+
+}
+```
+
+And added a new extension point to add [markup render](https://github.com/takezoe/gitbucket/blob/master/src/main/scala/gitbucket/core/plugin/Renderer.scala). In default, GitBucket supports plain text and Markdown.
+
+## go-import support
+
+GitBucket generates below `<meta>` tag for public repositories.
+
+```html
+<meta name="go-import" content="localhost:8080/root/test git http://localhost:8080/git/root/test.git" />
+```
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=is%3Aclosed+milestone%3A3.4) to know details.
+
+Enjoy GitBucket!
