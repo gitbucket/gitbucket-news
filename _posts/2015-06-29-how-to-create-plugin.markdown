@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to create a GitBucket plug-in"
+title: "How to create GitBucket plug-in"
 date: 2015-06-29 00:00:00
 categories: gitbucket
 ---
