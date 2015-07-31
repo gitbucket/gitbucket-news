@@ -1,0 +1,54 @@
+---
+layout: post
+title: "GitBucket 3.5 released!"
+date: 2015-08-01 00:00:00
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.5](https://github.com/takezoe/gitbucket/releases/tag/3.5) with [Gist plug-in](https://github.com/takezoe/gitbucket-gist-plugin) update!
+
+## Octicons
+
+[Octicons](https://octicons.github.com/) is an open-source web font contains GitHub like icons provided by GitHub. GitBucket and Gist plug-in now use Octicons instead of bitmap icons. It makes beautiful appearance even if for large display.
+
+![Octicons]({{site.baseurl}}/images/gitbucket-3.5/gitbucket_octicons.png)
+
+## Enhance global header
+
+Global header has been enhanced. Now it's further similar to GitHub.
+
+![Global header]({{site.baseurl}}/images/gitbucket-3.5/gitbucket_header.png)
+
+## Default compare / pull request target
+
+In the previous version of GitBucket, the default target of comparing or pull request from the branch list was the default branch of the current repository.
+
+![Compare / pull request target]({{site.baseurl}}/images/gitbucket-3.5/gitbucket_compare_target.png)
+
+However since GitBucket 3.5, it has been changed to the default branch of the parent repository as same as GitHub.
+
+## Gist plug-in
+
+[Gist plug-in](https://github.com/takezoe/gitbucket-gist-plugin) includes many updates as below.
+
+### Git repository access
+
+Git repository URL (both of http and ssh) is now available. We can clone and push Gist contents using Git client.
+
+![Gist repository access]({{site.baseurl}}/images/gitbucket-3.5/gist_git_repository.png)
+
+### Comment
+
+The comment form has been added to Gist. Markdown and its preview are available as same as GitBucket (but file attachment is not available currently).
+
+![Gist comment]({{site.baseurl}}/images/gitbucket-3.5/gist_comment.png)
+
+### Fork
+
+It's possible to fork Gist repository.
+
+![Gist Fork]({{site.baseurl}}/images/gitbucket-3.5/gist_fork.png)
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=is%3Aclosed+milestone%3A3.5) to know details.
+
+Enjoy GitBucket!
