@@ -1,0 +1,47 @@
+---
+layout: post
+title: "GitBucket 3.6 released!"
+date: 2015-08-30 00:00:00
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.6](https://github.com/takezoe/gitbucket/releases/tag/3.6)!
+
+## User interface improvements
+
+Some parts of GitBucket user interface had not been catched up to GitHub. In GitBucket 3.6, we have updated GitBucket design to more flat and sharp.
+
+Also we have made large user interface update to some features such as the commit history and the pull request. Especially, pull request became more easy to use.
+
+![Commit history]({{site.baseurl}}/images/gitbucket-3.6/commit_history.png)
+
+![Pull request]({{site.baseurl}}/images/gitbucket-3.6/pull_request.png)
+
+Some style improvements were made by [@garygreen](https://github.com/garygreen). Thanks for his contributions!
+
+## Installed plugins list
+
+Added the installed plugin list to the administration console. We can confirm installed plugins and these description and version using it.
+
+![Installed plugins]({{site.baseurl}}/images/gitbucket-3.6/installed_plugins.png)
+
+This feature was contributed by [@McFoggy](https://github.com/McFoggy). He also contributed some improvements about plugin development and providing [gitbucket-announce-plugin](https://github.com/McFoggy/gitbucket-announce-plugin) plugin. Please check it!
+
+## More pages and repositories
+
+Repositories and wiki pages on the side bar are limited in initial state. We can display all of them by clicking the "Show more repositories..." or "Show more pages..." link.
+
+![Show more pages]({{site.baseurl}}/images/gitbucket-3.6/show_more_pages.png)
+
+## Reference links in Markdown
+
+More reference links have been available in Markdown. This feature is contributed by [@officer](https://github.com/officer).
+
+- username/project@SHA
+- username/project#Num
+- username@SHA
+- username#Num
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=is%3Aclosed+milestone%3A3.6) to know details.
+
+Enjoy GitBucket!
