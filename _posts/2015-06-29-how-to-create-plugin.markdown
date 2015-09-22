@@ -79,5 +79,5 @@ Then start GitBucket and access to http://localhost:8080/helloworld by your web 
 
 ## Next step
 
-There are [gitbcucket-gist-plugin](https://github.com/takezoe/gitbucket-gist-plugin) as a practical example of GitBucket plug-in. Check it to know more details about GitBucket plug-in.
+There are [gitbcucket-gist-plugin](https://github.com/gitbucket/gitbucket-gist-plugin) as a practical example of GitBucket plug-in. Check it to know more details about GitBucket plug-in.
 

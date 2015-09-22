@@ -5,7 +5,7 @@ date: 2015-08-01 00:00:00
 categories: gitbucket
 ---
 
-Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.5](https://github.com/takezoe/gitbucket/releases/tag/3.5) with [Gist plug-in](https://github.com/takezoe/gitbucket-gist-plugin) update!
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.5](https://github.com/takezoe/gitbucket/releases/tag/3.5) with [Gist plug-in](https://github.com/gitbucket/gitbucket-gist-plugin) update!
 
 ## Octicons
 
@@ -29,7 +29,7 @@ However since GitBucket 3.5, it has been changed to the default branch of the pa
 
 ## Gist plug-in
 
-[Gist plug-in](https://github.com/takezoe/gitbucket-gist-plugin) includes many updates as below.
+[Gist plug-in](https://github.com/gitbucket/gitbucket-gist-plugin) includes many updates as below.
 
 ### Git repository access
 

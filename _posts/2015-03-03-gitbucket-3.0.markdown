@@ -15,7 +15,7 @@ We can now make plug-in as standard SBT project. Plug-ins are completely integra
 
 Please note, all classes are moved to `gitbucket.core` to separate from plug-in classes explicitly.
 
-We've also released [gitbucket-gist-plugin](https://github.com/takezoe/gitbucket-gist-plugin) which provides Gists like code snippet repository as a practical plug-in example.
+We've also released [gitbucket-gist-plugin](https://github.com/gitbucket/gitbucket-gist-plugin) which provides Gists like code snippet repository as a practical plug-in example.
 
 ![Gist plug-in]({{site.baseurl}}/images/gitbucket-3.0/gist_plugin.png)
 
