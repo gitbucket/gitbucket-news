@@ -2,7 +2,7 @@
 title: GitBucket News
 #email: your-email@domain.com
 description: "GitBucket is a GitHub clone powered by Scala."
-baseurl: "https://takezoe.github.io/gitbucket"
+baseurl: "https://gitbucket.github.io/gitbucket-news"
 url: ""
 
 # Build settings
