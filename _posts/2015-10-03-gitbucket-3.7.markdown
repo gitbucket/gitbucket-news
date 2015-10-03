@@ -1,0 +1,61 @@
+---
+layout: post
+title: "GitBucket 3.7 released!"
+date: 2015-10-03 00:00:00
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.7](https://github.com/takezoe/gitbucket/releases/tag/3.7)!
+
+## New markdown processor
+
+Markdown processor has been switched to [markedj](https://github.com/gitbucket/markedj) from pegdown.
+
+markedj is a Java port of graceful markdown processor [marked.js](https://github.com/chjj/marked). Since it provides good support for GitHub Flavored Markdown, some markdown notation differences between GitHub and GitBucket are solved by this switching.
+
+markedj was ported for GitBucket, but it's simply a Java library works on Java7. Therefore you can use markedj in your JVM based application easily.
+
+To use markedj, at first, add following dependency into your `pom.xml`:
+
+```xml
+<repositories>
+  <repository>
+    <id>amateras</id>
+	<name>Project Amateras Maven2 Repository</name>
+	<url>http://amateras.sourceforge.jp/mvn/</url>
+  </repository>
+</repositories>
+
+<dependencies>
+  <dependency>
+    <groupId>io.github.gitbucket</groupId>
+	<artifactId>markedj</artifactId>
+	<version>1.0.2</version>
+  </dependency>
+</dependencies>
+```
+
+Then, you can easily use markedj via `io.github.gitbucket.markedj.Marked`:
+
+```java
+import io.github.gitbucket.markedj.Marked;
+
+String markdown = ...
+String html = Marked.marked(markdown);
+```
+
+## Clone in desktop button
+
+"Clone in Desktop" button has been available in the sidebar of the repository viewer. This button invokes platform specific application (i.e. git client such as SourceTree or GitHub Desktop) to clone the repository.
+
+![Clone in Desktop]({{site.baseurl}}/images/gitbucket-3.7/clone_in_desktop.png)
+
+## Provide MD5 and SHA-1 checksum for gitbucket.war
+
+Providing MD5 and SHA-1 checksum for the released `gitbucket.war` has started since this version.
+
+They are available at the [download page](https://github.com/takezoe/gitbucket/releases/tag/3.7) with `gitbucket.war`. You can verify the downloaded war file by comparing these checksum and hash of the downloaded war file using commands such as `md5sum` or `sha1sum`.
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=is%3Aclosed+milestone%3A3.7) to know details.
+
+Enjoy GitBucket!
