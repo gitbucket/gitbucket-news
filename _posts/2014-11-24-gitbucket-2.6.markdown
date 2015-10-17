@@ -5,7 +5,7 @@ date: 2014-11-24 00:00:00
 categories: gitbucket
 ---
 
-Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 2.6](https://github.com/takezoe/gitbucket/releases/tag/2.6)!
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 2.6](https://github.com/gitbucket/gitbucket/releases/tag/2.6)!
 
 ## Search box at issues and pull requests
 
@@ -30,12 +30,12 @@ New issue UI has not been applied to the pull request detail page until 2.5. In 
 
 We moved our continuous integration to TravisCI from Buildhive.
 
-- https://travis-ci.org/takezoe/gitbucket
+- https://travis-ci.org/gitbucket/gitbucket
 
 ![TravisCI]({{site.baseurl}}/images/gitbucket-2.6/travis.png)
 
 ----
 
-In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=milestone%3A2.6+is%3Aclosed) to know details.
+In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=milestone%3A2.6+is%3Aclosed) to know details.
 
 Enjoy GitBucket!

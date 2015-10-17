@@ -5,7 +5,7 @@ date: 2015-08-30 00:00:00
 categories: gitbucket
 ---
 
-Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.6](https://github.com/takezoe/gitbucket/releases/tag/3.6)!
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.6](https://github.com/gitbucket/gitbucket/releases/tag/3.6)!
 
 ## User interface improvements
 
@@ -42,6 +42,6 @@ More reference links have been available in Markdown. This feature is contribute
 - username@SHA
 - username#Num
 
-In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=is%3Aclosed+milestone%3A3.6) to know details.
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A3.6) to know details.
 
 Enjoy GitBucket!

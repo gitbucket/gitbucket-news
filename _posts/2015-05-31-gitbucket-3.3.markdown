@@ -5,13 +5,13 @@ date: 2015-05-31 00:00:00
 categories: gitbucket
 ---
 
-Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.3](https://github.com/takezoe/gitbucket/releases/tag/3.3)!
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.3](https://github.com/gitbucket/gitbucket/releases/tag/3.3)!
 
 This release contains some great new features. Almost of these features are provided by [@nazoking](https://github.com/nazoking). Thanks for his contribution!
 
 ## Image diff
 
-Rich image diff view is available. It provides 2-up, swipe, onion skin, difference and blink view. See other screenshots at [#750](https://github.com/takezoe/gitbucket/pull/750).
+Rich image diff view is available. It provides 2-up, swipe, onion skin, difference and blink view. See other screenshots at [#750](https://github.com/gitbucket/gitbucket/pull/750).
 
 ![Image diff]({{site.baseurl}}/images/gitbucket-3.3/image_diff.png)
 
@@ -34,6 +34,6 @@ This release also contains some bugfix and improvements like below:
 - Disable IE backward compatibility mode
 - Focus the input field at some pages
 
-See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=is%3Aclosed+milestone%3A3.3) to know details.
+See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A3.3) to know details.
 
 Enjoy GitBucket!

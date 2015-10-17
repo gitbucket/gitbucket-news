@@ -4,7 +4,7 @@ title: "GitBucket 1.13 released!"
 date: 2014-04-29 00:00:00
 categories: gitbucket
 ---
-Today, we are pleased to announce the availability of  new version of Scala based Github clone [GitBucket 1.13](https://github.com/takezoe/gitbucket/releases/tag/1.13).
+Today, we are pleased to announce the availability of  new version of Scala based Github clone [GitBucket 1.13](https://github.com/gitbucket/gitbucket/releases/tag/1.13).
 
 I introduce new features in GitBucket 1.13 in this entry.
 
@@ -28,6 +28,6 @@ Atom feed is available in the dashboard and user activity page.
 
 ![Atom feed on user activity page]({{site.baseurl}}/images/gitbucket-1.13/rss2.png)
 
-And also this release contains some improvements and many bug fix. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?milestone=16&state=closed) to know details. We highly recommend upgrading your GitBucket.
+And also this release contains some improvements and many bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?milestone=16&state=closed) to know details. We highly recommend upgrading your GitBucket.
 
 Enjoy!

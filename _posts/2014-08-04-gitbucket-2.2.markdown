@@ -4,7 +4,7 @@ title: "GitBucket 2.2 released!"
 date: 2014-08-04 00:00:00
 categories: gitbucket
 ---
-Today, we are pleased to announce the availability of new version of Scala based Github clone [GitBucket 2.2](https://github.com/takezoe/gitbucket/releases/tag/2.2)!
+Today, we are pleased to announce the availability of new version of Scala based Github clone [GitBucket 2.2](https://github.com/gitbucket/gitbucket/releases/tag/2.2)!
 
 ## Plug-in system is available
 
@@ -32,6 +32,6 @@ LDAP authentication has been improved. The mail address became optional. If LDAP
 
 Show news feed of a private repository to members in the dashboard.
 
-In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=is%3Aclosed+milestone%3A2.2) to know details.
+In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A2.2) to know details.
 
 Enjoy GitBucket!

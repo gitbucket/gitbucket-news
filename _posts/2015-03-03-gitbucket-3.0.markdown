@@ -5,7 +5,7 @@ date: 2015-03-03 00:00:00
 categories: gitbucket
 ---
 
-Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.0](https://github.com/takezoe/gitbucket/releases/tag/3.0)!
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.0](https://github.com/gitbucket/gitbucket/releases/tag/3.0)!
 
 ## New Plug-in system
 
@@ -43,6 +43,6 @@ The compare view now provides diff for specified commit ids at `REPOSITORY_URL/c
 
 ![Compare commit ids]({{site.baseurl}}/images/gitbucket-3.0/compare_commit_id.png)
 
-In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=is%3Aclosed+milestone%3A3.0) to know details.
+In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A3.0) to know details.
 
 Enjoy GitBucket!

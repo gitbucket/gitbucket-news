@@ -5,7 +5,7 @@ date: 2015-02-01 00:00:00
 categories: gitbucket
 ---
 
-We've released new version of Scala based GitHub clone [GitBucket 2.8](https://github.com/takezoe/gitbucket/releases/tag/2.8) today! This is a first release in 2015.
+We've released new version of Scala based GitHub clone [GitBucket 2.8](https://github.com/gitbucke/gitbucket/releases/tag/2.8) today! This is a first release in 2015.
 
 ## New logo and icons
 
@@ -45,6 +45,6 @@ Until GitBucket 2.7, we can fork repository by only sign-in user. In 2.8, the fo
 
 ----
 
-In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=milestone%3A2.8+is%3Aclosed) to know details.
+In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=milestone%3A2.8+is%3Aclosed) to know details.
 
 Enjoy GitBucket!

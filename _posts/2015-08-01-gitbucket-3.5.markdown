@@ -5,7 +5,7 @@ date: 2015-08-01 00:00:00
 categories: gitbucket
 ---
 
-Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.5](https://github.com/takezoe/gitbucket/releases/tag/3.5) with [Gist plug-in](https://github.com/gitbucket/gitbucket-gist-plugin) update!
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.5](https://github.com/gitbucket/gitbucket/releases/tag/3.5) with [Gist plug-in](https://github.com/gitbucket/gitbucket-gist-plugin) update!
 
 ## Octicons
 
@@ -49,6 +49,6 @@ It's possible to fork Gist repository.
 
 ![Gist Fork]({{site.baseurl}}/images/gitbucket-3.5/gist_fork.png)
 
-In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=is%3Aclosed+milestone%3A3.5) to know details.
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A3.5) to know details.
 
 Enjoy GitBucket!

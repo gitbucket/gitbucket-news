@@ -5,7 +5,7 @@ date: 2015-03-28 00:00:00
 categories: gitbucket
 ---
 
-Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.1](https://github.com/takezoe/gitbucket/releases/tag/3.1)!
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.1](https://github.com/gitbucket/gitbucket/releases/tag/3.1)!
 
 ## New Web APIs
 
@@ -23,6 +23,6 @@ The diff view has been renewed with many improvement such as character level dif
 
 Upgrade Scalatra which includes security fix related to `scala.xml.XML` library.
 
-In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=is%3Aclosed+milestone%3A3.1) to know details.
+In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A3.1) to know details.
 
 Enjoy GitBucket!

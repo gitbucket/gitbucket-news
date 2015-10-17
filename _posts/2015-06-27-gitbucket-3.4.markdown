@@ -5,7 +5,7 @@ date: 2015-06-27 00:00:00
 categories: gitbucket
 ---
 
-Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.4](https://github.com/takezoe/gitbucket/releases/tag/3.4)!
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.4](https://github.com/gitbucket/gitbucket/releases/tag/3.4)!
 
 ## Plug-in API enhancement
 
@@ -35,7 +35,7 @@ class Plugin extends gitbucket.core.plugin.Plugin {
 }
 ```
 
-And added a new extension point to add [markup render](https://github.com/takezoe/gitbucket/blob/master/src/main/scala/gitbucket/core/plugin/Renderer.scala). In default, GitBucket supports plain text and Markdown.
+And added a new extension point to add [markup render](https://github.com/gitbucket/gitbucket/blob/master/src/main/scala/gitbucket/core/plugin/Renderer.scala). In default, GitBucket supports plain text and Markdown.
 
 ## go-import support
 
@@ -45,6 +45,6 @@ GitBucket generates below `<meta>` tag for public repositories.
 <meta name="go-import" content="localhost:8080/root/test git http://localhost:8080/git/root/test.git" />
 ```
 
-In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=is%3Aclosed+milestone%3A3.4) to know details.
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A3.4) to know details.
 
 Enjoy GitBucket!

@@ -4,7 +4,7 @@ title: "GitBucket 1.12 released!"
 date: 2014-03-29 00:00:00
 categories: gitbucket
 ---
-Today, we are pleased to announce the availability of  new version of Scala based Github clone [GitBucket 1.12](https://github.com/takezoe/gitbucket/releases/tag/1.12).
+Today, we are pleased to announce the availability of  new version of Scala based Github clone [GitBucket 1.12](https://github.com/gitbucket/gitbucket/releases/tag/1.12).
 
 This release contains some new features as below:
 

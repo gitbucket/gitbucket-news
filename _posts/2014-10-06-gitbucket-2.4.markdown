@@ -5,9 +5,9 @@ date: 2014-10-06 00:00:00
 categories: gitbucket
 ---
 
-> **Note:** [GitBucket 2.4.1](https://github.com/takezoe/gitbucket/releases/tag/2.4.1) is available. This is hotfix for critical bugs in 2.4. If you've already installed 2.4, please replace it with 2.4.1.
+> **Note:** [GitBucket 2.4.1](https://github.com/gitbucket/gitbucket/releases/tag/2.4.1) is available. This is hotfix for critical bugs in 2.4. If you've already installed 2.4, please replace it with 2.4.1.
 
-Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 2.4](https://github.com/takezoe/gitbucket/releases/tag/2.4)!
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 2.4](https://github.com/gitbucket/gitbucket/releases/tag/2.4)!
 
 ## New Issues UI
 
@@ -37,6 +37,6 @@ Plugin system has been disabled in default in this release, because it need many
 
 ----
 
-In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/takezoe/gitbucket/issues?q=milestone%3A2.4+is%3Aclosed) to know details.
+In addition, some bug fix and improvements are contained in this release. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=milestone%3A2.4+is%3Aclosed) to know details.
 
 Enjoy GitBucket!
