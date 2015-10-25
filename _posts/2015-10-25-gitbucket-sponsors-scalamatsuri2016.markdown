@@ -15,4 +15,4 @@ Also we talked about GitBucket at ScalaMatsuri Day1 and got an additional sessio
 
 ![ScalaMatsuri]({{site.baseurl}}/images/scalamatsuri/scalamatsuri.jpg)
 
-This year, there are many [candidate sessions](http://scalamatsuri.org/en/candidates/) and voting by attendees just now! We did not propose a session about GitBucket. However we are looking forward to attend ScalaMatsuri this year also :-)
+This year, there are many [candidate sessions](http://scalamatsuri.org/en/candidates/) and voting by attendees just now! We did not propose a session about GitBucket. However we are looking forward to attend ScalaMatsuri this year again :-)
