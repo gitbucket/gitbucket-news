@@ -1,0 +1,55 @@
+---
+layout: post
+title: "GitBucket 3.8 released!"
+date: 2015-10-31 00:00:00
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.8](https://github.com/gitbucket/gitbucket/releases/tag/3.8)!
+
+## GitBucket moved to GitHub organization
+
+We complete to move all of GitBucket repositories to [the gitbucket organization](https://github.com/gitbucket) to glow up as open-source community. Now, we have following repositories:
+
+- [gitbucket](https://github.com/gitbucket/gitbucket)
+- [gitbucket-news](https://github.com/gitbucket/gitbucket-news)
+- [gitbucket-gist-plugin](https://github.com/gitbucket/gitbucket-gist-plugin)
+- [markedj](https://github.com/gitbucket/markedj)
+
+Also, we will provide official plug-ins or libraries used in GitBucket at this organization.
+
+## Omit diff view for large differences
+
+Omit diff view for large differences to avoid freezing your browser.
+
+![Omit large diff]({{site.baseurl}}/images/gitbucket-3.8/omit_large_diff.png)
+
+## Repository creation API
+
+New web API to create repository is added. You can automate repository creation in GitBucket using this API.
+
+See [GitHub API specification](https://developer.github.com/v3/repos/#create) to know detailed specification of this API.
+
+##  Render url as link in repository description
+
+URL is rendered as link in repository description.
+
+![URL in repository description]({{site.baseurl}}/images/gitbucket-3.8/url_in_repo_description.png)
+
+## Expand attachable file types
+
+File attachment in issues had been supported only image files until GitBucket 3.7. Since 3.8, supports following file types:
+
+- .pdf
+- .gif
+- .jpg
+- .png
+- .docx
+- .pptx
+- .xlsx
+- .pdf
+- .txt
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A3.8) to know details.
+
+Enjoy GitBucket!
