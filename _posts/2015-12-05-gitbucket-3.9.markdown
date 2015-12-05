@@ -1,0 +1,46 @@
+---
+layout: post
+title: "GitBucket 3.9 released!"
+date: 2015-12-05 00:00:00
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.9](https://github.com/gitbucket/gitbucket/releases/tag/3.9)!
+
+## GFM inline breaks support in Markdown
+
+Line separator is converted to `<br>` in default.
+
+![Markdown contains inline breaks]({{site.baseurl}}/images/gitbucket-3.9/markdown_breaks_1.png)
+
+![line breaks rendered as br]({{site.baseurl}}/images/gitbucket-3.9/markdown_breaks_2.png)
+
+## WebHook event trigger is selectable
+
+WebHook on create review comment is now available. And also, WebHook event trigger is selectable at the WebHook settings page of each repositories.
+
+![WebHook event trigger is selectable]({{site.baseurl}}/images/gitbucket-3.9/webhook_setting_1.png)
+
+In addition, you can check WebHook request and response here:
+
+![Check WebHook request and response]({{site.baseurl}}/images/gitbucket-3.9/webhook_setting_2.png)
+
+## Start Solidbase Development
+
+GitBucket is using its own migration system for automatic migration. Its main target is RDBMS, and it does not support multi-tenancy so GitBucket provides another migration system for plug-ins.
+
+We started to make a new migration system named [Solidbase](https://github.com/gitbucket/solidbase) to renew GitBucket migration system in the future.
+
+- Multi-database (based on Liquibase)
+- Multi-resource (not only RDBMS)
+- Multi-tenancy (each modules can have independent version)
+
+Solidbase supports multi-databse using Liquibase. We can supports any databases supported by Liquibase (e.g. H2, MySQL, PostgreSQL and more) by one abstract definition. And it does not target specific resources such as RDBMS. We can use it for any resources that need migration such as the git repository or file system. In addition, Solidbase also supports multi-tenancy so plug-ins will use it in the future.
+
+Anyway, Solidbase is under development. We will continue to development and integrate it into GitBucket.
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A3.9) to know details.
+
+Enjoy GitBucket!
+
+
