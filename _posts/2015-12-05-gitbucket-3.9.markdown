@@ -31,6 +31,8 @@ GitBucket is using its own migration system for automatic migration. Its main ta
 
 We started to make a new migration system named [Solidbase](https://github.com/gitbucket/solidbase) to renew GitBucket migration system in the future.
 
+Solidbase has following features:
+
 - Multi-database (based on Liquibase)
 - Multi-resource (not only RDBMS)
 - Multi-tenancy (each modules can have independent version)
