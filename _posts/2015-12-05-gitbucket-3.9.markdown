@@ -15,7 +15,7 @@ Line separator is converted to `<br>` in default.
 
 ![line breaks rendered as br]({{site.baseurl}}/images/gitbucket-3.9/markdown_breaks_2.png)
 
-## WebHook event trigger is selectable
+## WebHook improvements
 
 WebHook on create review comment is now available. And also, WebHook event trigger is selectable at the WebHook settings page of each repositories.
 
