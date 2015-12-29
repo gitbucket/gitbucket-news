@@ -1,0 +1,40 @@
+---
+layout: post
+title: "GitBucket 3.10 released!"
+date: 2015-12-31 00:00:00
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.10](https://github.com/gitbucket/gitbucket/releases/tag/3.10)!
+
+## Move to Bootstrap3
+
+GitBucket moved to Bootstrap3 with slider23's [bootstrap-theme-github](https://github.com/slider23/bootstrap-theme-github) from Bootstrap2.
+
+![bootstrap-theme-github]({{site.baseurl}}/images/gitbucket-3.10/bootstrap-theme-github.png)
+
+However slider23's bootstrap-theme-github has some issues in GitBucket use. So we forked and improve it. See [gitbucket/bootstrap-theme-github](https://github.com/gitbucket/bootstrap-theme-github).
+
+We will continue improving styles and follow [the new look of GitHub](https://github.com/blog/2085-a-new-look-for-repositories) in GitBucket 3.11.
+
+## New URL for raw contents
+
+Provides new URL like `raw/master/doc/activity.md` instead of `blob/master/doc/activity.md?raw=true` (old URL is still available for backward compatibility).
+
+For example, GitBucket can [host the Maven repository](http://kwebble.com/blog/2014/02/19/use-github-to-host-your-own-maven-repo) by this update. 
+
+## Update xsbt-web-plugin
+
+Remove scalatra-sbt to use the newest version of [xsbt-web-plugin](https://github.com/earldouglas/xsbt-web-plugin) to resolve classpath issue in dev-mode.
+
+Notice for developers: start command has been changed to `sbt ~jetty:start` from `sbt ~container:start`, and sourcecode changing is detected and applied without `~ ;copy-resources;aux-compile`. Also, in dev-mode, you can configure logger at `src/main/resources/logback-dev.xml`.
+
+## Update H2 database
+
+Bump up H2 to the latest version: 1.4.190 to improve reliability of the database. However it might cause compatibility issue about data files. If you got such trouble, use [H2 1.4.180 version of GitBucket 3.10](https://github.com/gitbucket/gitbucket/releases/tag/3.10_h2-1.4.180) instead. This version is completely same as 3.10 except H2 version.
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A3.10) to know details.
+
+Enjoy GitBucket!
+
+
