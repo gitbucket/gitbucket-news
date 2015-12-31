@@ -31,7 +31,7 @@ Notice for developers: start command has been changed to `sbt ~jetty:start` from
 
 ## Update H2 database
 
-Bump up H2 to the latest version: 1.4.190 to improve reliability of the database. However it might cause compatibility issue about data files. If you got such trouble, use [H2 1.4.180 version of GitBucket 3.10](https://github.com/gitbucket/gitbucket/releases/tag/3.10_h2-1.4.180) instead. This version is completely same as 3.10 except H2 version.
+Bump up H2 to the latest version: 1.4.190 to improve reliability of the database. However it might cause compatibility issue about data files. If you got such trouble, try to migrate H2 data files using [the migration tool](https://github.com/gitbucket/h2-migration), or use [H2 1.4.180 version of GitBucket 3.10](https://github.com/gitbucket/gitbucket/releases/tag/3.10_h2-1.4.180) (this is completely same as 3.10 except H2 version) instead of this version.
 
 In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A3.10) to know details.
 
