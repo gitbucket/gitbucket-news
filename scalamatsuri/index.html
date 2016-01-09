@@ -1,0 +1,256 @@
+<!doctype html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang=""> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>GitBucket - GitHub clone powered by Scala</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.3.0/octicons.min.css">
+  <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Lato:100normal,300normal,700normal&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  <meta property="og:title" content="GitBucket - GitHub clone powered by Scala">
+  <meta property="og:site_name" content="GitBucket">
+  <meta property="og:url" content="https://gitbucket.github.io/gitbucket-news/scalamatsuri/">
+  <meta property="og:description" content="GitBucket is a GitHub clone powered by Scala which has easy installation and high extensibility.  Based on pure JVM solution, so you can run anywhere with Java installation only.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://gitbucket.github.io/gitbucket-news/scalamatsuri/og-image.png">
+
+  <style>
+    body {
+      padding-top: 80px;
+      padding-bottom: 20px;
+    }
+  </style>
+  <!--<link rel="stylesheet" href="css/bootstrap-theme.min.css">-->
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="//browsehappy.com/">upgrade
+  your browser</a> to improve your experience.</p>
+<![endif]-->
+<nav id="navigation" class="navbar navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">
+        <img id="logo-gitbucket" class="minus-margin-left" src="./img/logo-gitbucket.png"/>
+      </a>
+    </div>
+    <div class="navbar-right">
+      <a class="lg-block navbar-brand btn btn-skelton margin-top minus-margin-right"
+         href="https://github.com/gitbucket/gitbucket" target="_blank">
+        <span class="octicon octicon-mark-github octicon-btn"></span>
+        Fork me on Github.
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div id="masthead" class="jumbotron">
+  <div id="title-gitbucket" class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>
+          <span class="lighter">The easily installable</span><br>
+          GitHub clone
+        </h1>
+      </div>
+      <div id="eyecatch"></div>
+      <div class="col-lg-12">
+        <p class="text-muted">
+          GitBucket is a GitHub clone powered by Scala<br>
+          which has easy installation and high extensibility.
+        </p>
+
+        <p class="text-muted">
+          Based on pure JVM solution,<br>
+          so you can run anywhere with Java installation only.
+        </p>
+
+        <p class="margin-top-wide margin-bottom">
+          <a class="btn btn-scala btn-lg" href="https://github.com/gitbucket/gitbucket" target="_blank" role="button">
+            <span class="mega-octicon octicon-mark-github octicon-btn"></span>
+            Fork me on GitHub.
+          </a>
+        </p>
+
+        <p class="text-muted">
+          <small>
+            <span class="glyphicon glyphicon-heart-empty scala" aria-hidden="true"></span>
+            GitBucket is open source and available under<br>
+            the Apache License Version 2.0
+          </small>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container margin-top">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 margin-bottom">
+      <img class="library-icons" src="./img/icons-library-1.png" alt="scala scalatra slick jetty">
+    </div>
+    <div class="col-lg-6 col-md-6 margin-bottom">
+      <img class="library-icons" src="./img/icons-library-2.png" alt="jGit H2 ApacheMINA IntelliJIDEA">
+    </div>
+  </div>
+</div>
+
+<div id="activities" class="jumbotron">
+  <div class="container">
+    <h2 class="normal">Activities</h2>
+    <hr>
+    <div class="row spacing">
+      <div class="stars margin-bottom col-lg-3 col-md-4 col-lg-offset-half text-center">
+            <span class="num">
+              <span class="octicon octicon-star"></span>
+              5,047
+            </span>
+        stars
+      </div>
+      <div class="divider lg-block col-lg-1 text-center">
+        <div class="pipe">|</div>
+        <div>and</div>
+        <div class="pipe">|</div>
+      </div>
+      <div class="forks margin-bottom col-lg-3 col-md-4 text-center">
+            <span class="num">
+              <span class="octicon octicon-repo-forked"></span>
+              605
+            </span>
+        forks
+      </div>
+      <div class="divider lg-block col-lg-1 text-center">
+        <div class="pipe">|</div>
+        <div>and</div>
+        <div class="pipe">|</div>
+      </div>
+      <div class="contributors margin-bottom col-lg-3 col-md-4 text-center">
+            <span class="num">
+              <span class="octicon octicon-organization"></span>
+              80
+            </span>
+        contributors
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="text-center lighter">
+          but our resource is not enough...
+        </h3>
+      </div>
+    </div>
+    <div class="row spacing">
+      <div class="col-lg-12">
+        <p class="text-center">
+          <a class="btn btn-scala btn-lg" href="https://github.com/gitbucket/gitbucket" target="_blank">
+            <span class="mega-octicon octicon-mark-github octicon-btn"></span>
+            Fork me on GitHub.
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="features" class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 margin-bottom-wide">
+        <h2 class="normal">Features</h2>
+        <hr>
+        <ul class="features list-unstyled">
+          <li class="selected">
+            <span class="octicon octicon-browser"></span>
+            <span class="feature">Repository viewer</span>
+          </li>
+          <li>
+            <span class="octicon octicon-issue-opened"></span>
+            <span class="feature">Issues</span>
+          </li>
+          <li>
+            <span class="octicon octicon-git-pull-request"></span>
+            <span class="feature">Pull request</span>
+          </li>
+          <li>
+            <span class="octicon octicon-book"></span>
+            <span class="feature">Wiki</span>
+          </li>
+          <li>
+            <span class="octicon octicon-plug"></span>
+            <span class="feature">Plugin system</span>
+          </li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <div id="slides">
+          <div>
+            <img class="screenshot" src="./img/screenshots/screenshot-repository_viewer.png" alt="">
+          </div>
+          <div>
+            <img class="screenshot" src="./img/screenshots/screenshot-issues.png" alt="">
+          </div>
+          <div>
+            <img class="screenshot" data-lazy="./img/screenshots/screenshot-pull_request.png" alt="">
+          </div>
+          <div>
+            <img class="screenshot" data-lazy="./img/screenshots/screenshot-wiki.png" alt="">
+          </div>
+          <div>
+            <img class="screenshot" data-lazy="./img/screenshots/screenshot-plugin_system.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row margin-top">
+      <div class="col-lg-12">
+        <p class="text-center">
+          <a class="btn btn-scala btn-lg" href="https://github.com/gitbucket/gitbucket" target="_blank">
+            <span class="mega-octicon octicon-mark-github octicon-btn"></span>
+            Fork me on GitHub.
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <footer>
+    <p class="text-center">
+      <small>Copyright &copy; 2015 GitBucket  -  GitBucket is open source and available under the Apache License.
+      </small>
+    </p>
+  </footer>
+</div>
+<!-- /container -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+<script src="js/vendor/bootstrap.min.js"></script>
+
+<script src="./slick/slick.min.js"></script>
+
+<script src="js/main.js"></script>
+</body>
+</html>
