@@ -5,7 +5,7 @@ date: 2015-10-25 00:00:00
 categories: gitbucket
 ---
 
-GitBucket sponsors [ScalaMatsuri 2016](http://scalamatsuri.org/index_en.html) the internatinal Scala conference in Japan as "Samurai" sponsor!
+GitBucket sponsors [ScalaMatsuri 2016](http://scalamatsuri.org/index_en.html) the international Scala conference in Japan as "Samurai" sponsor!
 
 In the last year's ScalaMatsuri, we could attend many sessions by professional Scala developers. For example, keynote session by Martin Odersky, About sbt by Eugene Yokota (Typesafe), About Apache Spark by Aaron Davidson (Databricks) and About Scalding, Storm and Summingbird by Yoshimasa Niwa (Twitter).
 
