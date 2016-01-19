@@ -13,7 +13,4 @@ repository viewer, issues, wiki and pull request.
 
 Please visit [GitHub](https://github.com/gitbucket/gitbucket) to get more information.
 
-Sponsors
---------
-[![IntelliJ IDEA]({{site.baseurl}}/images/logo_IntelliJIDEA.png)](https://www.jetbrains.com/idea/)
 

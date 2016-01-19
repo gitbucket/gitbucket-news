@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GitBucket needs your help"
+title: "GitBucket needs your help!"
 date: 2016-01-10 00:00:00
 categories: gitbucket
 ---
