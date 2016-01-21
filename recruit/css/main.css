@@ -88,6 +88,10 @@ body, h1, h2, h3, h4, h5, h6 {
    display: none;
 }
 
+.lg-hidden {
+   display: inherit;
+}
+
 #logo-gitbucket {
    height: 40px;
    color: #fff;
@@ -298,7 +302,7 @@ img.screenshot {
       display: block;
       position: absolute;
       right: -30px;
-      top: 0;
+      top: 30px;
       min-height: 466px;
       width: 970px;
       background-size: 584px 387px;
@@ -312,6 +316,10 @@ img.screenshot {
 
    .lg-block {
       display: block;
+   }
+
+   .lg-hidden {
+      display: none;
    }
 
    #eyecatch {
