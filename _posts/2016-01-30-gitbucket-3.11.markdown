@@ -1,0 +1,58 @@
+---
+layout: post
+title: "GitBucket 3.11 released!"
+date: 2016-01-30 00:00:00
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.11](https://github.com/gitbucket/gitbucket/releases/tag/3.11)!
+
+## Upgrade Scalatra to 2.4
+
+Upgrade Scalatra to the latest version 2.4!
+
+Some existing issues are solved by this update. Main one is a performance issue of raw file downloading in the repository viewer. And also assembled war file size is considerably reduced.
+
+## Sidebar and footer for Wiki
+
+`_Sidebar` and `_Footer` page is rendered ad sidebar and footer of wiki pages:
+
+![Sidebar and footer for Wiki]({{site.baseurl}}/images/gitbucket-3.11/wiki-sidebar-and-footer.png)
+
+## Branch protection
+
+Branch protection is available at the repository settings page:
+
+![Branch protection]({{site.baseurl}}/images/gitbucket-3.11/branch-protection.png)
+
+Force push, delete branch and push commit which is not passed status checking are failed in the protected branch:
+
+This feature is implemented on the new [ReceiveHook](https://github.com/gitbucket/gitbucket/blob/master/src/main/scala/gitbucket/core/plugin/ReceiveHook.scala) extension point. We can now create plug-in which hooks pushing to the repository like branch protection.
+
+## Limit recent updated repositories list
+
+"Recent updated repositories" at the activity timeline page is limited to newest 20 repositories in default as same as "Your repositories":
+
+![Recent updated repositories]({{site.baseurl}}/images/gitbucket-3.11/recent-updated-repositories.png)
+
+## Issue actions look-alike GitHub
+
+Issue actions are render with GitHub like style:
+
+![Issue actions look-alike GitHub]({{site.baseurl}}/images/gitbucket-3.11/issue-actions.png)
+
+## Web API for labels
+
+Implemented some API endpoints to allow CRUD labels. These APIs have compatibility with follwing GitHub APIs:
+
+- [List all labels for this repository](https://developer.github.com/v3/issues/labels/#list-all-labels-for-this-repository)
+- [Get a single label](https://developer.github.com/v3/issues/labels/#get-a-single-label)
+- [Create a label](https://developer.github.com/v3/issues/labels/#create-a-label)
+- [Update a label](https://developer.github.com/v3/issues/labels/#update-a-label)
+- [Delete a label](https://developer.github.com/v3/issues/labels/#delete-a-label)
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A3.11) to know details.
+
+Enjoy GitBucket!
+
+
