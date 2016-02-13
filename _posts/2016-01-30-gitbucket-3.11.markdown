@@ -7,6 +7,8 @@ categories: gitbucket
 
 Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.11](https://github.com/gitbucket/gitbucket/releases/tag/3.11)!
 
+> Note: Since this version, GitBucket requires **Java8**. If GitBucket does not work on your existing environment, check your Java version at first.
+
 ## Upgrade Scalatra to 2.4
 
 Upgrade Scalatra to the latest version 2.4!
