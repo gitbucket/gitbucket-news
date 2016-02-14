@@ -11,7 +11,7 @@ Today, we are pleased to announce the availability of new version of Scala based
 
 Declarative style plug-in definition is available.
 
-~~~scala
+```scala
 class Plugin extends gitbucket.core.plugin.Plugin {
 
   override val pluginId: String = "gist"
@@ -33,7 +33,7 @@ class Plugin extends gitbucket.core.plugin.Plugin {
   )
 
 }
-~~~
+```
 
 And added a new extension point to add [markup render](https://github.com/gitbucket/gitbucket/blob/master/src/main/scala/gitbucket/core/plugin/Renderer.scala). In default, GitBucket supports plain text and Markdown.
 
@@ -41,9 +41,9 @@ And added a new extension point to add [markup render](https://github.com/gitbuc
 
 GitBucket generates below `<meta>` tag for public repositories.
 
-~~~html
+```html
 <meta name="go-import" content="localhost:8080/root/test git http://localhost:8080/git/root/test.git" />
-~~~
+```
 
 In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A3.4) to know details.
 
