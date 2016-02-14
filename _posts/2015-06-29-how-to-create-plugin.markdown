@@ -11,7 +11,7 @@ GitBucket has the plug-in system to extend itself from outside of GitBucket. In 
 
 At first, create a new sbt project with below `build.sbt`:
 
-```scala
+~~~scala
 name := "gitbucket-helloworld-plugin"
 
 organization := "io.github.gitbucket"
@@ -26,7 +26,7 @@ libraryDependencies ++= Seq(
 )
 
 resolvers += "amateras-repo" at "http://amateras.sourceforge.jp/mvn/"
-```
+~~~
 
 Notice: gitbucket-assembly must be a latest version.
 
@@ -34,7 +34,7 @@ Notice: gitbucket-assembly must be a latest version.
 
 Create below `Plugin` class which extends `gitbucket.core.plugin.Plugin` into `/src/main/scala`. Declare plug-in metadata and extension details in this class.
 
-```scala
+~~~scala
 import gitbucket.core.service.SystemSettingsService.SystemSettings
 import gitbucket.core.util.Version
 import io.github.gitbucket.controller.HelloWorldController
@@ -49,13 +49,13 @@ class Plugin extends gitbucket.core.plugin.Plugin {
     "/helloworld" -> new HelloWorldController()
   )
 }
-```
+~~~
 
 ## Controller implementation
 
 Implement `HelloWorldController` extends `gitbucket.core.controller.ControllerBase` and put it into `/src/main/io/github/gitbucket/helloworld/controller`. It's a generic Scalatra based controller servlet.
 
-```scala
+~~~scala
 package io.github.gitbucket.controller
 
 import gitbucket.core.controller.ControllerBase
@@ -67,7 +67,7 @@ class HelloWorldController extends ControllerBase {
   }
 
 }
-```
+~~~
 
 In this example, `HelloWorldController` returns plain text response. Of course, it's also possible to return any other type of response such as HTML rendered by Twirl template or JSON.
 
