@@ -13,5 +13,6 @@ paginate: 10
 
 kramdown:
   input: GFM
+  hard_wrap: false
 
 gems: [jekyll-paginate]
