@@ -15,4 +15,10 @@ kramdown:
   input: GFM
   hard_wrap: false
 
-gems: [jekyll-paginate]
+gems:
+  - jekyll-paginate
+  - jemoji
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jekyll-feed
