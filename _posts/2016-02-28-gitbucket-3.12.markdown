@@ -1,0 +1,44 @@
+---
+layout: post
+title: "GitBucket 3.12 released!"
+date: 2016-02-28 00:00:00
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.12](https://github.com/gitbucket/gitbucket/releases/tag/3.12)!
+
+## New GitHub UI
+
+GitBucket now supports current GitHub UI. Repository menu moved to the top from right-side. It provides more width for repository contents.
+
+![New GitHub UI]({{site.baseurl}}/images/gitbucket-3.12/new-github-ui.png)
+
+## Improved mobile view
+
+Since GitBucket 3.10, Mobile view has been broken because we moved to Bootstrap 3. We improved mobile view in this version with new GitHub UI mentioned above.
+
+![Improved mobile view]({{site.baseurl}}/images/gitbucket-3.12/mobile-view.png)
+
+## Improve printing style
+
+Printing CSS is improved a little. This would help you when you print Wiki pages.
+
+![Printing preview in Chrome]({{site.baseurl}}/images/gitbucket-3.12/print-preview.png)
+
+## Individual URL for pull request tabs
+
+Each tab of the pull request (i.e. "Conversation", "Commits" and "Files Changed") has the individual URL. You can link to specific tab using this link.
+
+![Fixed url for pull request tabs]({{site.baseurl}}/images/gitbucket-3.12/url-for-pull-request-tabs.png)
+
+## SSH host configuration is separated from HTTP base URL
+
+GitBucket had generated SSH URL using the hostname in HTTP base URL up to now. So it had been impossible to give different hostname from HTTP URL. In GitBucket 3.12, you can specify the independent hostname for SSH URL.
+
+![SSH host configuration]({{site.baseurl}}/images/gitbucket-3.12/ssh-host-configuration.png)
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A3.12) to know details.
+
+Enjoy GitBucket!
+
+
