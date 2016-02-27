@@ -19,6 +19,5 @@ gems:
   - jekyll-paginate
   - jemoji
   - jekyll-mentions
-  - jekyll-redirect-from
   - jekyll-sitemap
   - jekyll-feed
