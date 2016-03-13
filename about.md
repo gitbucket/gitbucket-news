@@ -6,11 +6,11 @@ permalink: /about/
 
 ![GitBucket Logo]({{site.baseurl}}/images/gitbucket_logo.png)
 
-GitBucket is an open-source GitHub clone powered by Scala which has easy installation and high extensibility.
+GitBucket is a Git platform powered by Scala offering:
 
-It's provide GitHub like UI and features such as Git repository hosting via HTTP and SSH,
-repository viewer, issues, wiki and pull request.
+- easy installation
+- high extensibility
+- API compatibility with GitHub
 
 Please visit [GitHub](https://github.com/gitbucket/gitbucket) to get more information.
-
 
