@@ -5,7 +5,7 @@ date: 2014-11-24 00:00:00
 categories: gitbucket
 ---
 
-Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 2.6](https://github.com/gitbucket/gitbucket/releases/tag/2.6)!
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 2.6](https://github.com/gitbucket/gitbucket/releases/tag/2.6)!
 
 ## Search box at issues and pull requests
 

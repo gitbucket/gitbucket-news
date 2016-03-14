@@ -5,7 +5,7 @@ date: 2016-01-30 00:00:00
 categories: gitbucket
 ---
 
-Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.11](https://github.com/gitbucket/gitbucket/releases/tag/3.11)!
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 3.11](https://github.com/gitbucket/gitbucket/releases/tag/3.11)!
 
 > Note: Since this version, GitBucket requires **Java8**. If GitBucket does not work on your existing environment, check your Java version at first.
 

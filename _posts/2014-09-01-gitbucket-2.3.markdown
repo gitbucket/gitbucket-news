@@ -4,7 +4,7 @@ title: "GitBucket 2.3 released!"
 date: 2014-09-01 00:00:00
 categories: gitbucket
 ---
-Today, we are pleased to announce the availability of new version of Scala based Github clone [GitBucket 2.3](https://github.com/gitbucket/gitbucket/releases/tag/2.3)!
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 2.3](https://github.com/gitbucket/gitbucket/releases/tag/2.3)!
 
 ## Scala based plugin system
 

@@ -5,7 +5,7 @@ date: 2015-10-03 00:00:00
 categories: gitbucket
 ---
 
-Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.7](https://github.com/gitbucket/gitbucket/releases/tag/3.7)!
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 3.7](https://github.com/gitbucket/gitbucket/releases/tag/3.7)!
 
 ## New markdown processor
 

@@ -5,7 +5,7 @@ date: 2015-06-27 00:00:00
 categories: gitbucket
 ---
 
-Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.4](https://github.com/gitbucket/gitbucket/releases/tag/3.4)!
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 3.4](https://github.com/gitbucket/gitbucket/releases/tag/3.4)!
 
 ## Plug-in API enhancement
 
@@ -15,19 +15,19 @@ Declarative style plug-in definition is available.
 class Plugin extends gitbucket.core.plugin.Plugin {
 
   override val pluginId: String = "gist"
-  
+
   override val pluginName: String = "Gist Plugin"
-  
+
   override val description: String = "Provides Gist feature on GitBucket."
-  
+
   override val versions: List[Version] = List(Version(1, 2), Version(1, 0))
-  
+
   override val images = Seq(
     "images/menu-revisions-active.png" -> fromClassPath("images/menu-revisions-active.png"),
     "images/menu-revisions.png"        -> fromClassPath("images/menu-revisions.png"),
     "images/snippet.png"               -> fromClassPath("images/snippet.png")
   )
-  
+
   override val controllers = Seq(
     "/*" -> new GistController()
   )

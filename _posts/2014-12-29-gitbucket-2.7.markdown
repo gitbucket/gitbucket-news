@@ -5,7 +5,7 @@ date: 2014-12-29 00:00:00
 categories: gitbucket
 ---
 
-At the end of 2014, we've released new version of Scala based GitHub clone [GitBucket 2.7](https://github.com/gitbucket/gitbucket/releases/tag/2.7)!
+At the end of 2014, we've released new version of Scala based Git platform [GitBucket 2.7](https://github.com/gitbucket/gitbucket/releases/tag/2.7)!
 
 This is a final release in this year. We could continue monthly release this year. Thanks for GitBucket team, all contributors and users.
 

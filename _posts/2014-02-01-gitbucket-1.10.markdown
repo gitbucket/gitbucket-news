@@ -4,7 +4,7 @@ title: "GitBucket 1.10 released!"
 date: 2014-02-01 00:00:00
 categories: gitbucket
 ---
-Today, we released a new version of Scala based Github clone [GitBucket 1.10](https://github.com/gitbucket/gitbucket/releases/tag/1.10).
+Today, we released a new version of Scala based Git platform [GitBucket 1.10](https://github.com/gitbucket/gitbucket/releases/tag/1.10).
 
 This release contains some new features as below:
 

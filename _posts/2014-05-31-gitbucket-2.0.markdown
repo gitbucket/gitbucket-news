@@ -4,7 +4,7 @@ title: "GitBucket 2.0 released!"
 date: 2014-05-31 00:00:00
 categories: gitbucket
 ---
-Today, we are pleased to announce the availability of new version of Scala based Github clone [GitBucket 2.0](https://github.com/gitbucket/gitbucket/releases/tag/2.0)!
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 2.0](https://github.com/gitbucket/gitbucket/releases/tag/2.0)!
 
 ![GitBucket 2.0 follows modern Github UI]({{site.baseurl}}/images/gitbucket-2.0/newui.png)
 

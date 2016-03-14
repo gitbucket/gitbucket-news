@@ -5,7 +5,7 @@ date: 2015-12-05 00:00:00
 categories: gitbucket
 ---
 
-Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.9](https://github.com/gitbucket/gitbucket/releases/tag/3.9)!
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 3.9](https://github.com/gitbucket/gitbucket/releases/tag/3.9)!
 
 ## GFM inline breaks support in Markdown
 
@@ -44,5 +44,3 @@ Anyway, Solidbase is under development. We will continue to development and inte
 In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A3.9) to know details.
 
 Enjoy GitBucket!
-
-

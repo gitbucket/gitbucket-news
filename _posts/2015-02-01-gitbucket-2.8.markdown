@@ -5,7 +5,7 @@ date: 2015-02-01 00:00:00
 categories: gitbucket
 ---
 
-We've released new version of Scala based GitHub clone [GitBucket 2.8](https://github.com/gitbucke/gitbucket/releases/tag/2.8) today! This is a first release in 2015.
+We've released new version of Scala based Git platform [GitBucket 2.8](https://github.com/gitbucke/gitbucket/releases/tag/2.8) today! This is a first release in 2015.
 
 ## New logo and icons
 

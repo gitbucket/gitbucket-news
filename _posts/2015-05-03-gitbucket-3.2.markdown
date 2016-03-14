@@ -5,7 +5,7 @@ date: 2015-05-03 00:00:00
 categories: gitbucket
 ---
 
-Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.2](https://github.com/gitbucket/gitbucket/releases/tag/3.2)!
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 3.2](https://github.com/gitbucket/gitbucket/releases/tag/3.2)!
 
 This release contains some improvements of the repository viewer as below:
 

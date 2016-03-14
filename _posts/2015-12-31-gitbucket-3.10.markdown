@@ -7,7 +7,7 @@ categories: gitbucket
 
 > **Note:** Updated version [3.10.1](https://github.com/gitbucket/gitbucket/releases/tag/3.10.1) and [3.10.1_h2-1.4.180](https://github.com/gitbucket/gitbucket/releases/tag/3.10.1_h2-1.4.180) are now available. Some bugs in 3.10 are fixed. Use it instead of 3.10 and 3.10.1_h2-1.4.180.
 
-Today, we are pleased to announce the availability of new version of Scala based GitHub clone [GitBucket 3.10](https://github.com/gitbucket/gitbucket/releases/tag/3.10)!
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 3.10](https://github.com/gitbucket/gitbucket/releases/tag/3.10)!
 
 ## Move to Bootstrap3
 
@@ -23,7 +23,7 @@ We will continue improving styles and follow [the new look of GitHub](https://gi
 
 Provides new URL like `raw/master/doc/activity.md` instead of `blob/master/doc/activity.md?raw=true` (old URL is still available for backward compatibility).
 
-For example, GitBucket can [host the Maven repository](http://kwebble.com/blog/2014/02/19/use-github-to-host-your-own-maven-repo) by this update. 
+For example, GitBucket can [host the Maven repository](http://kwebble.com/blog/2014/02/19/use-github-to-host-your-own-maven-repo) by this update.
 
 ## Update xsbt-web-plugin
 
