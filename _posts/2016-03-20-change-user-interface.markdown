@@ -11,10 +11,10 @@ It was saying GitHub does not allow to clone GitHub user interface and copy thei
 
 At first, we have never copied any materials from GitHub so this is not problem. However we should remove similarity to GitHub. Therefore we proposed changing color scheme to show difference clearly as a quick way.
 
-Fortunately, GitHub response was peaceful. They said that's good as a first step. But similarity is not only color. It's made by with icons, with fonts, with the layout, etc. We should remove these similarity.
+Fortunately, GitHub response was peaceful. They said that's good as a first step. But similarity is not only color. It's made by with icons, with fonts, with the layout, etc. We should remove these similarity and refresh our UI eventually.
 
-As a result, we will release the next version 3.13 with changing Bootstrap theme to the Bootstrap default theme and simplifying some parts of UI. And continue to make difference with GitHub through future versions.
+As a result, we will release the next version 3.13 with changing to the Bootstrap default theme and simplifying some parts of UI. And continue to make difference with GitHub through future versions.
 
 ![GitBucket 3.13 with Bootstrap default theme]({{site.baseurl}}/images/change-user-interface/bootstrap_default_theme.png)
 
-Anyway, we want to continue to use GitHub for our project because we love it. GitHub has been making revolution in the open-source world. Great thanks for them.
+Anyway, we want to continue to use GitHub for our project because we love it. GitHub has been making revolution in the open-source world.  Great thanks for this fantastic software development platform.
