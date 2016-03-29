@@ -1,7 +1,7 @@
 # Site settings
 title: GitBucket News
 #email: your-email@domain.com
-description: "GitBucket is a GitHub clone powered by Scala."
+description: "GitBucket is a Git platform powered by Scala."
 baseurl: "https://gitbucket.github.io/gitbucket-news"
 url: ""
 
