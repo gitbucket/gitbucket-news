@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "GitBucket 3.13 released!"
-date: 2016-04-02 00:00:00
+date: 2016-04-01 00:00:00
 categories: gitbucket
 ---
 
 Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 3.13](https://github.com/gitbucket/gitbucket/releases/tag/3.13)!
 
-## User interface update
+## Refresh user interface for wide screen
 
 GitBucket has been providing user interface which is similar to GitHub. But in this release, GitBucket user interface has been updated as suitable for wide screen with the sidebar. 
 
