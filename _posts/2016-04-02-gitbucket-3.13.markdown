@@ -1,0 +1,50 @@
+---
+layout: post
+title: "GitBucket 3.13 released!"
+date: 2016-04-01 00:00:00
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 3.13](https://github.com/gitbucket/gitbucket/releases/tag/3.13)!
+
+## Refresh user interface for wide screen
+
+GitBucket has been providing user interface which is similar to GitHub. But in this release, GitBucket user interface has been updated as suitable for wide screen with the sidebar. 
+
+![New UI of the repository viewer]({{site.baseurl}}/images/gitbucket-3.13/newui-filelist.png)
+
+![New UI of the issues]({{site.baseurl}}/images/gitbucket-3.13/newui-issues.png)
+
+This update is because we have to eliminate similarity from GitHub. If you want to know details of reason of this update, see [my previous blog post](https://gitbucket.github.io/gitbucket-news/gitbucket/2016/03/20/change-user-interface.html).
+
+## Add pull_request key in list issues API for pull requests
+
+GitHub pull request builder plugin had been ignoring the trigger like `"test this please"` because GitBucket list issues API does not contain `pull_request` key in the payload.
+
+In this release, GitBucket adds `pull_request` to the payload of the list issues API as following:
+
+```javascript
+...
+"pull_request": {
+  "url": "http://localhost:8080/api/v3/repos/octocat/Hello-World/pulls/1347",
+  "html_url": "http://localhost:8080/octocat/Hello-World/pull/1347"
+},
+...
+```
+
+## Add X-Hub-Signature security to webhooks
+
+To provide secure webhook, GitBucket now adds `X-Hub-Signature` header to the response using [xhub4j](https://github.com/McFoggy/xhub4j) if you configure.
+
+![WebHook security configuration]({{site.baseurl}}/images/gitbucket-3.13/webhook-xhub-signature.png)
+
+## Provide SHA-256 checksum
+
+We have been providing MD5 and SHA-1 checksum for the release file. Since this release, we are providing SHA-256 checksum also.
+
+![SHA-256 checksum]({{site.baseurl}}/images/gitbucket-3.13/sha256-checksum.png)
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A3.13) to know details.
+
+Enjoy GitBucket!
+
