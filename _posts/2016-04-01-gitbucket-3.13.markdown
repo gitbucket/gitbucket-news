@@ -9,7 +9,7 @@ Today, we are pleased to announce the availability of new version of Scala based
 
 ## Refresh user interface for wide screen
 
-GitBucket has been providing user interface which is similar to GitHub. But in this release, GitBucket user interface has been updated as suitable for wide screen with the sidebar. 
+GitBucket has been providing user interface which is similar to GitHub. But in this release, GitBucket user interface has been updated as suitable for wide screen with the sidebar.
 
 ![New UI of the repository viewer]({{site.baseurl}}/images/gitbucket-3.13/newui-filelist.png)
 
@@ -47,4 +47,3 @@ We have been providing MD5 and SHA-1 checksum for the release file. Since this r
 In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A3.13) to know details.
 
 Enjoy GitBucket!
-
