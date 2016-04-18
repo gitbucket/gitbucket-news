@@ -9,7 +9,7 @@ Yesterday, we released [Solidbase 1.0.0](https://github.com/gitbucket/solidbase)
 
 Originally, Solidbase is developed for GitBucket. GitBucket has used its own migration system until 3.x series, however we have been considering about moving to new migration system because it was not enough to cover plugin system and external database support.
 
-Of course, there are some existing migration tool in JVM world such as Flyway or Liquibase. But they are not fit our requirements as below:
+Of course, there are some existing migration tool in JVM world such as [Flyway](https://flywaydb.org/) or [Liquibase](http://www.liquibase.org/). But they are not fit our requirements as below:
 
 - Handle resources other than RDBMS (mainly file system)
 - Generate DDL for many RDBMS from one definition
