@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Solidbase is a database migration tool which supports multiresource and multitenancy"
+title: "Solidbase 1.0.0 released: a database migration tool supports multiresource and multitenancy"
 date: 2016-04-18 00:00:00
 categories: gitbucket
 ---
