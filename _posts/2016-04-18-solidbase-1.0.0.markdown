@@ -5,7 +5,7 @@ date: 2016-04-18 00:00:00
 categories: gitbucket
 ---
 
-Yesterday, we released [Solidbase 1.0.0](https://github.com/gitbucket/solidbase) which is a database migration tool supports multiresource and multi-tenancy.
+Yesterday, we released [Solidbase 1.0.0](https://github.com/gitbucket/solidbase) which is a database migration tool supports multiresource and multitenancy.
 
 Originally, Solidbase is developed for GitBucket. GitBucket has used its own migration system until 3.x series, however we have been considering about moving to new migration system because it was not enough to cover plugin system and external database support.
 
@@ -38,6 +38,8 @@ Add following dependency to your `pom.xml`:
   </dependency>
 </dependencies>
 ```
+
+We would like to deploy Solidbase artifacts to Maven Central in the near future.
 
 ## Create XML file
 
