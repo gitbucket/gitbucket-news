@@ -31,7 +31,7 @@ New extension points to add menus are available:
 - Account setting menu
 - Dashboard tab
 
-Plug-ins can add menu items or tabs using these extension points. See [Plugin class]((https://github.com/gitbucket/gitbucket-gist-plugin/blob/master/src/main/scala/Plugin.scala) of  gitbucket-gist-plugin as an example of usage of these extension points. And note that `Plugin` is now switched to abstract class from trait to improve binary compatibility of plug-ins.
+Plug-ins can add menu items or tabs using these extension points. See [Plugin class](https://github.com/gitbucket/gitbucket-gist-plugin/blob/master/src/main/scala/Plugin.scala) of  gitbucket-gist-plugin as an example of usage of these extension points. And note that `Plugin` is now switched to abstract class from trait to improve binary compatibility of plug-ins.
 
 ## Content-Type of webhooks
 
@@ -49,7 +49,7 @@ See [the wiki page](https://github.com/gitbucket/gitbucket/wiki/External-databas
 
 ### For plug-in developers
 
-Database migration system is replaced with [solidbase](https://github.com/gitbucket/solidbase) in GitBucket 4.0. Therefore if your plugin contains database migration scripts, you have to replace them with solidbase way. See gitbucket-gist-plugin's [Plugin class]((https://github.com/gitbucket/gitbucket-gist-plugin/blob/master/src/main/scala/Plugin.scala) and [migration scripts](https://github.com/gitbucket/gitbucket-gist-plugin/tree/master/src/main/resources/update) as an example.
+Database migration system is replaced with [solidbase](https://github.com/gitbucket/solidbase) in GitBucket 4.0. Therefore if your plugin contains database migration scripts, you have to replace them with solidbase way. See gitbucket-gist-plugin's [Plugin class](https://github.com/gitbucket/gitbucket-gist-plugin/blob/master/src/main/scala/Plugin.scala) and [migration scripts](https://github.com/gitbucket/gitbucket-gist-plugin/tree/master/src/main/resources/update) as an example.
 
 In addition, 3.14 and 4.0 contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A3.14) to know details.
 
