@@ -1,0 +1,127 @@
+---
+layout: post
+title: "Solidbase 1.0.0 released: a database migration tool supports multiresource and multitenancy"
+date: 2016-04-18 00:00:00
+categories: gitbucket
+---
+
+Yesterday, we released [Solidbase 1.0.0](https://github.com/gitbucket/solidbase) which is a database migration tool supports multiresource and multitenancy.
+
+Originally, Solidbase is developed for GitBucket. GitBucket has used its own migration system until 3.x series, however we have been considering about moving to new migration system because it was not enough to cover plugin system and external database support.
+
+Of course, there are some existing migration tool in JVM world such as [Flyway](https://flywaydb.org/) or [Liquibase](http://www.liquibase.org/). But they are not fit our requirements as below:
+
+- Handle resources other than RDBMS (mainly file system)
+- Generate DDL for many RDBMS from one definition
+- Multitenancy for versioning plugins not only GitBucket core
+
+Then, we developed a new migration tool based on Liquibase's SQL generator named Solidbase. I show how to use Solidase in rest of this article.
+
+## Add dependency
+
+Add following dependency to your `pom.xml`:
+
+```xml
+<repositories>
+  <repository>
+    <id>amateras-snapshot</id>
+    <name>Project Amateras Maven2 Repository</name>
+    <url>http://amateras.sourceforge.jp/mvn/</url>
+  </repository>
+</repositories>
+
+<dependencies>
+  <dependency>
+    <groupId>io.github.gitbucket</groupId>
+    <artifactId>solidbase</artifactId>
+    <version>1.0.0</version>
+  </dependency>
+</dependencies>
+```
+
+We would like to deploy Solidbase artifacts to Maven Central in the near future.
+
+## Create XML file
+
+Create following XML file in the classpath:
+
+```xml
+<changeSet>
+  <createTable tableName="person">
+      <column name="id" type="int" autoIncrement="true" primaryKey="true" nullable="false"/>
+      <column name="firstname" type="varchar(50)"/>
+      <column name="lastname" type="varchar(50)" constraints nullable="false"/>
+      <column name="state" type="char(2)"/>
+  </createTable>
+</changeSet>
+```
+
+This XML file is same as Liquibase basically. But it has some different points:
+
+- 1 file has 1 `<changeSet>`
+- Can be written as attribute of `<column>` instead of nested element
+
+## Define migration module
+
+Define a migration module as the following Java code:
+
+```java
+import io.github.gitbucket.solidbase.migration.LiquibaseMigration;
+import io.github.gitbucket.solidbase.model.Module;
+import io.github.gitbucket.solidbase.model.Version;
+
+Module module = new Module(
+  // module id (version is managed by this id)
+  "test",
+  // definition of versions (head is oldest)
+  new Version("1.0.0", new LiquibaseMigration("test_1.0.0.xml")),
+  new Version("1.0.1", new LiquibaseMigration("test_1.0.1.xml")),
+  ...
+);
+```
+
+Solidbase provides `LiquibaseMigration` which migrates by XML and `SqlMigration` which migrates by native SQL. In addition, we can write our own migration by extending `Migration`.
+
+The following code is an example of specifying multiple migration in one version:
+
+```java
+import io.github.gitbucket.solidbase.migration.LiquibaseMigration;
+import io.github.gitbucket.solidbase.migration.Migration;
+
+new Version("1.0.0",
+  // At first, migrate database
+  new LiquibaseMigration("test_1.0.0.xml"),
+  // Next, migrate other resource
+  new Migration(){
+    @Override
+    public void migrate(String moduleId, String version, Map<String, Object> context) throws Exception {
+      ...
+    }
+  }
+);
+```
+
+## Run migration
+
+Finally, we can run migration using the defined migration module as:
+
+```java
+import io.github.gitbucket.solidbase.SolidBase;
+import java.sql.DriverManager;
+import liquibase.database.core.H2Database;
+
+Solidbase solidbase = new Solidbase();
+
+solidbase.migrate(
+  DriverManager.getConnection("jdbc:h2:mem:test", "sa", "sa"),
+  Thread.currentThread().getContextClassLoader(),
+  new H2Database(), // Specify the class for the target database
+  module // Specify the defined migration module
+);
+```
+
+## Summary
+
+We think Solidbase is useful for JVM based software packages which must support various resources, databases or multitenancy.
+
+In addition, GitBucket will move to Solidbase in 4.0. So if you would like to create a GitBucket plugin that requires database migration, you have to use Solidbase. Also to run existing plugins on GitBucket 4.0, you have to move to Solidbase.
