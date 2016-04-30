@@ -1,0 +1,57 @@
+---
+layout: post
+title: "GitBucket 3.14 and 4.0 released!"
+date: 2016-04-30 00:00:00
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 3.14](https://github.com/gitbucket/gitbucket/releases/tag/3.14) and [4.0](https://github.com/gitbucket/gitbucket/releases/tag/4.0)! 
+
+GitBucket 4.0 is same as 3.13 except external database support. 3.14 is the final release of 3.x series and  we will release only 4.x series after this release.
+
+## File attachment and search for wiki pages 
+
+File attachment is available for wiki pages.
+
+![File attachment in wiki]({{site.baseurl}}/images/gitbucket-3.14/file-attach-wiki.png)
+
+And the repository search box also works for wiki pages.
+
+![Search for wiki pages]({{site.baseurl}}/images/gitbucket-3.14/file-search.png)
+
+## New extension points to add menus
+
+New extension points to add menus are available:
+
+- Global header menu
+- Repository menu
+- Repository setting tab
+- User profile tab
+- System setting menu
+- Account setting menu
+- Dashboard tab
+
+Plug-ins can add menu items or tabs using these extension points. See [Plugin class]((https://github.com/gitbucket/gitbucket-gist-plugin/blob/master/src/main/scala/Plugin.scala) of  gitbucket-gist-plugin as an example of usage of these extension points. And note that `Plugin` is now switched to abstract class from trait to improve binary compatibility of plug-ins.
+
+## Content-Type of webhooks
+
+Content-Type of webhooks are choosable at the webhook configuration.
+
+![Configure webhook Content-Type]({{site.baseurl}}/images/gitbucket-3.14/webhook-contenttype.png)
+
+## MySQL and PostgreSQL support (experimental)
+
+GitBucket 4.0 supports MySQL and PostgreSQL as external database.
+
+GitBucket have been using embedded H2 database until 3.x series. However we've heard troubles of breaking data in H2 from some GitBucket users. It's not suitable to store important data. In 4.0, GitBucket supports MySQL and PostgreSQL, not only default embedded H2 database. 
+
+See [the wiki page](https://github.com/gitbucket/gitbucket/wiki/External-database-configuration) to know how to configure GitBucket for external databases and migrate from existing H2 database.
+
+### For plug-in developers
+
+Database migration system is replaced with [solidbase](https://github.com/gitbucket/solidbase) in GitBucket 4.0. Therefore if your plugin contains database migration scripts, you have to replace them with solidbase way. See gitbucket-gist-plugin's [Plugin class]((https://github.com/gitbucket/gitbucket-gist-plugin/blob/master/src/main/scala/Plugin.scala) and [migration scripts](https://github.com/gitbucket/gitbucket-gist-plugin/tree/master/src/main/resources/update) as an example.
+
+In addition, 3.14 and 4.0 contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A3.14) to know details.
+
+Enjoy GitBucket!
+
