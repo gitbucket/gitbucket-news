@@ -13,11 +13,11 @@ GitBucket 4.0 is same as 3.13 except external database support. 3.14 is the fina
 
 File attachment is available for wiki pages.
 
-![File attachment in wiki]({{site.baseurl}}/images/gitbucket-3.14/file-attach-wiki.png)
+![File attachment in wiki]({{site.baseurl}}/images/gitbucket-3.14/wiki-file-attach.png)
 
 And the repository search box also works for wiki pages.
 
-![Search for wiki pages]({{site.baseurl}}/images/gitbucket-3.14/file-search.png)
+![Search for wiki pages]({{site.baseurl}}/images/gitbucket-3.14/wiki-search.png)
 
 ## New extension points to add menus
 
