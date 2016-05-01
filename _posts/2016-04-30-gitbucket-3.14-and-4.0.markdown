@@ -7,7 +7,7 @@ categories: gitbucket
 
 Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 3.14](https://github.com/gitbucket/gitbucket/releases/tag/3.14) and [4.0](https://github.com/gitbucket/gitbucket/releases/tag/4.0)! 
 
-GitBucket 4.0 is same as 3.13 except external database support. 3.14 is the final release of 3.x series and  we will release only 4.x series after this release.
+GitBucket 4.0 is same as 3.14 except external database support. 3.14 is the final release of 3.x series and  we will release only 4.x series after this release.
 
 ## File attachment and search for wiki pages 
 
