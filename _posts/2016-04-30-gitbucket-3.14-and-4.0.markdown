@@ -9,6 +9,8 @@ Today, we are pleased to announce the availability of new version of Scala based
 
 GitBucket 4.0 is same as 3.14 except external database support. 3.14 is the final release of 3.x series and  we will release only 4.x series after this release.
 
+**Note:** You can upgrade to GitBucket 4.0 from 3.14. If your GitBucket is 3.13 or before, you have to upgrade 3.14 at first.
+
 ## File attachment and search for wiki pages 
 
 File attachment is available for wiki pages.
@@ -54,4 +56,3 @@ Database migration system is replaced with [solidbase](https://github.com/gitbuc
 In addition, 3.14 and 4.0 contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A3.14) to know details.
 
 Enjoy GitBucket!
-
