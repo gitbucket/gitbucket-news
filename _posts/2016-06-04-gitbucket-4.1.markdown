@@ -34,6 +34,12 @@ Branch protection settings UI wasn't intuitive a little. So its UI has been upda
 3. When status check selected and `"Require status checks .."` checked, submit button is enabled
 ![selected]({{site.baseurl}}/images/gitbucket-4.1/branch_protection_3.png)
 
+## Default value of pull request title
+
+Default value of the pull request has been generated from commit message or branch name.
+
+![Default value of pull request title]({{site.baseurl}}/images/gitbucket-4.1/pull-request-title.png)
+
 In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.1) to know details.
 
 Enjoy GitBucket!
