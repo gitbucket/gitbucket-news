@@ -1,0 +1,45 @@
+---
+layout: post
+title: "GitBucket 4.1 released!"
+date: 2016-06-04 00:00:00
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 4.1](https://github.com/gitbucket/gitbucket/releases/tag/4.1)!
+
+## Generic ssh user
+
+Generic `git` user is available to connect git repository via SSH, so we can clone the git repository from folowing URL:
+
+```
+ssh://git@localhost:29418/root/test.git
+```
+
+instead of
+
+```
+ssh://root@localhost:29418/root/test.git
+```
+
+**Notice:** Old SSH URLs has been disabled Please update your existing remote SSH URLs.
+
+## Improve branch protection UI
+
+Branch protection settings UI wasn't intuitive a little. So its UI has been updated as below:
+
+1. When status check not found, `"Require status checks .."` checkbox is disabled
+![when status check not found]({{site.baseurl}}/images/gitbucket-4.1/branch_protection_1.png)
+2. When status check not selected and `"Require status checks .."` checked, submit button is disabled
+![when status check not selected]({{site.baseurl}}/images/gitbucket-4.1/branch_protection_2.png)
+3. When status check selected and `"Require status checks .."` checked, submit button is enabled
+![selected]({{site.baseurl}}/images/gitbucket-4.1/branch_protection_3.png)
+
+## Default value of pull request title
+
+Default value of the pull request has been generated from commit message or branch name.
+
+![Default value of pull request title]({{site.baseurl}}/images/gitbucket-4.1/pull-request-title.png)
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.1) to know details.
+
+Enjoy GitBucket!
