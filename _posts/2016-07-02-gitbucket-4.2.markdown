@@ -1,0 +1,38 @@
+---
+layout: post
+title: "GitBucket 4.2 released!"
+date: 2016-07-02 00:00:00
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 4.2](https://github.com/gitbucket/gitbucket/releases/tag/4.2)!
+
+## New UI based on AdminLTE
+
+UI refreshing is still ongoing. [AdminLTE](https://github.com/almasaeed2010/AdminLTE) is graceful admin control panel theme for Bootstrap. In GitBucket 4.2, this AdminLTE is fully applied to GitBucket UI.
+
+![AdminLTE based New UI]({{site.baseurl}}/images/gitbucket-4.2/adminlte.png)
+
+## git gc
+
+`git gc` is available at the repository settings page:
+
+![git gc]({{site.baseurl}}/images/gitbucket-4.2/git_gc.png)
+
+## Toggle repository features
+
+Issues and Wiki are possible to be disabled at the repository settings page:
+
+![Toggle repository features]({{site.baseurl}}/images/gitbucket-4.2/disable_repository_features.png)
+
+If you are using external ITS or Wiki, you can link to them from "Issues" or "Wiki" in the side menu of the repository by putting these URL at the repository settings page above.
+
+## SMTP configuration test
+
+You can send a test mail to specified address to validate SMTP configuration:
+
+![Send test mail]({{site.baseurl}}/images/gitbucket-4.2/smtp_test.png)
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.2) to know details.
+
+Enjoy GitBucket!
