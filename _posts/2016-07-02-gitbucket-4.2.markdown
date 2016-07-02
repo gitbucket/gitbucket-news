@@ -6,6 +6,8 @@ image: /images/gitbucket-4.2/adminlte.png
 categories: gitbucket
 ---
 
+> **Note:** [GitBucket 4.2.1](https://github.com/gitbucket/gitbucket/releases/tag/4.2.1) is available. This is hotfix for a critical bug in migration. If your GitBucket had been updated to 4.0 from 3.x, you must update to 4.2.1, not 4.2. Of course, even if your GitBucket is not matched with this condition, it's no problem updating to 4.2.1.
+
 Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 4.2](https://github.com/gitbucket/gitbucket/releases/tag/4.2)!
 
 ## New UI based on AdminLTE
