@@ -10,4 +10,23 @@
 <!-- Custom CSS -->
 <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ "/css/github-markdown.css" | prepend: site.baseurl }}">
-
+<!-- Twitter Card -->
+{% assign twitter_description = page.description | default: page.excerpt | default: site.description %}
+{% if twitter_description %}
+  {% assign twitter_description = twitter_description | markdownify | strip_html | strip_newlines | escape_once %}
+{% endif %}
+{% if page.title %}
+  {% assign twitter_title = page.title | append: " - " | append: site.title %}
+{% else %}
+  {% assign twitter_title = site.title %}
+{% endif %}
+{% if page.image %}
+  {% assign twitter_image = site.url | append: page.image %}
+{% else %}
+  {% assign twitter_image = site.url | append: "/favicon.png" %}
+{% endif %}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ twitter_title }}">
+<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+<meta name="twitter:description" content="{{ twitter_description }}">
+<meta name="twitter:image:src" content="{{ twitter_image }}">
