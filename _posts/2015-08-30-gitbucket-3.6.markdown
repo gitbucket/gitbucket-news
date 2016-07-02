@@ -2,6 +2,7 @@
 layout: post
 title: "GitBucket 3.6 released!"
 date: 2015-08-30 00:00:00
+image: /images/gitbucket-3.6/commit_history.png
 categories: gitbucket
 ---
 

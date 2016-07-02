@@ -2,6 +2,7 @@
 layout: post
 title: "GitBucket 3.7 released!"
 date: 2015-10-03 00:00:00
+image: /images/gitbucket-3.7/clone_in_desktop.png
 categories: gitbucket
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: "GitBucket needs your help!"
 date: 2016-01-10 00:00:00
+image: /images/gitbucket-needs-your-help/gitbucket_recruit.png
 categories: gitbucket
 ---
 

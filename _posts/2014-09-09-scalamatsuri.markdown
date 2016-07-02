@@ -2,6 +2,7 @@
 layout: post
 title: "GitBucket in ScalaMatsuri"
 date: 2014-09-09 00:00:00
+image: /images/scalamatsuri/scalamatsuri.jpg
 categories: gitbucket
 ---
 [ScalaMatsuri](http://scalamatsuri.org/en/) the interational conference for Scala developers in Japan was held at last weekend. I gave a speech about GitBucket in the first day of this conference. In my talk, described technologies and tools which support GitBucket and its development.

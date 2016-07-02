@@ -2,6 +2,7 @@
 layout: post
 title: "GitBucket 3.3 released!"
 date: 2015-05-31 00:00:00
+image: /images/gitbucket-3.3/image_diff.png
 categories: gitbucket
 ---
 

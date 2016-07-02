@@ -2,6 +2,7 @@
 layout: post
 title: "GitBucket 2.4 released!"
 date: 2014-10-06 00:00:00
+image: /images/gitbucket-2.4/new_issues_ui.png
 categories: gitbucket
 ---
 

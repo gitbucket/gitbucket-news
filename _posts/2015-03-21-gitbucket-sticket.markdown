@@ -2,6 +2,7 @@
 layout: post
 title: "GitBucket Team in ScalaDays 2015"
 date: 2015-03-03 00:00:00
+image: /images/scaladays-2015/scaladays-2015.jpg
 categories: gitbucket
 ---
 

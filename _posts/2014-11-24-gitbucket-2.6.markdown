@@ -2,6 +2,7 @@
 layout: post
 title: "GitBucket 2.6 released!"
 date: 2014-11-24 00:00:00
+image: /images/gitbucket-2.6/searchbox.png
 categories: gitbucket
 ---
 

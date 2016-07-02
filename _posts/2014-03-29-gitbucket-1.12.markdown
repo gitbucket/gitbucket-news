@@ -2,6 +2,7 @@
 layout: post
 title: "GitBucket 1.12 released!"
 date: 2014-03-29 00:00:00
+image: /images/gitbucket-1.12/ssh.png
 categories: gitbucket
 ---
 Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 1.12](https://github.com/gitbucket/gitbucket/releases/tag/1.12).

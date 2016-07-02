@@ -2,6 +2,7 @@
 layout: post
 title: "Change GitBucket user interface to make difference with GitHub"
 date: 2016-03-20 00:00:00
+image: /images/change-user-interface/bootstrap_default_theme.png
 categories: gitbucket
 ---
 

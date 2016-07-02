@@ -2,6 +2,7 @@
 layout: post
 title: "GitBucket 3.13 released!"
 date: 2016-04-01 00:00:00
+image: /images/gitbucket-3.13/newui-filelist.png
 categories: gitbucket
 ---
 

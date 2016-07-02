@@ -2,6 +2,7 @@
 layout: post
 title: "GitBucket 2.3 released!"
 date: 2014-09-01 00:00:00
+image: /images/gitbucket-2.3/gist_plugin_1.png
 categories: gitbucket
 ---
 Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 2.3](https://github.com/gitbucket/gitbucket/releases/tag/2.3)!

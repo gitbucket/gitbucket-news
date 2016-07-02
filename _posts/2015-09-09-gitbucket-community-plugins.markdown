@@ -2,6 +2,7 @@
 layout: post
 title: "gitbucket community plugins started!"
 date: 2015-09-09 00:00:00
+image: /images/gitbucket_community_plugins/gitbucket_community_plugins.png
 categories: gitbucket
 ---
 

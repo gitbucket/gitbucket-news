@@ -2,6 +2,7 @@
 layout: post
 title: "GitBucket 3.0 released!"
 date: 2015-03-03 00:00:00
+image: /images/gitbucket-3.0/gist_plugin.png
 categories: gitbucket
 ---
 

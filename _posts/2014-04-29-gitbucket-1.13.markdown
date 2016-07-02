@@ -2,6 +2,7 @@
 layout: post
 title: "GitBucket 1.13 released!"
 date: 2014-04-29 00:00:00
+image: /images/gitbucket-1.13/aceeditor.png
 categories: gitbucket
 ---
 Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 1.13](https://github.com/gitbucket/gitbucket/releases/tag/1.13).

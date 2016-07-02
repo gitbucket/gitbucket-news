@@ -2,6 +2,7 @@
 layout: post
 title: "GitBucket 3.8 released!"
 date: 2015-10-31 00:00:00
+image: /images/gitbucket-3.8/omit_large_diff.png
 categories: gitbucket
 ---
 

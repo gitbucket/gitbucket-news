@@ -2,6 +2,7 @@
 layout: post
 title: "GitBucket sponsors ScalaMatsuri 2016"
 date: 2015-10-25 00:00:00
+image: /images/scalamatsuri/scalamatsuri.jpg
 categories: gitbucket
 ---
 
