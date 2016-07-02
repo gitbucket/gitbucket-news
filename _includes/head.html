@@ -6,7 +6,7 @@
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <link rel="shortcut icon" href="{{ '/favicon.png' | prepend: site.baseurl }}" type="image/png"ß />
 <link rel="icon" href="{{ '/favicon.png' | prepend: site.baseurl }}" type="image/png" />
-<link type="application/atom+xml" rel="alternate" href="{{site.url}}/feed.xml" title="Atom" />
+<link type="application/atom+xml" rel="alternate" href="{{site.baseurl}}/feed.xml" title="Atom" />
 <!-- Custom CSS -->
 <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ "/css/github-markdown.css" | prepend: site.baseurl }}">
@@ -21,12 +21,12 @@
   {% assign twitter_title = site.title %}
 {% endif %}
 {% if page.image %}
-  {% assign twitter_image = site.url | append: page.image %}
+  {% assign twitter_image = site.baseurl | append: page.image %}
 {% else %}
-  {% assign twitter_image = site.url | append: "/favicon.png" %}
+  {% assign twitter_image = site.baseurl | append: "/favicon.png" %}
 {% endif %}
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="{{ twitter_title }}">
-<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+<meta name="twitter:url" content="{{ site.baseurl }}{{ page.url }}">
 <meta name="twitter:description" content="{{ twitter_description }}">
 <meta name="twitter:image:src" content="{{ twitter_image }}">
