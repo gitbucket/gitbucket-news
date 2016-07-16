@@ -1,0 +1,38 @@
+---
+layout: post
+title: "GitBucket 4.3 released!"
+date: 2016-07-30 00:00:00
+image: /images/gitbucket-4.2/adminlte.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 4.3](https://github.com/gitbucket/gitbucket/releases/tag/4.3)!
+
+## Emoji support
+
+[gitbucket-emoji-plugin](https://github.com/gitbucket/gitbucket-emoji-plugin) has been released with GitBucket 4.3. This plugin provides following features:
+
+- Convert Emoji directives in Markdown or other places as images
+- Completion Emoji directives in the textarea
+
+> TODO: Image
+
+## User name completion
+
+In the textarea in issues and pull requests, user name completion has been available. When you type `@`, completion proposals are displayed as below:
+
+> TODO: Image
+
+## Add new extension points
+
+New extension points are available for plugins:
+
+- assetsMapping
+- completionProposalProvider
+- textDecorator
+
+See the [Plugin](https://github.com/gitbucket/gitbucket-emoji-plugin/blob/master/src/main/scala/Plugin.scala) class of gitbucket-emoji-plugin to know usage of these extension points.
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.3) to know details.
+
+Enjoy GitBucket!
