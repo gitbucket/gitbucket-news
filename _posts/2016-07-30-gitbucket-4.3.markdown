@@ -15,20 +15,20 @@ Today, we are pleased to announce the availability of new version of Scala based
 - Convert Emoji directives in Markdown or other places as images
 - Suggest Emoji directives in the textarea
 
-![Emoji completion]({{site.baseurl}}/images/gitbucket-4.3/emoji_completion.png)
+![Emoji suggestion]({{site.baseurl}}/images/gitbucket-4.3/emoji_suggestion.png)
 
-## User name suggest
+## User name suggestion
 
-In the textarea in issues and pull requests, user name suggest has been available. When you type `@`, user name proposals are popped up as below:
+In the textarea in issues and pull requests, user name suggestion has been available. When you type `@`, user name proposals are popped up as below:
 
-![User name completion]({{site.baseurl}}/images/gitbucket-4.3/username_completion.png)
+![User name suggestion]({{site.baseurl}}/images/gitbucket-4.3/username_suggestion.png)
 
 ## Add new extension points
 
 New extension points are available for plugins:
 
 - `assetsMapping` : Supplies resources in plugin classpath as web assets
-- `suggestProvider` : Provides completion proposals in the Markdown editing textarea 
+- `suggestionProvider` : Provides suggestion in the Markdown editing textarea 
 - `textDecorator` : Decorate text nodes in HTML which is converted from Markdown
 
 See the [Plugin](https://github.com/gitbucket/gitbucket-emoji-plugin/blob/master/src/main/scala/Plugin.scala) class of gitbucket-emoji-plugin to know usage of these extension points.
