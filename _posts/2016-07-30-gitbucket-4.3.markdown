@@ -23,6 +23,23 @@ In the textarea in issues and pull requests, user name suggestion has been avail
 
 ![User name suggestion]({{site.baseurl}}/images/gitbucket-4.3/username_suggestion.png)
 
+## Add new web APIs
+
+GitBucket is providing GitHub compatible Web API. A lot of new APIs have been added in this version.
+
+- Root Endpoint
+  - [List endpoints](https://developer.github.com/v3/#root-endpoint)
+- Repositories
+  - [List Branches](https://developer.github.com/v3/repos/branches/#list-branches)
+  - [Get contents](https://developer.github.com/v3/repos/contents/#get-contents)
+  - [Get a Reference](https://developer.github.com/v3/git/refs/#get-a-reference)
+  - [List Collaborators](https://developer.github.com/v3/repos/collaborators/#list-collaborators)
+- Users
+  - [List user repositories](https://developer.github.com/v3/repos/#list-user-repositories)
+- Groups
+  - [Get a group](https://developer.github.com/v3/orgs/#get-an-organization)
+  - [List group repositories](https://developer.github.com/v3/repos/#list-organization-repositories)
+
 ## Add new extension points
 
 New extension points are available for plugins:
