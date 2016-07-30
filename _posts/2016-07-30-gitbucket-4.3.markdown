@@ -2,7 +2,7 @@
 layout: post
 title: "GitBucket 4.3 released!"
 date: 2016-07-30 00:00:00
-image: /images/gitbucket-4.2/adminlte.png
+image: /images/gitbucket-4.3/emoji_suggestion.png
 categories: gitbucket
 ---
 
