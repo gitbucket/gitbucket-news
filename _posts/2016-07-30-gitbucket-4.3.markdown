@@ -40,6 +40,8 @@ GitBucket is providing GitHub compatible Web API. A lot of new APIs have been ad
   - [Get a group](https://developer.github.com/v3/orgs/#get-an-organization)
   - [List group repositories](https://developer.github.com/v3/repos/#list-organization-repositories)
 
+Also basic authentication is available for API access.
+
 ## Add new extension points
 
 New extension points are available for plugins:
