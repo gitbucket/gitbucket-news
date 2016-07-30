@@ -1,0 +1,57 @@
+---
+layout: post
+title: "GitBucket 4.3 released!"
+date: 2016-07-30 00:00:00
+image: /images/gitbucket-4.2/adminlte.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 4.3](https://github.com/gitbucket/gitbucket/releases/tag/4.3)!
+
+## Emoji support
+
+[gitbucket-emoji-plugin](https://github.com/gitbucket/gitbucket-emoji-plugin) has been released with GitBucket 4.3. This plugin provides following features:
+
+- Convert Emoji directives in Markdown or other places as images
+- Suggest Emoji directives in the textarea
+
+![Emoji suggestion]({{site.baseurl}}/images/gitbucket-4.3/emoji_suggestion.png)
+
+## User name suggestion
+
+In the textarea in issues and pull requests, user name suggestion has been available. When you type `@`, user name proposals are popped up as below:
+
+![User name suggestion]({{site.baseurl}}/images/gitbucket-4.3/username_suggestion.png)
+
+## Add new web APIs
+
+GitBucket is providing GitHub compatible Web API. A lot of new APIs have been added in this version.
+
+- Root Endpoint
+  - [List endpoints](https://developer.github.com/v3/#root-endpoint)
+- Repositories
+  - [List Branches](https://developer.github.com/v3/repos/branches/#list-branches)
+  - [Get contents](https://developer.github.com/v3/repos/contents/#get-contents)
+  - [Get a Reference](https://developer.github.com/v3/git/refs/#get-a-reference)
+  - [List Collaborators](https://developer.github.com/v3/repos/collaborators/#list-collaborators)
+- Users
+  - [List user repositories](https://developer.github.com/v3/repos/#list-user-repositories)
+- Groups
+  - [Get a group](https://developer.github.com/v3/orgs/#get-an-organization)
+  - [List group repositories](https://developer.github.com/v3/repos/#list-organization-repositories)
+
+Also basic authentication is available for API access.
+
+## Add new extension points
+
+New extension points are available for plugins:
+
+- `assetsMapping` : Supplies resources in plugin classpath as web assets
+- `suggestionProvider` : Provides suggestion in the Markdown editing textarea 
+- `textDecorator` : Decorate text nodes in HTML which is converted from Markdown
+
+See the [Plugin](https://github.com/gitbucket/gitbucket-emoji-plugin/blob/master/src/main/scala/Plugin.scala) class of gitbucket-emoji-plugin to know usage of these extension points.
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.3) to know details.
+
+Enjoy GitBucket!
