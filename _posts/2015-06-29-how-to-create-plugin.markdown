@@ -18,14 +18,12 @@ organization := "io.github.gitbucket"
 
 version := "1.0.0"
 
-scalaVersion := "2.11.6"
+scalaVersion := "2.11.8"
 
 libraryDependencies ++= Seq(
-  "gitbucket"     % "gitbucket-assembly" % "3.4.0" % "provided",
-  "javax.servlet" % "javax.servlet-api"  % "3.1.0" % "provided"
+  "io.github.gitbucket" %% "gitbucket"         % "4.3.0" % "provided",
+  "javax.servlet"        % "javax.servlet-api" % "3.1.0" % "provided"
 )
-
-resolvers += "amateras-repo" at "http://amateras.sourceforge.jp/mvn/"
 ```
 
 Notice: gitbucket-assembly must be a latest version.
@@ -35,15 +33,14 @@ Notice: gitbucket-assembly must be a latest version.
 Create below `Plugin` class which extends `gitbucket.core.plugin.Plugin` into `/src/main/scala`. Declare plug-in metadata and extension details in this class.
 
 ```scala
-import gitbucket.core.service.SystemSettingsService.SystemSettings
-import gitbucket.core.util.Version
-import io.github.gitbucket.controller.HelloWorldController
+import io.github.gitbucket.solidbase.model.Version
+import io.github.gitbucket.sample.controller.HelloWorldController
 
 class Plugin extends gitbucket.core.plugin.Plugin {
   override val pluginId: String = "helloworld"
   override val pluginName: String = "HelloWorld Plugin"
   override val description: String = "First example of GitBucket plug-in"
-  override val versions: Seq[Version] = Seq(Version(1, 0))
+  override val versions: List[Version] = List(new Version("1.0.0"))
 
   override val controllers = Seq(
     "/helloworld" -> new HelloWorldController()
@@ -56,7 +53,7 @@ class Plugin extends gitbucket.core.plugin.Plugin {
 Implement `HelloWorldController` extends `gitbucket.core.controller.ControllerBase` and put it into `/src/main/io/github/gitbucket/helloworld/controller`. It's a generic Scalatra based controller servlet.
 
 ```scala
-package io.github.gitbucket.controller
+package io.github.gitbucket.sample.controller
 
 import gitbucket.core.controller.ControllerBase
 
@@ -76,6 +73,8 @@ In this example, `HelloWorldController` returns plain text response. Of course, 
 Run `sbt package` and copy generated `/target/scala-2.11/gitbucket-helloworld-plugin_2.11-1.0.0.jar` to `~/.gitbucket/plugins` (If it does not exist, create its directory manually).
 
 Then start GitBucket and access to http://localhost:8080/helloworld by your web browser, you will see `Hello World!` response.
+
+A complete project explained in this article is [here](https://github.com/gitbucket/gitbucket-plugin-template). You can start plugin development from this project.
 
 ## Next step
 
