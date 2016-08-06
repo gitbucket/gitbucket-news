@@ -26,7 +26,7 @@ libraryDependencies ++= Seq(
 )
 ```
 
-Notice: gitbucket-assembly must be a latest version.
+Notice: Modify gitbucket dependency to a latest version.
 
 ## Plug-in definition
 
@@ -34,7 +34,7 @@ Create below `Plugin` class which extends `gitbucket.core.plugin.Plugin` into `/
 
 ```scala
 import io.github.gitbucket.solidbase.model.Version
-import io.github.gitbucket.sample.controller.HelloWorldController
+import io.github.gitbucket.helloworld.controller.HelloWorldController
 
 class Plugin extends gitbucket.core.plugin.Plugin {
   override val pluginId: String = "helloworld"
@@ -53,7 +53,7 @@ class Plugin extends gitbucket.core.plugin.Plugin {
 Implement `HelloWorldController` extends `gitbucket.core.controller.ControllerBase` and put it into `/src/main/io/github/gitbucket/helloworld/controller`. It's a generic Scalatra based controller servlet.
 
 ```scala
-package io.github.gitbucket.sample.controller
+package io.github.gitbucket.helloworld.controller
 
 import gitbucket.core.controller.ControllerBase
 
