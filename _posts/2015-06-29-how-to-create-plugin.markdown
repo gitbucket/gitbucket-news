@@ -74,9 +74,9 @@ Run `sbt package` and copy generated `/target/scala-2.11/gitbucket-helloworld-pl
 
 Then start GitBucket and access to http://localhost:8080/helloworld by your web browser, you will see `Hello World!` response.
 
-A complete project explained in this article is [here](https://github.com/gitbucket/gitbucket-plugin-template). You can start plugin development from this project.
-
 ## Next step
 
-There are [gitbcucket-gist-plugin](https://github.com/gitbucket/gitbucket-gist-plugin) as a practical example of GitBucket plug-in. Check it to know more details about GitBucket plug-in.
+A complete project explained in this article is [here](https://github.com/gitbucket/gitbucket-plugin-template). You can start plugin development from this project.
+
+Furthermore, you can find practical plugins at [gitbucket community plugins](http://gitbucket-plugins.github.io/). Check source code of these plugins to know more details about GitBucket plug-in.
 
