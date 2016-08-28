@@ -1,0 +1,48 @@
+---
+layout: post
+title: "GitBucket 4.4 released!"
+date: 2016-08-28 00:00:00
+image: /images/gitbucket-4.4/sort_milestones_1.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 4.4](https://github.com/gitbucket/gitbucket/releases/tag/4.4)!
+
+## Import a SQL dump file to the database
+
+Importing a SQL dump file to the database is available in the administration console.
+
+![Import SQL file]({{site.baseurl}}/images/gitbucket-4.4/sql_import.png)
+
+**Note:** XML export and import are abolished along with this.
+
+## `go get` support in private repositories
+
+`go get` support has been available in public repositories until 4.3. Since 4.4, it's also available in private repositories. GitBucket generates HTML for private repositories as follows:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="go-import" content="localhost:8080/root/hogege git http://localhost:8080/git/root/hogege.git" />
+  </head>
+</html>
+```
+
+## Sort milestones by due date
+
+The list of milestones has been sorted by due date.
+
+![Sort milestones]({{site.baseurl}}/images/gitbucket-4.4/sort_milestones_1.png)
+
+![Milestones in pulldown]({{site.baseurl}}/images/gitbucket-4.4/sort_milestones_2.png)
+
+## apache-sshd has been updated to 1.2.0
+
+[apache-sshd](https://mina.apache.org/sshd-project/) has been updated to 1.2.0.
+
+DSA (ssh-dss) is not recommended because of the vulnerability, however GitBucket has supported only DSA until 4.3. By this update, you can use RSA to connect git repository on the GitBucket via SSH.
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.4) to know details.
+
+Enjoy GitBucket!
