@@ -32,7 +32,7 @@
 }
 
 .markdown-body img {
-  border: 0;
+  border: 1px solid #d5d5e9;
 }
 
 .markdown-body hr {
