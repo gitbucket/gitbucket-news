@@ -37,7 +37,7 @@ db {
 }
 ```
 
-If you want configure HikariCP, activate commented line and modify value. See [HikariCP's web site](https://github.com/brettwooldridge/HikariCP) to learn meaning of each property.
+If you want configure HikariCP, activate commented line and modify value. You have to reboot GitBucket after modifying HikariCP configuration to apply changes. See [HikariCP's web site](https://github.com/brettwooldridge/HikariCP) to learn meaning of each property.
 
 ## Improve Cookie security
 
