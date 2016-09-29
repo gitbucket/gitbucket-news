@@ -1,0 +1,66 @@
+---
+layout: post
+title: "GitBucket 4.5 released!"
+date: 2016-09-29 00:00:00
+image: /images/gitbucket-4.5/drop_to_textarea.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 4.5](https://github.com/gitbucket/gitbucket/releases/tag/4.5)!
+
+## Attach files by dropping into textarea
+
+It had been possible to attach files to issues or wiki by dropping into only the bottom area of textarea until GitBucket 4.4. However it's also available in textarea itself since 4.5. By this update, we can now attach files more easily.
+
+![Drop files to textarea]({{site.baseurl}}/images/gitbucket-4.5/drop_to_textarea.png)
+
+## Issues / Pull requests switcher in dashboard
+
+You can see assigned or mentioned issues / pull requests in the dashboard. This switcher had been removed in previous UI updating, but restored with new design in this version.
+
+![Issues / Pull requests switcher in dashboard]({{site.baseurl}}/images/gitbucket-4.5/issues_switcher.png)
+
+## HikariCP configuration
+
+You can configure HikariCP in `GITBUCKET_HOME/database.conf`. GitBucket generates this file with following contents in default:
+
+```
+db {
+  url = "jdbc:h2:${DatabaseHome};MVCC=true"
+  user = "sa"
+  password = "sa"
+#  connectionTimeout = 30000
+#  idleTimeout = 600000
+#  maxLifetime = 1800000
+#  minimumIdle = 10
+#  maximumPoolSize = 10
+}
+```
+
+If you want configure HikariCP, activate commented line and modify value. You have to reboot GitBucket after modifying HikariCP configuration to apply changes. See [HikariCP's web site](https://github.com/brettwooldridge/HikariCP) to learn meaning of each property.
+
+## Improve Cookie security
+
+Always set `http-only` attribute to the JSESSIONID cookie and if `baseUrl` starts with `https://xxx`, set `secure` attribute as well.
+
+## Display commit count on the history button
+
+The commit count had been removed from the repository viewer since UI updating. In this version, it was restored on the history button.
+
+![Commit count]({{site.baseurl}}/images/gitbucket-4.5/commit_count.png)
+
+## Improve mobile view
+
+Mobile view had been broken since starting to change to AdminLTE. In GitBucket 4.5, we fixed CSS for mobile browsers and repair mobile view as follows:
+
+![Mobile view (1)]({{site.baseurl}}/images/gitbucket-4.5/mobile1.png)
+
+![Mobile view (2)]({{site.baseurl}}/images/gitbucket-4.5/mobile2.png)
+
+Further, the find button and the history button is available in the mobile view as well:
+
+![Mobile view (3)]({{site.baseurl}}/images/gitbucket-4.5/mobile3.png)
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.5) to know details.
+
+Enjoy GitBucket!
