@@ -1,0 +1,84 @@
+---
+layout: post
+title: "GitBucket 4.6 released!"
+date: 2016-10-29 00:00:00
+image: /images/gitbucket-4.6/disable_forking.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 4.6](https://github.com/gitbucket/gitbucket/releases/tag/4.6)!
+
+## Add disable option for forking
+
+New option to disable repository forking has been available.
+
+![Disable option for forking]({{site.baseurl}}/images/gitbucket-4.6/disable_forking.png)
+
+## Add History button to wiki page
+
+History button has been added to wiki pages. In 4.5 or before, History button was available in only wiki page editing form.
+
+![Wiki history button]({{site.baseurl}}/images/gitbucket-4.6/wiki_history.png)
+
+## Git repository URL redirection
+
+To improve external tools (like Jenkins) integration, GitHub like repository URL has been available.
+
+For example,
+
+```
+http://localhost:8080/user1/gitbucket.git
+```
+
+a URL above is redirected to below:
+
+```
+http://localhost:8080/git/user1/gitbucket.git
+```
+
+## Get-Content API improvement
+
+Get-Content API now supports files. It supported only directory in previous versions.
+
+- API call:
+
+  ```
+  $ curl http://localhost:8080/api/v3/repos/user1/gitbucket/contents/project/build.properties
+  ```
+
+- Response:
+
+  ```javascript
+  {
+    "type":"file",
+    "name":"build.properties",
+    "content":"c2J0LnZlcnNpb249MC4xMy4xMgo=",
+    "encoding":"base64"
+  }
+  ```
+
+Further, it also supports custom media types. By adding the `Accept` header in the request, users can choose the format of responded data. If the `Accept` header is not passed, a JSON object including the Base64 encoded content will be returned.
+
+- Raw:
+
+  ```
+  $ curl http://localhost:8080/api/v3/repos/user1/gitbucket/contents/project/build.properties \
+  -H "Accept: application/vnd.github.v3.raw"
+  ```
+
+- HTML:
+
+  ```
+  $ curl http://localhost:8080/api/v3/repos/user1/gitbucket/contents/project/build.properties \
+  -H "Accept: application/vnd.github.v3.html"
+  ```
+
+## Indicate who is group manager
+
+Indicate who is group manager in the Members tab in the group view.
+
+![Indicate group manager]({{site.baseurl}}/images/gitbucket-4.6/group_manager.png)
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.6) to know details.
+
+Enjoy GitBucket!
