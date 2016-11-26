@@ -34,6 +34,8 @@ Sidebar can be folded by clicking the hamburger button on the header. Since GitB
 
 ## Link from milestone label to the issue list
 
+The milestone label at the issue links to the list of issues which are scheduled in that milestone.
+
 ![Milestone link]({{site.baseurl}}/images/gitbucket-4.7/issues_milestone_link.png)
 
 In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.7) to know details.
