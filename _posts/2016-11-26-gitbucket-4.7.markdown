@@ -1,0 +1,41 @@
+---
+layout: post
+title: "GitBucket 4.7 released!"
+date: 2016-11-26 00:00:00
+image: /images/gitbucket-4.7/new_permission_system.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 4.7](https://github.com/gitbucket/gitbucket/releases/tag/4.7)!
+
+## New permission system
+
+The most impact feature is the new permission system.
+
+We can now give guest, developer or administration role to users and groups for each repositories. Also we can add collaborators more flexibly. For example, we can add individual users or other groups to the group repository as the collaborator. And it's also possible to add groups to the personal repository as the collaborator.
+
+![New permission system]({{site.baseurl}}/images/gitbucket-4.7/new_permission_system.png)
+
+In addition, we can also configure which role of users to allow creating or updating issues or wiki pages.
+
+![Feature configuration]({{site.baseurl}}/images/gitbucket-4.7/feature_configuration.png)
+
+## Dropdown filter for issue labels, milestones and assignees
+
+The filter box is now available in dropdown selection lists such as issue labels, milestones and assignees. You can filter these lists incrementaly.
+
+![Dropdown filter]({{site.baseurl}}/images/gitbucket-4.7/dropdown_filter.png)
+
+## Keep sidebar folding status
+
+Sidebar can be folded by clicking the hamburger button on the header. Since GitBucket 4.7, folding status has been kept during a session.
+
+![Fold sidebar]({{site.baseurl}}/images/gitbucket-4.7/fold_sidebar.png)
+
+## Link from milestone label to the issue list
+
+![Milestone link]({{site.baseurl}}/images/gitbucket-4.7/issues_milestone_link.png)
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.7) to know details.
+
+Enjoy GitBucket!
