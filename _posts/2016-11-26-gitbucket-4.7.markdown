@@ -6,6 +6,8 @@ image: /images/gitbucket-4.7/new_permission_system.png
 categories: gitbucket
 ---
 
+> **Note:** [GitBucket 4.7.1](https://github.com/gitbucket/gitbucket/releases/tag/4.7.1) is now available. This is hotfix for a bug that group repositories are not shown in the user repositories list on the sidebar of the dashboard. And includes small performance improvement of the dashboard.
+
 Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 4.7](https://github.com/gitbucket/gitbucket/releases/tag/4.7)!
 
 ## New permission system
