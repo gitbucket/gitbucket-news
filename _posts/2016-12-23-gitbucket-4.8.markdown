@@ -1,0 +1,31 @@
+---
+layout: post
+title: "GitBucket 4.8 released!"
+date: 2016-12-23 00:00:00
+image: /images/gitbucket-4.8/repository_search_box.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 4.8](https://github.com/gitbucket/gitbucket/releases/tag/4.8)!
+
+## Search for repository names
+
+The search box on the global header now works for search repository:
+
+![Repository search box on the header]({{site.baseurl}}/images/gitbucket-4.8/repository_search_box.png)
+
+Also the filter box on the dashboard sidebar to filter repositories has been available:
+
+![Repository filter on the sidebar]({{site.baseurl}}/images/gitbucket-4.8/sidebar_filter.png)
+
+## Search issues and wiki
+
+The search box has been available for issues and wiki:
+
+![Search box for issues]({{site.baseurl}}/images/gitbucket-4.8/search_box_issues.png)
+
+![Search box for wiki]({{site.baseurl}}/images/gitbucket-4.7/search_box_wiki_box.png)
+
+In addition, this release contains new WebAPI to get a single issue, performance improvenemt for the repository viewer. It also contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.8) to know details.
+
+Enjoy GitBucket!
