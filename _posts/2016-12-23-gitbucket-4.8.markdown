@@ -28,15 +28,15 @@ The search box has been available for issues and wiki:
 
 ## Keep pull request comments
 
-Before this release, comments on source code of the pull request had became invisible if new commits are pushed. Since this release, if new pushed commits don't update commented line, these comments are keeped on the screen.
+Before this release, comments on source code of the pull request had became invisible if new commits are pushed. Since this release, if new pushed commits don't update commented line, these comments are kept on the screen.
 
 ![Comment for the pull request]({{site.baseurl}}/images/gitbucket-4.8/pull_request_comment.png)
 
 In addition, this release contains:
 
-- New WebAPI to get a single issue
+- New [WebAPI](https://github.com/gitbucket/gitbucket/wiki/API-WebHook#api) to get a single issue
 - Performance improvement for the repository viewer
-- Some other improvements and bug fix
+- Some other improvements and bugfixes
 
 See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.8) to know details.
 
