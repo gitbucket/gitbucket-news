@@ -10,7 +10,7 @@ You can add a new blog entry by adding a markdown file into `_post` directory.
 To confirm actual presentation, run jekyll as below at the root directory of this branch and access to http://localhost:4000/ by your web browser.
 
 ```
-jekyll server --baseurl '' -w
+jekyll server --baseurl '' --watch --future
 ```
 
 You can stop jekyll by CTRL+C.
