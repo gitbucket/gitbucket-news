@@ -24,7 +24,7 @@ The search box has been available for issues and wiki:
 
 ![Search box for issues]({{site.baseurl}}/images/gitbucket-4.8/search_box_issues.png)
 
-![Search box for wiki]({{site.baseurl}}/images/gitbucket-4.8/search_box_wiki_box.png)
+![Search box for wiki]({{site.baseurl}}/images/gitbucket-4.8/search_box_wiki.png)
 
 ## Keep pull request comments
 
@@ -35,7 +35,7 @@ Before this release, comments on source code of the pull request had became invi
 In addition, this release contains:
 
 - New WebAPI to get a single issue
-- Performance improvenemt for the repository viewer
+- Performance improvement for the repository viewer
 - Some other improvements and bug fix
 
 See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.8) to know details.
