@@ -1,0 +1,43 @@
+---
+layout: post
+title: "GitBucket 4.8 released!"
+date: 2016-12-23 00:00:00
+image: /images/gitbucket-4.8/repository_search_box.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 4.8](https://github.com/gitbucket/gitbucket/releases/tag/4.8)!
+
+## Search for repository names
+
+The search box on the global header now works for search repository:
+
+![Repository search box on the header]({{site.baseurl}}/images/gitbucket-4.8/repository_search_box.png)
+
+Also a filter box on the dashboard sidebar to filter repositories have been introduced:
+
+![Repository filter on the sidebar]({{site.baseurl}}/images/gitbucket-4.8/sidebar_filter.png)
+
+## Search issues and wiki
+
+The search box has been available for issues and wiki:
+
+![Search box for issues]({{site.baseurl}}/images/gitbucket-4.8/search_box_issues.png)
+
+![Search box for wiki]({{site.baseurl}}/images/gitbucket-4.8/search_box_wiki.png)
+
+## Keep pull request comments
+
+Before this release, comments on source code of the pull request had became invisible if new commits are pushed. Since this release, if new pushed commits don't update commented line, these comments are kept on the screen.
+
+![Comment for the pull request]({{site.baseurl}}/images/gitbucket-4.8/pull_request_comment.png)
+
+In addition, this release contains:
+
+- New [WebAPI](https://github.com/gitbucket/gitbucket/wiki/API-WebHook#api) to get a single issue
+- Performance improvement for the repository viewer
+- Some other improvements and bugfixes
+
+See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.8) to know details.
+
+Enjoy GitBucket!
