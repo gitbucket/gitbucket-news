@@ -2,8 +2,8 @@
 title: GitBucket News
 #email: your-email@domain.com
 description: "GitBucket is a Git platform powered by Scala."
-baseurl: "https://gitbucket.github.io/gitbucket-news"
-url: ""
+url: "https://gitbucket.github.io"
+baseurl: "/gitbucket-news"
 
 # Build settings
 markdown: kramdown
