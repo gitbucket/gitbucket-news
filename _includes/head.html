@@ -21,14 +21,14 @@
   {% assign twitter_title = site.title %}
 {% endif %}
 {% if page.image %}
-  {% assign twitter_image = site.baseurl | append: page.image %}
+  {% assign twitter_image = site.url | append: site.baseurl | append: page.image %}
   {% assign twitter_card = "summary_large_image" %}
 {% else %}
-  {% assign twitter_image = site.baseurl | append: "/favicon.png" %}
+  {% assign twitter_image = site.url | append: site.baseurl | append: "/favicon.png" %}
   {% assign twitter_card = "summary" %}
 {% endif %}
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ twitter_title }}">
-<meta name="twitter:url" content="{{ site.baseurl }}{{ page.url }}">
+<meta name="twitter:url" content="{{ site.url }}{{ site.baseurl }}{{ page.url }}">
 <meta name="twitter:description" content="{{ twitter_description }}">
 <meta name="twitter:image:src" content="{{ twitter_image }}">
