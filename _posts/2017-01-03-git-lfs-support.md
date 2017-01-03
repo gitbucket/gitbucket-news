@@ -2,7 +2,7 @@
 layout: post
 title: "GitLFS support in GitBucket"
 date: 2017-01-03 00:00:00
-image: /images/git-lfs-support/lfs-server-url.png
+image: /images/git-lfs-support/blob-view.png
 categories: gitbucket
 ---
 
@@ -20,24 +20,22 @@ GitLFS is a git extension to separate large files from git repository. We can se
 
 From these options, I chose JGit's lfs server implementation and tried to integrate it with GitBucket.
 
-At first, JGit's lfs server implementation does not have Batch API implementation, so I made it by myself.
+At first, JGit's lfs server implementation does not have Batch API implementation. It has only Transfer API, so I made Batch API by myself.
 
 Problem was JGit's lfs server uses asynchrnous support in Servlet 3.0. Since LFS server receives and sends large files mainly, handling them as asynchronous is reasonable. However GitBucket has many existing non-async filters chain. It's impossible to put it together.
 
-Solution is that only Batch API is working on GitBucket and its response points a location of GitLFS server url that is working on an other server.
+Eventually I also re-implemented Transfer API as non-async servlet.
 
 ## Test experimental GitLFS support
 
-Experimental GitLFS support is now available.
+Experimental GitLFS support is now available in [git-lfs-support branch](https://github.com/gitbucket/gitbucket/tree/git-lfs-support) branch.
 
-You can get GitLFS server implementation from [here](https://github.com/gitbucket/gitbucket-lfs). Clone this repository and hit `sbt ~jetty:start` on the root directory. GitLFS server is run at `http://localhost:9090/git-lfs`.
+Checkout this branch and run it. Then you have to fill the base url of your GitBucket instance at the system settings page to enable GitLFS support.
 
-Next, checkout [git-lfs-support branch](https://github.com/gitbucket/gitbucket/tree/git-lfs-support) of GitBucket and run it as well.
+![GitLFS configuration]({{site.baseurl}}/images/git-lfs-support/baseurl.png)
 
-To enable GitLFS support, put GitLFS server url as `http://localhost:9090/git-lfs` at the system settings page in GitBucket.
+It's all. Now you can use GitLFS on GitBucket normally. Large files are stored under `GITBUCKET_HOME/lfs`. At the blob view of the repository viewer, `LFS` badge is shown for LFS files as following:
 
-![GitLFS configuration]({{site.baseurl}}/images/git-lfs-support/lfs-server-url.png)
-
-It's all. Now you can use GitLFS on GitBucket normally. Large files are stored under `GITBUCKET_HOME/lfs`.
+![Blob view]({{site.baseurl}}/images/git-lfs-support/blob-view.png)
 
 GitLFS support in GitBucket is still experimantal. It has several problemns currently including a security issue or various storage support. We have to continue to consider GitLFS support.
