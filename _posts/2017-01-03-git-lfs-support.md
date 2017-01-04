@@ -34,7 +34,7 @@ Checkout this branch and run it. Then you have to fill the base url of your GitB
 
 ![GitLFS configuration]({{site.baseurl}}/images/git-lfs-support/baseurl.png)
 
-It's all. Now you can use GitLFS on GitBucket normally. Large files are stored under `GITBUCKET_HOME/lfs`. At the blob view of the repository viewer, `LFS` badge is shown for LFS files as following:
+It's all. Now you can use GitLFS on GitBucket normally. Large files are stored under `GITBUCKET_HOME/repositories/<user>/<repository>/lfs`. At the blob view of the repository viewer, `LFS` badge is shown for LFS files as following:
 
 ![Blob view]({{site.baseurl}}/images/git-lfs-support/blob-view.png)
 
