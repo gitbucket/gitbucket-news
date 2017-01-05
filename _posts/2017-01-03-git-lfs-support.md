@@ -38,4 +38,4 @@ It's all. Now you can use GitLFS on GitBucket normally. Large files are stored u
 
 ![Blob view]({{site.baseurl}}/images/git-lfs-support/blob-view.png)
 
-GitLFS support in GitBucket is still experimantal. It has several problemns currently including a security issue or various storage support. We have to continue to consider GitLFS support.
+GitLFS support in GitBucket is still experimantal. It has several problems currently including a security issue or various storage support. We have to continue to consider GitLFS support.
