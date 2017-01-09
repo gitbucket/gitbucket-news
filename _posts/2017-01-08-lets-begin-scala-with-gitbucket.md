@@ -278,7 +278,7 @@ Try to re-write more Java like (but this code does not work):
 
 ```scala
 class MyController extends ScalatraServlet, ScalateSupport {
-  // コンストラクタ
+  // Constructor
   public MyController(){
     Route route1 = new Route("GET", "/hoge")
     route1.setAction(new Action(){
@@ -291,7 +291,7 @@ class MyController extends ScalatraServlet, ScalateSupport {
 }
 ```
 
-If you have experience in web application development, you can understand what this code is doing. In Scala, we can write constructor statements in the class definition directory, so DSL such as above example makes easy.
+If you have experience in web application development, you can understand what this code is doing. In Java, we have to write routing definition in constructor in Java. On the other hand, in Java, we can write routing definition more simply because class body is constructor in Scala.
 
 In GitBucket, you have to put this controllers into `src/main/scala/gitbucket/core/controller/MyController.scala`.
 
@@ -337,7 +337,7 @@ In Scalatra, you can retreive request parameters as following:
 
 ```scala
   get("/hoge/:aaa") {
-    "aaa="+ parem("aaa")+ " bbb="+parem("bbb")
+    "aaa="+ param("aaa") + " bbb=" + param("bbb")
   }
 ```
 
