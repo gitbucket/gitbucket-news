@@ -5,17 +5,17 @@ date: 2017-01-08 00:00:00
 categories: gitbucket
 ---
 
-The original article by [@nazoking](https://github.com/nazoking) on Qiita in Japanese.
+Translated from original article by [@nazoking](https://github.com/nazoking) on Qiita in Japanese.
 
 [http://qiita.com/nazoking@github/items/4518266ff0f4fd92bd0a](http://qiita.com/nazoking@github/items/4518266ff0f4fd92bd0a)
 
 ## What's GitBucket?
 
-GitBucket is an open-source Git server based on Scala and JVM techinoligies. It provides features like GitHub or BitBucket and you can install it on your server easily.
+GitBucket is an open-source Git server based on Scala and JVM technologies. It provides features like GitHub or BitBucket and can be installed on your own server easily.
 
 [https://github.com/gitbucket/gitbucket](https://github.com/gitbucket/gitbucket)
 
-User's guilde is available on [GitHub Wiki](https://github.com/gitbucket/gitbucket/wiki) and developer's guide is avaioable on [docs directory](https://github.com/gitbucket/gitbucket/tree/master/doc) in the source tree.
+User's guide is available on [GitHub Wiki](https://github.com/gitbucket/gitbucket/wiki) and developer's guide is available on [docs directory](https://github.com/gitbucket/gitbucket/tree/master/doc) in the source tree.
 
 ## Build GitBucket
 
@@ -42,7 +42,7 @@ Listening for transport dt_socket at address: 5005
 :
 ```
 
-Many libraries are download and source code are compiled. In paticular, first run takes a lot of time.
+Many libraries are downloaded and source code is compiled ; thus the first run takes a lot of time.
 
 ```
 ：
@@ -55,19 +55,19 @@ Build is finished. Open `http://localhost:8080/` in your browser. You can see Gi
 
 ## sbt interactive console
 
-A following command runs sbt.
+The following command runs sbt:
 
 ```
 sbt ~jetty:start
 ```
 
-sbt is a build tool for Scala like Maven + And in Java, Make + library management in C or gems + bundler + rake in Ruby. sbt also has an interactive console. You can start the interactive console as:
+sbt is a build tool for Scala like Maven / Ant in Java or make / library management in C or gems + bundler + rake in Ruby. sbt also has an interactive console. You can start the interactive console as:
 
 ```
 sbt
 ```
 
-Following messages are shown and prompt is available. This is sbt console.
+Following messages are shown and prompt is available. This is the sbt interactive console.
 
 ```
 Java HotSpot(TM) 64-Bit Server VM warning: ignoring option MaxPermSize=256m; support was removed in 8.0
@@ -80,17 +80,17 @@ Listening for transport dt_socket at address: 5005
 
 You can start GitBucket on this console as well by hitting `jetty:start` and stop it by `jetty:stop`.
 
-`jetty:start` and `jetty:stop` are sbt task. `jetty:start` is a task to start a jetty server. If you prepend `~` to task, the task is run continually. In this case, `~jetty:start` means that run `jetty:start` task and watch source code updating. When source code are modified, run `jetty:start` again.
+`jetty:start` and `jetty:stop` are sbt task. `jetty:start` is a task to start a jetty server. If you prepend `~` to task, the task is run continually. In this case, `~jetty:start` means: run `jetty:start` task and watch sources for any update ; when some source code is modified, run `jetty:start` again.
 
-You can exit from sbt console by `exit`. If jetty has been stopped, it's stopped in this time.
+You can exit from sbt console by `exit`. If jetty has not been stopped, it's stopped at this time.
 
 Remember only sbt is a build tool for Scala, you can run tasks in sbt and sbt can watch files and re-run a task.
 
 ## Configuration on Windows
 
-In sbt console, we can select commands from history by cursor keys but it doesn't work in Windows in default. By adding `-Dinput.encoding=Cp1252` option, this works well. This is a reason of `SET _JAVA_OPTIONS="-Dinput.encoding=Cp1252"` in the setup script I introduced at first (If `_JAVA_OPTIONS` is defined, java.exe adds it to bootstrap option automatically).
+In sbt console, we can select commands from history by cursor keys but it doesn't work in Windows by default with non standard encoding (like japanese one). By adding `-Dinput.encoding=Cp1252` option, this feature works well again. This is the reason of `SET _JAVA_OPTIONS="-Dinput.encoding=Cp1252"` introduced first in the setup script (if `_JAVA_OPTIONS` is defined, java.exe adds it to bootstrap option automatically).
 
-Also, in Windows, a following error is caused in packaging by editing CSS etc:
+Also, on Windows, the following error is caused in packaging task when editing some CSS, etc:
 
 ```
 [trace] Stack trace suppressed: run 'last *:webappPrepare' for the full output.
@@ -98,7 +98,7 @@ Also, in Windows, a following error is caused in packaging by editing CSS etc:
 [error] Total time: 3 s, completed Jan 13, 2016 12:07:07 PM
 ```
 
-This is bacause Jetty is locking files. Solution is put a folllowing XML file o `src/main/webapp/WEB-INF/jetty-web.xml`.
+This is because Jetty is locking files. Solution is to create the folllowing XML file under `src/main/webapp/WEB-INF/jetty-web.xml`:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -113,11 +113,11 @@ This is bacause Jetty is locking files. Solution is put a folllowing XML file o 
 
 Reference: [http://www.eclipse.org/jetty/documentation/current/troubleshooting-locked-files-on-windows.html](http://www.eclipse.org/jetty/documentation/current/troubleshooting-locked-files-on-windows.html)
 
-It's good to add `src/main/webapp/WEB-INF/jetty-web.xml` to your `gitbucket/.git/info/exclude` so as not to commit this file.
+It's good to add `src/main/webapp/WEB-INF/jetty-web.xml` to your `gitbucket/.git/info/exclude` not to commit this file.
 
 ## Introduce JRebel
 
-JRebel makes class reloading without restart JavaVM. It makes quick development cycle for JVM based applications. It can be used free for personal, non-comercial use.
+JRebel allows class reloading without restarting the JavaVM. It makes quick development cycle for JVM based applications. It can be used free for personal, non-commercial use.
 
 1. Sign into myJRebel: [https://my.jrebel.com/](https://my.jrebel.com/)
 2. You can get a license key at `Install and Activate` and download JRebel by `"Download jrebel"` (not a licence server) from [https://zeroturnaround.com/software/jrebel/download/#!/have-license](https://zeroturnaround.com/software/jrebel/download/#!/have-license).
@@ -148,9 +148,9 @@ Listening for transport dt_socket at address: 5005
 
 This means "Watching source code and when modified, run `webappPrepare`".
 
-In this state, try to modify `src/main/twirl/gitbucket/core/main.scala.html` and reload your browser. You will know modification is applied faster than the case of `~jetty:start`.
+In this state, try to modify `src/main/twirl/gitbucket/core/main.scala.html` and reload gitbucket application in your browser (normally F5 to reload page). You will see that modifications are applied faster than in the case of `~jetty:start` usage.
 
-Although JRebel can reload class, it can't initialize related classes. For example, if you add a new controller, it's not applied.  Also sometimes JRebel causes NoClassDefined error casused in cached classes's inconsistency. In that case, once stop `~webappPrepare` (by ENTER key) and restart Jetty by `jetty:start`.
+Although JRebel can reload classes, it can't initialize related classes (not in current version of JRebel). For example, if you add a new controller, it is not applied.  Also sometimes JRebel causes NoClassDefined error caused by cached classes inconsistency. In that case, once stop `~webappPrepare` (by ENTER key) and restart Jetty by `jetty:start`.
 
 ## Structure of source tree of GitBucket
 
@@ -174,43 +174,43 @@ We will edit files under `src/main/scala` in following sections mainly. HTML fil
 
 ## View template (Twirl)
 
-GitBucket is adopting [Twirl](https://www.playframework.com/documentation/2.5.x/ScalaTemplates) as view template. This had been a part of Play Framework originally. We can embeds Scala code to HTML in Twirl template.
+GitBucket is adopting [Twirl](https://www.playframework.com/documentation/2.5.x/ScalaTemplates) as view template. This had been part of Play Framework originally. We can embed Scala code to HTML in Twirl template.
 
-The basic Scala syntax is not do difficult. If you have experience of other programming languages such as JavaScript or Ruby, you will be able to understand it.
+The basic Scala syntax is not too difficult. If you have experience in other programming languages such as Java, JavaScript or Ruby, you will be able to understand it.
 
-I recommend you to use IDE if you want to edit Scala code. But if you edit only view templates, text editors such as vim or sublime text are enough (In fact, I'm using sublime text with [ensime](http://ensime.org/editors/sublime/) plug-in).
+I recommend you to use an IDE if you want to edit Scala code. But if you edit only view templates, text editors such as vim or sublime text are enough (In fact, I'm using sublime text with [ensime](http://ensime.org/editors/sublime/) plug-in).
 
-Twirl is similar to JSP or ERB. It recognize parts after `@` as Scala code and process them in nice touch. File extension must be `.scala.html` and put under `src/main/twirl/gitbucket/core`.
+Twirl is similar to JSP or ERB. It recognizes parts after `@` as Scala code and process them in nice touch. File extension must be `.scala.html` and put under `src/main/twirl/gitbucket/core`.
 
 As a test, modify `src/main/twirl/gitbucket/core/main.scala.html` a little and reload your browser. You will see a modified result.
 
 - If `@` appears, there are Scala for a while. In particular:
   - Variable name:
-  
+
     ```html
     <h1>@value1</h1>
     ```
-    
+
   - Function name + arguments:
-  
+
     ```html
     <h1>@func1(value1)</h1>
     ```
-    
+
   - Function name (+ arguments) + block:
-  
+
     ```html
     <ol>@func1(value1){ value2 => <li>@value2</li> }</o1>
     ```
-    
+
   - Match expression:
-  
+
     ```html
-    <p>@value1 match { case condisiton-expression => <span>@condition</span> }</p>
+    <p>@value1 match { case condition-expression => <span>@condition</span> }</p>
     ```
-    
+
   - Brackets:
-   
+
     ```html
     <h1>@(value1 + value2)</h1>
     ```
@@ -224,7 +224,7 @@ Let's look an actual template:
 <h1>@title</h1>
 ```
 
-The first line is decralation of arguments. Arguments are passed from controllers. This template is converted as (although it is not accurate, it is simplified for explanation here):
+The first line is a declaration of arguments. Arguments are passed from controllers. This template is converted as (although it is not accurate, it is simplified for explanation here):
 
 ```scala
 def view(title: String){
@@ -242,7 +242,7 @@ A part that actually uses this argument is `<h1>@title</h1>`. When rewritten in 
 
 In Twirl, values are escaped automatically for XSS protection.
 
-It's also available functio call, if or for expression after `@`:
+Expressions like _if_ or _for_ can also be used after `@`:
 
 ```html
 @for(order <- orders) {
@@ -256,15 +256,15 @@ See [the template engine](https://www.playframework.com/documentation/2.5.x/Scal
 
 Yes. We shouldn't write complex logic in view template. Of course, view templates in GitBucket don't contain much complex logic (Maybe... I believe so).
 
-GitBucket UI is based on [Bootstrap](http://getbootstrap.com/) and using jQuery in JavaScript.
+GitBucket UI is based on [Bootstrap](http://getbootstrap.com/) and uses jQuery in JavaScript for some dynamic usages.
 
 In this section, you learned Twirl and basis of GitBucket UI. Now you can change UI, replace a logo or change small behavior of GitBucket.
 
 ## Controller (Scalatra web framework)
 
-GitBucket uses [Scalatra](http://www.scalatra.org/) web framework. Scalatra is a web framework for Scala inspired by Ruby's Sinatra. In Scala, Play is a major web framework. Play is based on non-blocking I/O, but since Scalatra is based on Java servlet, it can make use of existing servlet based resources. For example, GitBucket is contains JGitServlet which is provided by JGit.
+GitBucket uses [Scalatra](http://www.scalatra.org/) web framework. Scalatra is a web framework for Scala inspired by Ruby's Sinatra. In Scala, Play is a major web framework. Play is based on non-blocking I/O, but since Scalatra is based on Java servlet, it can make use of existing servlet based resources. For example, GitBucket uses JGitServlet which is provided by JGit.
 
-You can write servlet very easy as following:
+You can write servlet very easily as following:
 
 ```scala
 class MyController extends ScalatraServlet with ScalateSupport {
@@ -291,7 +291,7 @@ class MyController extends ScalatraServlet, ScalateSupport {
 }
 ```
 
-If you have experience of web application development, you can understand what this code is doing. In Scala, we can write constructor statements in the class definition directory, so DSL such as above example makes easy.
+If you have experience in web application development, you can understand what this code is doing. In Scala, we can write constructor statements in the class definition directory, so DSL such as above example makes easy.
 
 In GitBucket, you have to put this controllers into `src/main/scala/gitbucket/core/controller/MyController.scala`.
 
@@ -331,7 +331,7 @@ You can call a function which is compiled from this template in a controller as 
 
 Put this controller into `src/main/scala/gitbucket/core/IndexController.scala` and open `/hoge` in your browser. You will see `Hello World`.
 
-Twirl recognize parts of after `@` as Scala code and process them in nice touch. Almost template files in `src/twirl/gitbucket/core` are matched with url. Try to see pages you care about on GitBucket.
+Twirl recognize parts after `@` as Scala code and process them in nice touch. Almost template files in `src/twirl/gitbucket/core` are matched with url. Try to see pages you care about on GitBucket.
 
 In Scalatra, you can retreive request parameters as following:
 
@@ -347,4 +347,4 @@ OK. You can now create a controller which receives a request and returns a view 
 
 ----
 
-Welcome! This is a first step to development of GitBucket and Scala. Let's feel free to try and enjoy Scala programming on GitBucket!
+Welcome! This is a first step to development of GitBucket and Scala. Feel free to try and enjoy Scala programming on GitBucket!
