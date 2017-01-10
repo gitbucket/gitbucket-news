@@ -291,7 +291,7 @@ class MyController extends ScalatraServlet, ScalateSupport {
 }
 ```
 
-If you have experience in web application development, you can understand what this code is doing. In Java, we have to write routing definition in constructor in Java. On the other hand, in Java, we can write routing definition more simply because class body is constructor in Scala.
+If you have experience in web application development, you can understand what this code is doing. In Java, we have to write the routing definition inside the constructor using some anonymous class and quite a verbose syntax. On the other hand, we can write the routing definition more simply in Scala using the fact that the constructor is the class body; leading in far more readable syntax.
 
 In GitBucket, you have to put this controllers into `src/main/scala/gitbucket/core/controller/MyController.scala`.
 
