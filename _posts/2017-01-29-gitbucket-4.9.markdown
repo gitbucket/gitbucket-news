@@ -34,7 +34,18 @@ Color of issues and pull request labels is now editable by color code directly.
 
 ![Edit label color by color code]({{site.baseurl}}/images/gitbucket-4.9/edit-label-color.png)
 
+## Account description
+
+Added a description field for groups. Also added a bio field for personal accounts. They are displayed on the account page.
+
+![Account description]({{site.baseurl}}/images/gitbucket-4.9/account-description.png)
+
 ## More APIs for issues
+
+Following APIs for issues are added in this release:
+
+- [List issues for a repository](https://developer.github.com/v3/issues/#list-issues-for-a-repository)
+- [Create an issue](https://developer.github.com/v3/issues/#create-an-issue)
 
 In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.9) to know details.
 
