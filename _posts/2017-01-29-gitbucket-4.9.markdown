@@ -1,0 +1,58 @@
+---
+layout: post
+title: "GitBucket 4.9 released!"
+date: 2017-01-29 00:00:00
+image: /images/gitbucket-4.9/blob-view.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 4.9](https://github.com/gitbucket/gitbucket/releases/tag/4.9)!
+
+## GitLFS support
+
+Experimental suppoort of GitLFS is now available.
+
+You have to fill the base url of your GitBucket instance at the system settings page to enable GitLFS support.
+
+![GitLFS configuration]({{site.baseurl}}/images/gitbucket-4.9/baseurl.png)
+
+It’s all. Now you can use GitLFS on GitBucket. Large files are stored under `GITBUCKET_HOME/repositories/<user>/<repository>/lfs`. At the blob view of the repository viewer, LFS badge is shown for LFS files as following:
+
+![Blob view]({{site.baseurl}}/images/gitbucket-4.9/blob-view.png)
+
+We are planning an option to store large files to the storage other than local file system such as the distributed file system or the cloud storage.
+
+## Template for issues and pull requests
+
+It's possible to define a template of issues and pull requests by adding a file called `ISSUES_TEMPLATE` to the root directory of your git repository. A defined template is shown as a initial value of the description of new issue or pull request.
+
+![Issue template]({{site.baseurl}}/images/gitbucket-4.9/issue-template.png)
+
+## Manual label color editing
+
+Color of issues and pull request labels became editable by color code directly.
+
+![Edit label color by color code]({{site.baseurl}}/images/gitbucket-4.9/edit-label-color.png)
+
+## Account description
+
+Added a description field for groups. Also added a bio field for personal accounts. They are displayed on the account page.
+
+![Account description]({{site.baseurl}}/images/gitbucket-4.9/account-description.png)
+
+## --tmp-dir option for standalone mode
+
+Added `--temp_dir` option for the standalone mode running on the embedded Jetty.
+
+In default, the embedded Jetty unpack gitbucket.war into `GITBUCKET_HOME/tmp`. You can change the target directory by this option.
+
+## More APIs for issues
+
+Following APIs for issues are added in this release:
+
+- [List issues for a repository](https://developer.github.com/v3/issues/#list-issues-for-a-repository)
+- [Create an issue](https://developer.github.com/v3/issues/#create-an-issue)
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.9) to know details.
+
+Enjoy GitBucket!
