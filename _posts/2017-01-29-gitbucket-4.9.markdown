@@ -26,11 +26,11 @@ We are planning an option to store large files to the storage other than local f
 
 It's possible to define a template of issues and pull requests by adding a file called `ISSUES_TEMPLATE` to the root directory of your git repository. A defined template is shown as a initial value of the description of new issue or pull request.
 
-> TODO: image
+![Issue template]({{site.baseurl}}/images/gitbucket-4.9/issue-template.png)
 
 ## Manual label color editing
 
-Color of issues and pull request labels is now editable by color code directly.
+Color of issues and pull request labels became editable by color code directly.
 
 ![Edit label color by color code]({{site.baseurl}}/images/gitbucket-4.9/edit-label-color.png)
 
