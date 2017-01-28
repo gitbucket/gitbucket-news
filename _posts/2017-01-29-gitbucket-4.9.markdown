@@ -40,6 +40,12 @@ Added a description field for groups. Also added a bio field for personal accoun
 
 ![Account description]({{site.baseurl}}/images/gitbucket-4.9/account-description.png)
 
+## --tmp-dir option for standalone mode
+
+Added `--temp_dir` option for the standalone mode running on the embedded Jetty.
+
+In default, the embedded Jetty unpack gitbucket.war into `GITBUCKET_HOME/tmp`. You can change the target directory by this option.
+
 ## More APIs for issues
 
 Following APIs for issues are added in this release:
