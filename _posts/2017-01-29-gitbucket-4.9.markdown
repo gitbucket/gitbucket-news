@@ -24,7 +24,7 @@ We are planning an option to store large files to the storage other than local f
 
 ## Template for issues and pull requests
 
-It's possible to define a template of issues and pull requests by adding a file called `ISSUES_TEMPLATE` to the root directory of your git repository. A defined template is shown as a initial value of the description of new issue or pull request.
+It's possible to define a template of issues and pull requests by adding a file called `ISSUE_TEMPLATE`, `ISSUE_TEMPLATE.md` or `ISSUE_TEMPLATE.markdown` to the root directory or `.gitbucket` directory of your git repository. A defined template is shown as a initial value of the description of new issue or pull request.
 
 ![Issue template]({{site.baseurl}}/images/gitbucket-4.9/issue-template.png)
 
