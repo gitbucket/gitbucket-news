@@ -1,0 +1,30 @@
+---
+layout: post
+title: "GitBucket 4.10 released!"
+date: 2017-02-25 00:00:00
+image: /images/gitbucket-4.10/filesize.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 4.10](https://github.com/gitbucket/gitbucket/releases/tag/4.10)!
+
+## Update to Scala 2.12, Scalatra 2.5 and Slick 3.2.0
+
+Scala version has been updated to 2.12. Also Scalatra and Slick have been updated to Scalatra 2.5 and blocking-slick 0.0.7 (Slick 3.2.0-RC1).
+
+By this change, plug-ins compatibility has been broken. If your plug-in hasn't used Slick query, it will be work on GitBucket 4.10 only recompile simply. Otherwise, you have to update your code to use blocking-slick.
+
+[blocking-slick](https://github.com/takezoe/blocking-slick) is a library that provides Slick2 compatible blocking API on Slick3. Slick2 isn't already maintained any longer and not published Scala 2.12 version, so we had to move to Slick3 to update Scala to 2.12. Also query compiler has been improved in Slick3, it might bring performance advantage.
+
+Just for this purpose, we made blocking-slick. It provides Slick2 compatible API as much as possible, but you have to rewrite some code. Check [this pull request](https://github.com/gitbucket/gitbucket/pull/1381/files) to know how to migrate your Slick2 based code to blocking-slick.
+
+## Display file size in the file viewer
+
+File size has been added to the blob view of the repository viewer:
+
+![File size]({{site.baseurl}}/images/gitbucket-4.10/filesize.png)
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.10) to know details.
+
+Enjoy GitBucket!
+
