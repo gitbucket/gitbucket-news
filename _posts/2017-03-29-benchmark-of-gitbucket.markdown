@@ -186,7 +186,7 @@ In Gogs, the server returned 500 but it's resistered normally.
 
 GitLab was much slower than others. I removed GitLab from the graph because I want like to compare others.
 
-![Rssults exclude GitLab]({{site.baseurl}}/images/benchmark-of-gitbucket/issue-excludes-GitLab.png)
+![Rssults exclude GitLab]({{site.baseurl}}/images/benchmark-of-gitbucket/issue-excludes-gitlab.png)
 
 Although GitBucket doesn't good for the issues list, it looks good in the issue page. However Gogs / GitBucket is increasing linearly and Gitea is flat, so they might be slower than Gitea when comments are increased more.
 
