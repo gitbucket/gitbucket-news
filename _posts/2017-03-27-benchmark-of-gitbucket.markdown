@@ -141,11 +141,21 @@ Mem:           925        242        683         21          9        175
 Swap:           99          0         99
 ```
 
+GitLab
+
+```
+pi@raspberrypi:~ $ free -m
+             total       used       free     shared    buffers     cached
+Mem:           925        820        104         26         27        214
+-/+ buffers/cache:        579        346
+Swap:           99          0         99
+```
+
 ### Top page after logged-in
 
 At first, I measured time to just display the top page after logged-in on Chrome on MackBook. Reloaded 5 times for warm-up before testing. Then measure 5 times and took average of them.
 
-![Results of top page after logged-in](https://qiita-image-store.s3.amazonaws.com/0/53147/e33d4c2e-661d-e8f2-fac3-44044bd7d64f.png)
+![Results of top page after logged-in]({{site.baseurl}}/images/benchmark-of-gitbucket/toppage.png)
 
 GitLab is slow a little, but others looks roughly same.
 
@@ -153,11 +163,11 @@ GitLab is slow a little, but others looks roughly same.
 
 Created n repositories (n = 1, 10, 50, 100) by the test account and measured time to display the user page.
 
-Note that GitBucket displays all repositories at once, Gogs / Gitea paginates them.
+Note that GitBucket displays all repositories at once, but Gogs, Gitea and GitLab paginate them.
 
 In Gogs / Gitea, if API calls to create repository and requests from the browser to reference repositories are conflicted, it caused 500 Internal Server Error sometimes.
 
-![Results of user page by number of repositories](https://qiita-image-store.s3.amazonaws.com/0/53147/2c7a2600-8ced-6c2d-cc51-a2d9dd4dd519.png)
+![Results of user page by number of repositories]({{site.baseurl}}/images/benchmark-of-gitbucket/list-of-repositories.png)
 
 GitBucket is increasing linearly. Probably, a reason of this results is GitBucket is displaying all repositories at once.
 
@@ -165,7 +175,7 @@ GitBucket is increasing linearly. Probably, a reason of this results is GitBucke
 
 Created one repository by the test account and created n issues (n = 1, 10, 50, 100) in that repository. Then measured time to display the issue list page.
 
-![Results of issue list page by number of issues](https://qiita-image-store.s3.amazonaws.com/0/53147/1f47ed6f-d7a4-8c18-6d0a-93f103e549d1.png)
+![Results of issue list page by number of issues]({{site.baseurl}}/images/benchmark-of-gitbucket/list-of-issues.png)
 
 Although issues are paginated in all products, GitLab looks to be increasing linearly. And GitBucket is slower than Gogs / Gitea.
 
@@ -175,11 +185,11 @@ Created one repository by the test account, and created 1 issue in the repositor
 
 In Gogs, the server returned 500 but it's resistered normally.
 
-![Rssults of individual issue by number of comments](https://qiita-image-store.s3.amazonaws.com/0/53147/182c2f9c-848d-dc7a-d433-6ab3431fe0ae.png)
+![Rssults of individual issue by number of comments]({{site.baseurl}}/images/benchmark-of-gitbucket/issue.png)
 
 GitLab was much slower than others. I removed GitLab from the graph because I want like to compare others.
 
-![Rssults without GitLab](https://qiita-image-store.s3.amazonaws.com/0/53147/b734c14f-880e-4062-4e7d-4885793edb59.png)
+![Rssults exclude GitLab]({{site.baseurl}}/images/benchmark-of-gitbucket/issue-excludes-GitLab.png)
 
 Although GitBucket doesn't good for the issues list, it looks good in the issue page. However Gogs / GitBucket is increasing linearly and Gitea is flat, so they might be slower than Gitea when comments are increased more.
 
@@ -187,17 +197,17 @@ Although GitBucket doesn't good for the issues list, it looks good in the issue 
 
 Measured time to push [this repository](https://github.com/gitbucket/gitbucket) and clone that repository via both HTTP and SSH. This test results was taken from only one execution.
 
-![push-http](https://qiita-image-store.s3.amazonaws.com/0/53147/3af7a504-568a-28f0-1e95-c610ff46a116.png)
+![push-http]({{site.baseurl}}/images/benchmark-of-gitbucket/push-http.png)
 
-![clone-http](https://qiita-image-store.s3.amazonaws.com/0/53147/8f4b11ee-4cc3-e8c5-26e9-8935bc1bbcb3.png)
+![clone-http]({{site.baseurl}}/images/benchmark-of-gitbucket/clone-http.png)
 
-![push-ssh](https://qiita-image-store.s3.amazonaws.com/0/53147/602e9010-6d8d-2700-35ef-d0d0a2b9a3af.png)
+![push-ssh]({{site.baseurl}}/images/benchmark-of-gitbucket/push-ssh.png)
 
-![clone-ssh](https://qiita-image-store.s3.amazonaws.com/0/53147/256d24d3-d296-8772-fea0-7656a2a25246.png)
+![clone-ssh]({{site.baseurl}}/images/benchmark-of-gitbucket/clone-ssh.png)
 
 In pushing via HTTP, GitLab is much slow, others are side by side. In cloning via HTTP, all products are side by side. In pushing / cloning via SSH, GitLab is slow. Gogs looks better in others, but it might be an error of measurement.
 
-I got errors in pushing to Gitea, but it looked to be working fine.
+I got error messages in pushing to Gitea, but it looked to be working fine.
 
 ## Conclusion
 
