@@ -2,12 +2,11 @@
 layout: post
 title: "Benchmark of GitBucket / Gogs / Gitea / GitLab on Raspberry Pi 3"
 date: 2017-03-29 00:00:00
-image: https://qiita-image-store.s3.amazonaws.com/0/53147/e33d4c2e-661d-e8f2-fac3-44044bd7d64f.png
+image: /images/benchmark-of-gitbucket/toppage.png
 categories: gitbucket
 ---
-Translated from a Japanese article by [@kounoike](https://github.com/kounoike).
 
-http://qiita.com/kounoike/items/7c42db90c42e280e1cab
+This article was translated from a Japanese article by [@kounoike](https://github.com/kounoike) on Qiita. The original article is [here](http://qiita.com/kounoike/items/7c42db90c42e280e1cab).
 
 ## Introduction
 

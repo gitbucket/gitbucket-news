@@ -5,9 +5,7 @@ date: 2017-01-10 00:00:00
 categories: gitbucket
 ---
 
-Translated from original article by [@nazoking](https://github.com/nazoking) on Qiita in Japanese.
-
-[http://qiita.com/nazoking@github/items/4518266ff0f4fd92bd0a](http://qiita.com/nazoking@github/items/4518266ff0f4fd92bd0a)
+This article was translated from Japanese article by [@nazoking](https://github.com/nazoking) on Qiita. The original article is [here](http://qiita.com/nazoking@github/items/4518266ff0f4fd92bd0a).
 
 ## What's GitBucket?
 

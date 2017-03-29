@@ -8,7 +8,7 @@ categories: gitbucket
 
 Happy new year, everyone! We are going to do GitBucket as usual in 2017 as well.
 
-By the way, I'm working for [GitLFS support](https://github.com/gitbucket/gitbucket/pull/1401) in GitBucket these days. I would like to talk about it today.
+By the way, I'm working for [GitLFS support](https://github.com/gitbucket/gitbucket/pull/1401) in GitBucket these days. I would like to talk about it today.
 
 ## Think about GitLFS support in GitBucket
 
