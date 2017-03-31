@@ -22,7 +22,7 @@ If gravatar settings is off and user hasn't upload an image, it's auto generated
 
 ![Auto generated avatar images]({{site.baseurl}}/images/gitbucket-4.11/avatar.png)
 
-## Collaborator of the private forked repository
+## Collaborators are copied for private forked repository
 
 When you fork a private repository, the forked repository takes over collaborators of the original repository since this version.
 
@@ -44,7 +44,7 @@ In addition, GitBucket has added the hash value calculated from the startup time
 
 This makes sure to reload assets when they are updated.
 
-## Repository event hook
+## New extension point to receive events about repository
 
 Added new extension point for plug-ins to hook events about repository.
 
