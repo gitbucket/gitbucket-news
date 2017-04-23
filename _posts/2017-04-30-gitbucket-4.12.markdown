@@ -1,0 +1,31 @@
+---
+layout: post
+title: "GitBucket 4.12 released!"
+date: 2017-04-30 00:00:00
+image: /images/gitbucket-4.12/gist_embed_javascript.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 4.12](https://github.com/gitbucket/gitbucket/releases/tag/4.12)!
+
+## Gist plug-in provides JavaScript to embed snippet
+
+Gist plug-in has been updated with GitBucket 4.12. In this update, JavaScript to embed snippet has been available.
+
+You can get the JavaScript for embedding from the sidebar of snippet.
+
+![Get JavaScript]({{site.baseurl}}/images/gitbucket-4.12/gist_embed_javascript.png)
+
+And paste it to the web page. Then embeded snippet is displayed as following:
+
+![Embedded snippet]({{site.baseurl}}/images/gitbucket-4.12/gist_embedded_snippet.png)
+
+## Caution for the embedded H2 database
+
+In default, GitBucket works with H2 database in embed mode. However we recommend to use MySQL or PostgreSQL if you want to use GitBucket in important use because H2 has possibility of breaking data when JVM which is working under GitBucket is crashed. So if your GitBucket is working with the embedded H2 database, you will find a caution at the administration console.
+
+![Caution for database configuration]({{site.baseurl}}/images/gitbucket-4.12/h2_caution.png)
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.12) to know details.
+
+Enjoy GitBucket!
