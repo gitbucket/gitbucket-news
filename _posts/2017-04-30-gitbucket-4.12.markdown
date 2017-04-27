@@ -20,6 +20,13 @@ And paste it to the web page. Then embeded snippet is displayed as following:
 
 ![Embedded snippet]({{site.baseurl}}/images/gitbucket-4.12/gist_embedded_snippet.png)
 
+## Dropdown menu filter in the branch comparing page
+
+Filter box is available in "base fork:" "base:" "head fork:" "compare:" menus in the branch comparing page.
+
+![Dropdown menu filter in branch comparing page]({{site.baseurl}}/images/gitbucket-4.12/branch_comparing_filter.png)
+
+
 ## Caution for the embedded H2 database
 
 In default, GitBucket works with H2 database in embed mode. However we recommend to use MySQL or PostgreSQL if you want to use GitBucket in important use because H2 has possibility of breaking data when JVM which is working under GitBucket is crashed. So if your GitBucket is working with the embedded H2 database, you will find a caution at the administration console.
