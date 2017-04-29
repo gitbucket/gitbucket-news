@@ -10,7 +10,7 @@ Today, we are pleased to announce the availability of new version of Scala based
 
 ## Gist plug-in provides JavaScript to embed snippet
 
-Gist plug-in has been updated with GitBucket 4.12. In this update, JavaScript to embed snippet has been available.
+[Gist plug-in](https://github.com/gitbucket/gitbucket-gist-plugin) has been updated with GitBucket 4.12. In this update, JavaScript to embed snippet has been available.
 
 You can get the JavaScript for embedding from the sidebar of snippet.
 
