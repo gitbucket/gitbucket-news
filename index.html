@@ -12,6 +12,10 @@ layout: default
       <li>
         <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <blockquote>
+          {{post.content | strip_html | truncatewords: 40}}
+        </blockquote>
+        <a href="{{ post.url | prepend: site.baseurl }}">Read more...</a>
       </li>
     {% endfor %}
   </ul>

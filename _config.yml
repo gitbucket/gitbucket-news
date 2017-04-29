@@ -9,7 +9,7 @@ baseurl: "/gitbucket-news"
 markdown: kramdown
 #permalink: prettay
 
-paginate: 10
+paginate: 5
 
 kramdown:
   input: GFM
