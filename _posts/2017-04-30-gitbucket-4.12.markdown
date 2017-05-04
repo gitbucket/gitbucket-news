@@ -6,6 +6,9 @@ image: /images/gitbucket-4.12/gist_embed_javascript.png
 categories: gitbucket
 ---
 
+> We've already released 4.12.1 because 4.12 had an issue in redirection. Please use it instead.
+> [https://github.com/gitbucket/gitbucket/releases/tag/4.12.1](https://github.com/gitbucket/gitbucket/releases/tag/4.12.1)
+
 Today, we are pleased to announce the availability of new version of Scala based Git platform [GitBucket 4.12](https://github.com/gitbucket/gitbucket/releases/tag/4.12)!
 
 ## Gist plug-in provides JavaScript to embed snippet
