@@ -1,0 +1,35 @@
+---
+layout: post
+title: "GitBucket 4.13 released!"
+date: 2017-05-29 00:00:00
+image: /images/gitbucket-4.13/file_upload_2.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.13](https://github.com/gitbucket/gitbucket/releases/tag/4.13)!
+
+## Uploading files into the repository
+
+We can upload local files to the repository by drag and drop on the repository viewer.
+
+![File uploading (1)]({{site.baseurl}}/images/gitbucket-4.13/file_upload_1.png)
+
+![File uploading (2)]({{site.baseurl}}/images/gitbucket-4.13/file_upload_2.png)
+
+## HTML is available in Markdown
+
+Since the latest version of [markedj](https://github.com/gitbucket/markedj) which is a Java based Markdown parsing and rendering library used in GitBucket supports whitelist based HTML rendering, Now we can put some HTML tags in Markdown.
+
+![HTML in Matkdown (1)]({{site.baseurl}}/images/gitbucket-4.13/html_in_markdown_1.png)
+
+![HTML in Markdown (2)]({{site.baseurl}}/images/gitbucket-4.13/html_in_markdown_2.png)
+
+## Added filter box to dowpdown menus
+
+The filter box became available at almost dropdown lists.
+
+![Dropdown filter]({{site.baseurl}}/images/gitbucket-4.13/dropdown_filter.png)
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.13) to know details.
+
+Enjoy GitBucket!
