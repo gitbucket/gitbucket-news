@@ -2,23 +2,27 @@
 layout: post
 title: "GitBucket 4.14 released!"
 date: 2017-07-01 00:00:00
-image: /images/gitbucket-4.13/file_upload_2.png
+image: /images/gitbucket-4.14/issues_priority_1.png
 categories: gitbucket
 ---
 
 Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.14](https://github.com/gitbucket/gitbucket/releases/tag/4.14)!
 
-## Collapsed sidebar
-
-Show icons when the sidebar is collapsed.
-
-> TODO: Image
-
 ## Issue priorities
 
 The priority field is available in issues and pull requests. You can filter and sort issues and pull requests by the priority.
 
-> TODO: Image
+![Priorities]({{site.baseurl}}/images/gitbucket-4.14/issues_priority_1.png)
+
+![Set priority]({{site.baseurl}}/images/gitbucket-4.14/issues_priority_2.png)
+
+## Collapsed sidebar
+
+Show icons when the sidebar is collapsed.
+
+![Collapsed sidebar]({{site.baseurl}}/images/gitbucket-4.14/collapsed_sidebar__1.png)
+
+![Hover menu item]({{site.baseurl}}/images/gitbucket-4.14/collapsed_sidebar_2.png)
 
 ## Web hook enhancement
 
