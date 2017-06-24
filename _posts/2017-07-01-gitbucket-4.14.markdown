@@ -20,7 +20,7 @@ The priority field is available in issues and pull requests. You can filter and 
 
 Show icons when the sidebar is collapsed.
 
-![Collapsed sidebar]({{site.baseurl}}/images/gitbucket-4.14/collapsed_sidebar__1.png)
+![Collapsed sidebar]({{site.baseurl}}/images/gitbucket-4.14/collapsed_sidebar_1.png)
 
 ![Hover menu item]({{site.baseurl}}/images/gitbucket-4.14/collapsed_sidebar_2.png)
 
@@ -29,7 +29,9 @@ Show icons when the sidebar is collapsed.
 This release includes following enhancement for web hook:
 
 - Support gollum events (gollum events are events caused by Wiki operation)
-- Support avvount (user / group) level web hook
+- Support account (user / group) level web hook
+
+![User's webhook configuration]({{site.baseurl}}/images/gitbucket-4.14/account_webhook.png)
 
 ## Add --max_file_size option
 
