@@ -43,7 +43,7 @@ java -jar gitbucket.war --max_file_size=10485760
 
 Also it can be configured by a system property `gitbucket.maxFileSize`. If you are deployong GitBucket on the servlet container, you can configure this way.
 
-## Configure by system property or environment variable
+## Configuration by system property or environment variable
 
 All settings in `gitbucket.conf` and `database.conf` are configurable by system property or environment variable.
 
