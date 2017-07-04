@@ -6,6 +6,9 @@ image: /images/gitbucket-4.14/issues_priority_1.png
 categories: gitbucket
 ---
 
+> We've already released 4.14.1 because 4.14 had a possibility bug to fail to fork repository. Please use it instead.
+> [https://github.com/gitbucket/gitbucket/releases/tag/4.14.1](https://github.com/gitbucket/gitbucket/releases/tag/4.14.1)
+
 Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.14](https://github.com/gitbucket/gitbucket/releases/tag/4.14)!
 
 ## Issue priorities
