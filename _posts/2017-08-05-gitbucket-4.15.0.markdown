@@ -16,15 +16,23 @@ Following plugins are bundled with the GitBucket distribution (`gitbucket.war`).
 
 ## Notifications plugin
 
-E-mail notification is separated as [gitbucket-notifications-plugin](https://github.com/gitbucket/gitbucket-notifications-plugin) and it's bundled with the GitBucket distribution.
+E-mail notification is separated as [gitbucket-notifications-plugin](https://github.com/gitbucket/gitbucket-notifications-plugin) and it's bundled with the GitBucket distribution. This plugin offers capability to turn onn / off e-mail notifications for each project or issue / pull request.
 
-> TODO: Image
+![Watch project]({{site.baseurl}}/images/gitbucket-4.15.0/notifications_1.png)
+
+![Watch issue or pull request]({{site.baseurl}}/images/gitbucket-4.15.0/notifications_2.png)
 
 ## Plugin hot deployment
 
+You can install or uninstall plugins without rebooting GitBucket. You can install plugins by just putting a plugin jar file into `GITBUCKET_HOME/plugins`, and uninstall by removing a plugin jar file.
+
+> TODO: About --plugin_dir option
 
 ## Markdown preview in comment editing forms
 
+So far, new issue or comment forms were preview-able, but editing forms were just a textarea. In this release, these textareas became preview-able as well.
+
+> TODO: Image
 
 ## Support ed25519 keys for SSH
 
