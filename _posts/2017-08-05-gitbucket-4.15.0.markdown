@@ -26,7 +26,19 @@ E-mail notification is separated as [gitbucket-notifications-plugin](https://git
 
 You can install or uninstall plugins without rebooting GitBucket. You can install plugins by just putting a plugin jar file into `GITBUCKET_HOME/plugins`, and uninstall by removing a plugin jar file.
 
-> TODO: About --plugin_dir option
+Also `--plugin_dir` option has been added for plugin development. GitBucket can load plugins from a directory which is specified by this option. When you are developing a plugin, we recommend to run GitBucket as follows:
+
+```
+$ java -jar gitbucket.war --plugin_dir=<YOUR_PLUGIN_PROJECT_DIR>/target/scala-2.12
+```
+
+and run sbt to build your plugin as:
+
+```
+$ sbt ~package
+```
+
+Then sbt packages your plugin when you modify source code and GitBucket reloads it automatically. Copying a jar file to the plugin directory or restarting GitBucket is no longer necesarry to test your plugin.
 
 ## Markdown preview in comment editing forms
 
