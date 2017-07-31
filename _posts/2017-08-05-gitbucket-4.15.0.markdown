@@ -10,7 +10,14 @@ Today, we are pleased to announce the availability of new version of Scala based
 
 ## Bundle GitBucket organization plugins
 
-Following plugins are bundled with the GitBucket distribution (`gitbucket.war`). You can use these plugins in default. Of course, you can also disable these plugins in the administration console:
+Following plugins are bundled with the GitBucket distribution (`gitbucket.war`).
+
+- [gitbucket-gist-plugin](https://github.com/gitbucket/gitbucket-gist-plugin)
+- [gitbucket-emoji-plugin](https://github.com/gitbucket/gitbucket-emoji-plugin)
+- [gitbucket-pages-plugin](https://github.com/gitbucket/gitbucket-pages-plugin)
+- [gitbucket-notifications-plugin](https://github.com/gitbucket/gitbucket-notifications-plugin)
+
+These plugins can be enabled / disabled in the administration console:
 
 ![Bindled plugins]({{site.baseurl}}/images/gitbucket-4.15.0/plugins.png)
 
