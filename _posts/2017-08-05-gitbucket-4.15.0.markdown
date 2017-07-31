@@ -2,7 +2,7 @@
 layout: post
 title: "GitBucket 4.15.0 released!"
 date: 2017-08-05 00:00:00
-image: /images/gitbucket-4.14/issues_priority_1.png
+image: /images/gitbucket-4.15.0/plugins.png
 categories: gitbucket
 ---
 
@@ -12,7 +12,7 @@ Today, we are pleased to announce the availability of new version of Scala based
 
 Following plugins are bundled with the GitBucket distribution (`gitbucket.war`). You can use these plugins in default. Of course, you can also disable these plugins in the administration console:
 
-> TODO: Image
+![Bindled plugins]({{site.baseurl}}/images/gitbucket-4.15.0/plugins.png)
 
 ## Notifications plugin
 
@@ -40,14 +40,21 @@ $ sbt ~package
 
 Then sbt packages your plugin when you modify source code and GitBucket reloads it automatically. Copying a jar file to the plugin directory or restarting GitBucket is no longer necesarry to test your plugin.
 
+## Updated Slick to 3.2.1 from 3.2.0
+
+Slick (a database access library used in GitBucket) is updated to 3.2.1 from 3.2.0.
+
+**For plugin authors:** This version of Slick has no binary compatibility with a previous version, so many existing GitBucket plugins whould not work on GitBucket 4.15.0. Please update you plugins by rebuilding with GitBucket 4.15.0.
+
+## Support ed25519 keys for SSH
+
+ed25519 keys are now supported for git access via SSH.
+
 ## Markdown preview in comment editing forms
 
 So far, new issue or comment forms were preview-able, but editing forms were just a textarea. In this release, these textareas became preview-able as well.
 
-> TODO: Image
-
-## Support ed25519 keys for SSH
-
+![Editing forms became previewable]({{site.baseurl}}/images/gitbucket-4.15.0/preview-edit-form.png)
 
 In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.15) to know details.
 
