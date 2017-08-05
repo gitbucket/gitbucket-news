@@ -10,7 +10,7 @@ Today, we are pleased to announce the availability of new version of Scala based
 
 ## Bundle GitBucket organization plugins
 
-Following plugins are bundled with the GitBucket distribution (`gitbucket.war`).
+Following plugins are bundled with the GitBucket distribution:
 
 - [gitbucket-gist-plugin](https://github.com/gitbucket/gitbucket-gist-plugin)
 - [gitbucket-emoji-plugin](https://github.com/gitbucket/gitbucket-emoji-plugin)
