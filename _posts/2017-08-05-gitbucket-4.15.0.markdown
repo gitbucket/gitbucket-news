@@ -1,0 +1,68 @@
+---
+layout: post
+title: "GitBucket 4.15.0 released!"
+date: 2017-08-05 00:00:00
+image: /images/gitbucket-4.15.0/plugins.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.15.0](https://github.com/gitbucket/gitbucket/releases/tag/4.15.0)!
+
+## Bundle GitBucket organization plugins
+
+Following plugins are bundled with the GitBucket distribution (`gitbucket.war`).
+
+- [gitbucket-gist-plugin](https://github.com/gitbucket/gitbucket-gist-plugin)
+- [gitbucket-emoji-plugin](https://github.com/gitbucket/gitbucket-emoji-plugin)
+- [gitbucket-pages-plugin](https://github.com/gitbucket/gitbucket-pages-plugin)
+- [gitbucket-notifications-plugin](https://github.com/gitbucket/gitbucket-notifications-plugin)
+
+These plugins can be enabled / disabled in the administration console:
+
+![Bindled plugins]({{site.baseurl}}/images/gitbucket-4.15.0/plugins.png)
+
+## Notifications plugin
+
+E-mail notification is separated as [gitbucket-notifications-plugin](https://github.com/gitbucket/gitbucket-notifications-plugin) and it's bundled with the GitBucket distribution. This plugin offers capability to turn onn / off e-mail notifications for each project or issue / pull request.
+
+![Watch project]({{site.baseurl}}/images/gitbucket-4.15.0/notifications_1.png)
+
+![Watch issue or pull request]({{site.baseurl}}/images/gitbucket-4.15.0/notifications_2.png)
+
+## Plugin hot deployment
+
+You can install or uninstall plugins without rebooting GitBucket. You can install plugins by just putting a plugin jar file into `GITBUCKET_HOME/plugins`, and uninstall by removing a plugin jar file.
+
+Also `--plugin_dir` option has been added for plugin development. GitBucket can load plugins from a directory which is specified by this option. When you are developing a plugin, we recommend to run GitBucket as follows:
+
+```
+$ java -jar gitbucket.war --plugin_dir=<YOUR_PLUGIN_PROJECT_DIR>/target/scala-2.12
+```
+
+and run sbt to build your plugin as:
+
+```
+$ sbt ~package
+```
+
+Then sbt packages your plugin when you modify source code and GitBucket reloads it automatically. Copying a jar file to the plugin directory or restarting GitBucket is no longer necesarry to test your plugin.
+
+## Updated Slick to 3.2.1 from 3.2.0
+
+Slick (a database access library used in GitBucket) is updated to 3.2.1 from 3.2.0.
+
+**For plugin authors:** This version of Slick has no binary compatibility with a previous version, so many existing GitBucket plugins whould not work on GitBucket 4.15.0. Please update you plugins by rebuilding with GitBucket 4.15.0.
+
+## Support ed25519 keys for SSH
+
+ed25519 keys are now supported for git access via SSH.
+
+## Markdown preview in comment editing forms
+
+So far, new issue or comment forms were preview-able, but editing forms were just a textarea. In this release, these textareas became preview-able as well.
+
+![Editing forms became previewable]({{site.baseurl}}/images/gitbucket-4.15.0/preview-edit-form.png)
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.15) to know details.
+
+Enjoy GitBucket!
