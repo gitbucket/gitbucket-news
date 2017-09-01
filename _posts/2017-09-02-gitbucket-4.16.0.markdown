@@ -8,7 +8,7 @@ categories: gitbucket
 
 Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.16.0](https://github.com/gitbucket/gitbucket/releases/tag/4.16.0)!
 
-## AdminLTE color skin selector
+## Support AdminLTE color skin
 
 [AdminLTE](https://adminlte.io/) which is a pretty CSS theme used in GitBucket supports color skin. In GitBucket 4.16.0, it's possible to select which color skin is used at the administration console.
 
