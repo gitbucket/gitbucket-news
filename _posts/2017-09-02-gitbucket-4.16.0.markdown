@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "GitBucket 4.16.0 released!"
-date: 2017-08-05 00:00:00
-image: /images/gitbucket-4.16.0/plugins.png
+date: 2017-09-02 00:00:00
+image: /images/gitbucket-4.16.0/color_skin_green.png
 categories: gitbucket
 ---
 
@@ -12,21 +12,27 @@ Today, we are pleased to announce the availability of new version of Scala based
 
 [AdminLTE](https://adminlte.io/) which is a pretty CSS theme used in GitBucket supports color skin. In GitBucket 4.16.0, it's possible to select which color skin is used at the administration console.
 
-> TODO: Image
+![Select AdminLTE color skin]({{site.baseurl}}/images/gitbucket-4.16.0/color_skin_setting.png)
+
+This is a result of applying the green skin:
+
+![Green skin]({{site.baseurl}}/images/gitbucket-4.16.0/color_skin_green.png)
 
 ## Improve error log handling
 
-Unexpected errors are logged and shown on the screen for administrators in default.
+Unexpected errors are logged and shown on the screen for administrators.
 
-> TODO: Image
+![Stacktrace of unexpected error]({{site.baseurl}}/images/gitbucket-4.16.0/unexpected_error_stacktrace.png)
 
-Also you can configure that errors are shown for all users.
+![Unexpected errors are logged]({{site.baseurl}}/images/gitbucket-4.16.0/unexpected_error_log.png)
+
+In default, error details are shown for only administrators by security reason. However you can configure that errors are shown for all users too.
 
 ## Show commit status on the commits list
 
 Commit status (which shows build status etc...) are shown on the commits list.
 
-> TODO: Image
+![Commit status]({{site.baseurl}}/images/gitbucket-4.16.0/commit_status.png)
 
 In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.16) to know details.
 
