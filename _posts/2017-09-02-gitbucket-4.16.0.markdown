@@ -10,9 +10,23 @@ Today, we are pleased to announce the availability of new version of Scala based
 
 ## AdminLTE color skin selector
 
+[AdminLTE](https://adminlte.io/) which is a pretty CSS theme used in GitBucket supports color skin. In GitBucket 4.16.0, it's possible to select which color skin is used at the administration console.
+
+> TODO: Image
+
 ## Improve error log handling
 
+Unexpected errors are logged and shown on the screen for administrators in default.
+
+> TODO: Image
+
+Also you can configure that errors are shown for all users.
+
 ## Show commit status on the commits list
+
+Commit status (which shows build status etc...) are shown on the commits list.
+
+> TODO: Image
 
 In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.16) to know details.
 
