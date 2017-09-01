@@ -34,6 +34,6 @@ Commit status (which shows build status etc...) are shown on the commits list.
 
 ![Commit status]({{site.baseurl}}/images/gitbucket-4.16.0/commit_status.png)
 
-In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.16) to know details.
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.16.0) to know details.
 
 Enjoy GitBucket!
