@@ -26,8 +26,6 @@ Unexpected errors are logged and shown on the screen for administrators.
 
 ![Unexpected errors are logged]({{site.baseurl}}/images/gitbucket-4.16.0/unexpected_error_log.png)
 
-In default, error details are shown for only administrators by security reason. However you can configure that errors are shown for all users too.
-
 ## Show commit status on the commits list
 
 Commit status (which shows build status etc...) are shown on the commits list.
