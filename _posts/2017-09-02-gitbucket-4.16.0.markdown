@@ -1,0 +1,37 @@
+---
+layout: post
+title: "GitBucket 4.16.0 released!"
+date: 2017-09-02 00:00:00
+image: /images/gitbucket-4.16.0/color_skin_green.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.16.0](https://github.com/gitbucket/gitbucket/releases/tag/4.16.0)!
+
+## Support AdminLTE color skin
+
+[AdminLTE](https://adminlte.io/) which is a pretty CSS theme used in GitBucket supports color skin. In GitBucket 4.16.0, it's possible to select which color skin is used at the administration console.
+
+![Select AdminLTE color skin]({{site.baseurl}}/images/gitbucket-4.16.0/color_skin_setting.png)
+
+This is a result of applying the green skin:
+
+![Green skin]({{site.baseurl}}/images/gitbucket-4.16.0/color_skin_green.png)
+
+## Improve unexpected error handling
+
+Unexpected errors are logged and shown on the screen for administrators.
+
+![Stacktrace of unexpected error]({{site.baseurl}}/images/gitbucket-4.16.0/unexpected_error_stacktrace.png)
+
+![Unexpected errors are logged]({{site.baseurl}}/images/gitbucket-4.16.0/unexpected_error_log.png)
+
+## Show commit status on the commits list
+
+Commit status (which shows build status etc...) are shown on the commits list.
+
+![Commit status]({{site.baseurl}}/images/gitbucket-4.16.0/commit_status.png)
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.16.0) to know details.
+
+Enjoy GitBucket!
