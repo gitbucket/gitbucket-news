@@ -25,21 +25,17 @@ However, you must not use this plug-in in public environment because it allows e
 
 In addition, this plug-in is made to just test continious integration on GitBucket easily without complex settings of webhook or Jenkins. It doesn't have flexibility and scalability, and also has a security issue which is mentioned above. Therefore, if you like it and would like to use for your project actually, we recommend to setup Jenkins and move to it.
 
-## Transfer URL with commit ID
+## Transferring to URL with commit ID
 
 In the repository viewer, it can be move to the URL with commit ID by typing `y`. It's useful to share a URL which points a specific version of the file.
 
-> TODO: Image
-
 Also, move to the URL with commit ID when you choose a line number on the file viewer automatically.
 
-> TODO: Image
+![URL with commit ID]({{site.baseurl}}/images/gitbucket-4.17.0/url_with_commit_id.png)
 
 ## Drop uploadable file type limitation
 
 GitBucket had file type limitation in attachment, but this limitation has been dropped in this version. You can attach any types of files to any places of GitBucket such as issues, pull requests, comments and wiki.
-
-> TODO: Image
 
 ## Improve Mailer API
 
@@ -58,6 +54,8 @@ mailer.send(
 ```
 
 `Mailer` has also `sendBcc()` method which takes addresses as `Seq[String]` and send to these addresses with BCC.
+
+According to this improvement, bundled [gitbucket-notification-plugin](https://github.com/gitbucket/gitbucket-notifications-plugin) has been updated to 1.0.2.
 
 ## Web API and webhook enhancement
 
