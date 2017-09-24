@@ -2,7 +2,7 @@
 layout: post
 title: "GitBucket 4.17.0 released!"
 date: 2017-09-30 00:00:00
-image: /images/gitbucket-4.16.0/color_skin_green.png
+image: /images/gitbucket-4.17.0/gitbucket-ci-plugin_results.png
 categories: gitbucket
 ---
 
@@ -12,9 +12,9 @@ Today, we are pleased to announce the availability of new version of Scala based
 
 [gitbucket-ci-plugin](https://github.com/takezoe/gitbucket-ci-plugin) which offers simple continuous integration ability is available for GitBucket 4.17.0.
 
-> TODO: Image
+![Build results]({{site.baseurl}}/images/gitbucket-4.17.0/gitbucket-ci-plugin_results.png)
 
-> TODO: Image
+![Build output]({{site.baseurl}}/images/gitbucket-4.17.0/gitbucket-ci-plugin_output.png)
 
 It allows repository owners to configure build command, and run them at following timing:
 
