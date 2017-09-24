@@ -1,0 +1,70 @@
+---
+layout: post
+title: "GitBucket 4.17.0 released!"
+date: 2017-09-30 00:00:00
+image: /images/gitbucket-4.16.0/color_skin_green.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.17.0](https://github.com/gitbucket/gitbucket/releases/tag/4.17.0)!
+
+## gitbucket-ci-plugin is available
+
+[gitbucket-ci-plugin](https://github.com/takezoe/gitbucket-ci-plugin) which offers simple continuous integration ability is available for GitBucket 4.17.0.
+
+> TODO: Image
+
+> TODO: Image
+
+It allows repository owners to configure build command, and run them at following timing:
+
+- Push to the default branch
+- Push to the pull request branch
+
+However, you must not use this plug-in in public environment because it allows executing any commands on a GitBucket instance. It will be **a serious security hall**.
+
+In addition, this plug-in is made to just test contenious integration on GitBucket easily without complex settings of webhook or Jenkins. It doesn't have flexibility and scalability, and also has a security issue which is mentioned above. Therefore, if you like it and would like to use for your project actually, we recommend to setup Jenkins and move to it.
+
+## Transfer URL with commit ID
+
+In the repository viewer, it can be move to the URL with commit ID by typing `y`. It's useful to share a URL which points a specific version of the file.
+
+> TODO: Image
+
+Also, move to the URL with commit ID when you choose a line number on the file viewer automatically.
+
+> TODO: Image
+
+## Drop uploadable file type limitation
+
+GitBucket had file type limitation in attachement, but this limitation has been dropped in this version. You can attach any types of files to any places of GitBucket such as issues, pull requests, comments and wiki.
+
+> TODO: Image
+
+## Improve Mailer API
+
+GitBucket provides [Mailer API](https://github.com/gitbucket/gitbucket/blob/master/src/main/scala/gitbucket/core/util/Mailer.scala) for plug-ins and it became more general. It can be used as follows:
+
+```scala
+val mailer = new Mailer(context.settings)
+
+mailer.send(
+  to           = "...", 
+  subject      = "...", 
+  textMsg      = "...", 
+  htmlMsg      = Some("..."), 
+  loginAccount = context.loginAccount
+)
+```
+
+`Mailer` has also `sendBcc()` method which takes addresses as `Seq[String]` and send to these addresses with BCC.
+
+## Web API and webhook enhancement
+
+- Add get a single commit API
+- Includes `assignee` in pull request related APIs
+- Includes `ssh_url` to webhook payload
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.17.0) to know details.
+
+Enjoy GitBucket!
