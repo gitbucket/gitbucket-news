@@ -18,15 +18,19 @@ The reply form is displayed below review comments. You can reply to review comme
 
 In the username suggestion, a fullname of proposed users is displayed, not only a username.
 
-> TODO: Image
+![Username suggestion]({{site.baseurl}}/images/gitbucket-4.18.0/username-suggest.png)
 
-## Apply commit hook plugin to online editing
+## Commit hook plugins are applied to online editing
 
-In previous versions, commit hooks which are supplied by plugins didn't work for online editing in the repository viewer. However, they work in GitBucket 4.18.0. Itmeans the branch protection also works when we update files in the git repository online.
+In previous versions, commit hooks (actually they are implemented as [ReceiveHook](https://github.com/gitbucket/gitbucket/blob/master/src/main/scala/gitbucket/core/plugin/ReceiveHook.scala)) which are supplied by plugins didn't work for online editing in the repository viewer. But they work in GitBucket 4.18.0.
+
+It means the branch protection also works when we update files in the git repository on the browser.
 
 ## Improve gitbucket-ci-plugin
 
-> TODO
+[gitbucket-ci-plugin](https://github.com/takezoe/gitbucket-ci-plugin) has been updated to 1.1.0 and it supports skipp build by commit message and re-run build by pull request comment. Trigger words can be set at the build settings page as comma-separated values:
+
+![Skip and rerun words setting]({{site.baseurl}}/images/gitbucket-4.18.0/ci-build-settings.png)
 
 In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.18.0) to know details.
 
