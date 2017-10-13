@@ -28,9 +28,22 @@ It means the branch protection also works when we update files in the git reposi
 
 ## Improve gitbucket-ci-plugin
 
-[gitbucket-ci-plugin](https://github.com/takezoe/gitbucket-ci-plugin) has been updated to 1.1.0 and it supports skipp build by commit message and re-run build by pull request comment. Trigger words can be set at the build settings page as comma-separated values:
+[gitbucket-ci-plugin](https://github.com/takezoe/gitbucket-ci-plugin) has been updated to 1.1.0 and it supports skip build by commit message and re-run build by pull request comment. Trigger words can be set at the build settings page as comma-separated values:
 
 ![Skip and rerun words setting]({{site.baseurl}}/images/gitbucket-4.18.0/ci-build-settings.png)
+
+And following environment variables have been available in the build script:
+
+- `CI` (true)
+- `HOME` (root of the build directory)
+- `CI_BUILD_DIR` (same as HOME)
+- `CI_BUILD_NUMBER`
+- `CI_BUILD_BRANCH`
+- `CI_COMMIT_ID`
+- `CI_COMMIT_MESSAGE`
+- `CI_REPO_SLUG` ("owner/repo")
+- `CI_PULL_REQUEST` (pull request id or "false")
+- `CI_PULL_REQUEST_SLUG` ("owner/repo" or "")
 
 In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.18.0) to know details.
 
