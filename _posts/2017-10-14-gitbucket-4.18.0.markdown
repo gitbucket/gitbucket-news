@@ -1,0 +1,50 @@
+---
+layout: post
+title: "GitBucket 4.18.0 released!"
+date: 2017-10-14 00:00:00
+image: /images/gitbucket-4.18.0/reply-comment-form.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.18.0](https://github.com/gitbucket/gitbucket/releases/tag/4.18.0)!
+
+## Form to reply to review comment
+
+The reply form is displayed below review comments. You can reply to review comments quickly from this form.
+
+![Reply comment form]({{site.baseurl}}/images/gitbucket-4.18.0/reply-comment-form.png)
+
+## Display fullname in username suggestion
+
+In the username suggestion, a fullname of proposed users is displayed, not only a username.
+
+![Username suggestion]({{site.baseurl}}/images/gitbucket-4.18.0/username-suggest.png)
+
+## Commit hook plugins are applied to online editing
+
+In previous versions, commit hooks (actually they are implemented as [ReceiveHook](https://github.com/gitbucket/gitbucket/blob/master/src/main/scala/gitbucket/core/plugin/ReceiveHook.scala)) which are supplied by plugins didn't work for online editing in the repository viewer. But they work in GitBucket 4.18.0.
+
+It means the branch protection also works when we update files in the git repository on the browser.
+
+## Improve gitbucket-ci-plugin
+
+[gitbucket-ci-plugin](https://github.com/takezoe/gitbucket-ci-plugin) has been updated to 1.1.0 and it supports skip build by commit message and re-run build by pull request comment. Trigger words can be set at the build settings page as comma-separated values:
+
+![Skip and rerun words setting]({{site.baseurl}}/images/gitbucket-4.18.0/ci-build-settings.png)
+
+And following environment variables have been available in the build script:
+
+- `CI` (true)
+- `HOME` (root of the build directory)
+- `CI_BUILD_DIR` (same as HOME)
+- `CI_BUILD_NUMBER`
+- `CI_BUILD_BRANCH`
+- `CI_COMMIT_ID`
+- `CI_COMMIT_MESSAGE`
+- `CI_REPO_SLUG` ("owner/repo")
+- `CI_PULL_REQUEST` (pull request id or "false")
+- `CI_PULL_REQUEST_SLUG` ("owner/repo" or "")
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.18.0) to know details.
+
+Enjoy GitBucket!
