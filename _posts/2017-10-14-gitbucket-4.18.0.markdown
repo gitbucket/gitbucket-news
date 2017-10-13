@@ -8,7 +8,7 @@ categories: gitbucket
 
 Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.18.0](https://github.com/gitbucket/gitbucket/releases/tag/4.18.0)!
 
-## Reply form to review comment
+## Form to reply to review comment
 
 The reply form is displayed below review comments. You can reply to review comments quickly from this form.
 
