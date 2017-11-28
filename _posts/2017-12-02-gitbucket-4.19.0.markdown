@@ -1,0 +1,42 @@
+---
+layout: post
+title: "GitBucket 4.19.0 released!"
+date: 2017-12-02 00:00:00
+image: /images/gitbucket-4.19.0/xxx.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.19.0](https://github.com/gitbucket/gitbucket/releases/tag/4.19.0)!
+
+## Maven repository plugin
+
+[gitbucket-maven-repository-plugin](https://github.com/takezoe/gitbucket-maven-repository-plugin) which makes possible to host maven repositories on GitBucket is available for GitBucket 4.19.0.
+
+> TODO: Image
+
+Following Maven repositories become available by installing this plugin to GitBucket.
+
+- `http(s)://GITBUCKET_HOST/maven/releases`
+- `http(s)://GITBUCKET_HOST/maven/snapshots`
+
+You can deploy your artifacts to these repositories via WebDAV or SCP. See details about this plugin and configuration at the plugin's [README](https://github.com/takezoe/gitbucket-maven-repository-plugin/blob/master/README.md).
+
+## Upgrade to Scalatra 2.6
+
+Scalatra is a servlet based web framework for Scala and GitBucket uses it. The latest major update of Scalatra, 2.6 was released November, so we moved to Scalatra 2.6 series in GitBucket 4.19.0.
+
+One of big topic of Scalatra 2.6 is GitBucket's scalatra-forms was merged to Scalatra. GitBucket codebase was modified to use Scalatra's version of scalatra-forms in this release. This might break binary compatibility of existing GitBucket plugins. If you can find broken plugins, let know plugin authors to that.
+
+Also Scala, sbt and JGit has been upgraded in thie release, and drop joda-time dependency.
+
+## Layout improvements of system settings page
+
+> TODO: Image
+
+## New extention point
+
+New extention point `sshCommandProvider` has been added. Plugins can handle SSH communication using this extention point. In fact, gitbucket-maven-repository-plugin uses this extension point to handle uploading artifacts via SCP.
+
+In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.19.0) to know details.
+
+Enjoy GitBucket!
