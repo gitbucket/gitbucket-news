@@ -12,7 +12,7 @@ Today, we are pleased to announce the availability of new version of Scala based
 
 [gitbucket-maven-repository-plugin](https://github.com/takezoe/gitbucket-maven-repository-plugin) which makes possible to host maven repositories on GitBucket is available for GitBucket 4.19.0.
 
-> TODO: Image
+![Maven repository plugine]({{site.baseurl}}/images/gitbucket-4.19.0/maven-repository-plugin.png)
 
 Following Maven repositories become available by installing this plugin to GitBucket.
 
@@ -23,9 +23,9 @@ You can deploy your artifacts to these repositories via WebDAV or SCP. See detai
 
 ## Upgrade to Scalatra 2.6
 
-Scalatra is a servlet based web framework for Scala and GitBucket uses it. The latest major update of Scalatra, 2.6 was released November, so we moved to Scalatra 2.6 series in GitBucket 4.19.0.
+[Scalatra](http://scalatra.org/) is a servlet based web framework for Scala and GitBucket uses it. The latest major update of Scalatra, 2.6 was released November, so we moved to Scalatra 2.6 series in GitBucket 4.19.0.
 
-One of big topic of Scalatra 2.6 is GitBucket's scalatra-forms was merged to Scalatra. GitBucket codebase was modified to use Scalatra's version of scalatra-forms in this release. This might break binary compatibility of existing GitBucket plugins. If you can find broken plugins, let know plugin authors to that.
+One of big topics in Scalatra 2.6 is GitBucket's [scalatra-forms](https://github.com/gitbucket/scalatra-forms) was merged to Scalatra. GitBucket codebase was modified to use Scalatra's version of scalatra-forms in this release. This might break binary compatibility of existing GitBucket plugins. If you can find broken plugins, let know plugin authors to that.
 
 Also Scala, sbt and JGit has been upgraded in thie release, and drop joda-time dependency.
 
