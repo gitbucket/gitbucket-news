@@ -29,9 +29,11 @@ One of big topic of Scalatra 2.6 is GitBucket's scalatra-forms was merged to Sca
 
 Also Scala, sbt and JGit has been upgraded in thie release, and drop joda-time dependency.
 
-## Layout improvements of system settings page
+## Improve layout of the system settings page
 
-> TODO: Image
+The layout of the system setting page has been improved. A major change is in the skin selector. It was moved just below "Information" section, and now you can confirm the presentation of a selected skin before saving settings.
+
+![Improved system settings page]({{site.baseurl}}/images/gitbucket-4.19.0/system-settings.png)
 
 ## New extention point
 
