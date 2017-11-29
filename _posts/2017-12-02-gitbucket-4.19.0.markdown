@@ -2,7 +2,7 @@
 layout: post
 title: "GitBucket 4.19.0 released!"
 date: 2017-12-02 00:00:00
-image: /images/gitbucket-4.19.0/xxx.png
+image: /images/gitbucket-4.19.0/maven-repository-plugin.png
 categories: gitbucket
 ---
 
