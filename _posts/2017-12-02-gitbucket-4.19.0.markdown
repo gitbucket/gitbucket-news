@@ -35,9 +35,9 @@ The layout of the system setting page has been improved. A major change is in th
 
 ![Improved system settings page]({{site.baseurl}}/images/gitbucket-4.19.0/system-settings.png)
 
-## New extention point
+## New extension point
 
-New extention point `sshCommandProvider` has been added. Plugins can handle SSH communication using this extention point. In fact, gitbucket-maven-repository-plugin uses this extension point to handle uploading artifacts via SCP.
+New extension point `sshCommandProvider` has been added. Plugins can handle SSH communication using this extension point. In fact, gitbucket-maven-repository-plugin uses this extension point to handle uploading artifacts via SCP.
 
 In addition, this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.19.0) to know details.
 
