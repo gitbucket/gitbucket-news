@@ -6,6 +6,9 @@ image: /images/gitbucket-4.19.0/maven-repository-plugin.png
 categories: gitbucket
 ---
 
+> We've already released 4.19.1 because 4.19.0 had a version compatibility issue in the bundled notifications plugin. Please use it instead.
+> [https://github.com/gitbucket/gitbucket/releases/tag/4.19.1](https://github.com/gitbucket/gitbucket/releases/tag/4.19.1)
+
 Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.19.0](https://github.com/gitbucket/gitbucket/releases/tag/4.19.0)!
 
 ## Maven repository plugin
