@@ -39,6 +39,6 @@ The layout of the system setting page has been improved. A major change is in th
 
 New extension point `sshCommandProvider` has been added. Plugins can handle SSH communication using this extension point. In fact, gitbucket-maven-repository-plugin uses this extension point to handle uploading artifacts via SCP.
 
-In addition, [gitbucket-pages-plugin](https://github.com/gitbucket/gitbucket-pages-plugin) has been dropped from bundled plugins temporary because update for Scalatra 2.6 couldn't completed before this release. It will be bundled again after update is completed. Also this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.19.0) to know details.
+In addition, [gitbucket-pages-plugin](https://github.com/gitbucket/gitbucket-pages-plugin) has been dropped from bundled plugins temporary because we couldn't complete update for Scalatra 2.6 before this release. It will be bundled again after update is completed. Also this release contains some improvements and bug fix. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.19.0) to know details.
 
 Enjoy GitBucket!
