@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "sbt plugin for GitBucket plugind developers"
+title: "sbt plugin for GitBucket plugin developers"
 date: 2017-12-03 00:00:00
 categories: gitbucket
 ---
