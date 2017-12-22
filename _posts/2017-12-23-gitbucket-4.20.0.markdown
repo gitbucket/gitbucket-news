@@ -10,7 +10,7 @@ Today, we are pleased to announce the availability of new version of Scala based
 
 ## Download patch from the diff view
 
-Added a "Patch" button to the diff view. You can download a patch file of the displaying diff by clicking this button.
+"Patch" button is available at the diff view. You can download a patch file of the displaying diff by this button.
 
 ![Patch button]({{site.baseurl}}/images/gitbucket-4.20.0/download-patch.png)
 
@@ -34,7 +34,7 @@ You can choose merge strategy from following three options when you merge pull r
 
 ## Fork and create repository are proceeded asynchronously
 
-In particular, forking large repositories were taking long time. So sometimes it was  causing request timeout. In this release, Fork and create repository became to be proceeded asynchronously to avoid request timeout.
+In particular, forking large repositories were taking long time. So sometimes it was causing request timeout so far. In this release, fork and create repository became to be proceeded asynchronously to avoid request timeout.
 
 ![Creating repository]({{site.baseurl}}/images/gitbucket-4.20.0/creating-repository.png)
 
@@ -56,7 +56,7 @@ Added [CreateEvent](https://developer.github.com/v3/activity/events/types/#creat
 
 ## Display conflicting files if pull request can't be merged
 
-If pull requests can't be merged automatically, conflicting files came to be displayed in the status are of the pull request.
+If pull requests can't be merged automatically, conflicting files are displayed in the status are of the pull request.
 
 ![Conflicting files]({{site.baseurl}}/images/gitbucket-4.20.0/conflicting-files.png)
 
