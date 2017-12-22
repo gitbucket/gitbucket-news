@@ -8,20 +8,6 @@ categories: gitbucket
 
 Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.20.0](https://github.com/gitbucket/gitbucket/releases/tag/4.20.0)!
 
-## Download patch from the diff view
-
-"Patch" button is available at the diff view. You can download a patch file of the displaying diff by this button.
-
-![Patch button]({{site.baseurl}}/images/gitbucket-4.20.0/download-patch.png)
-
-GitBucket can't render a large diff on the browser. Even in this case, you can confirm complete diff by downloading a patch file and seing it.
-
-## Quick pull request creation
-
-If a repository has branches which can be raised as pull requests, buttons to create pull request are displayed on the top of the repository viewer. You can create pull request quickly using these buttons.
-
-![Quik pull request]({{site.baseurl}}/images/gitbucket-4.20.0/quick-pull-request.png)
-
 ## Squash and rebase merge strategy for pull requests
 
 You can choose merge strategy from following three options when you merge pull requests:
@@ -31,6 +17,20 @@ You can choose merge strategy from following three options when you merge pull r
 - Rebase: Commits will be rebased and added to the base branch.
 
 ![Merge strategy]({{site.baseurl}}/images/gitbucket-4.20.0/merge-strategy.png)
+
+## Quick pull request creation
+
+If a repository has branches which can be raised as pull requests, buttons to create pull request are displayed on the top of the repository viewer. You can create pull request quickly using these buttons.
+
+![Quik pull request]({{site.baseurl}}/images/gitbucket-4.20.0/quick-pull-request.png)
+
+## Download patch from the diff view
+
+"Patch" button is available at the diff view. You can download a patch file of the displaying diff by this button.
+
+![Patch button]({{site.baseurl}}/images/gitbucket-4.20.0/download-patch.png)
+
+GitBucket can't render a large diff on the browser. Even in this case, you can confirm complete diff by downloading a patch file and seing it.
 
 ## Fork and create repository are proceeded asynchronously
 
