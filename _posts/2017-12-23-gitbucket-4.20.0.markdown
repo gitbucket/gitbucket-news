@@ -1,0 +1,65 @@
+---
+layout: post
+title: "GitBucket 4.20.0 released!"
+date: 2017-12-23 00:00:00
+image: /images/gitbucket-4.20.0/merge-strategy.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.20.0](https://github.com/gitbucket/gitbucket/releases/tag/4.20.0)!
+
+## Squash and rebase merge strategy for pull requests
+
+You can choose merge strategy from following three options when you merge pull requests:
+
+- Merge commit: Commits will be added to the base branch via a merge commit.
+- Squash: Commits will be combined into one commit in the base branch.
+- Rebase: Commits will be rebased and added to the base branch.
+
+![Merge strategy]({{site.baseurl}}/images/gitbucket-4.20.0/merge-strategy.png)
+
+## Quick pull request creation
+
+If a repository has branches which can be raised as pull requests, buttons to create pull request are displayed on the top of the repository viewer. You can create pull request quickly using these buttons.
+
+![Quik pull request]({{site.baseurl}}/images/gitbucket-4.20.0/quick-pull-request.png)
+
+## Download patch from the diff view
+
+"Patch" button is available at the diff view. You can download a patch file of the displaying diff by this button.
+
+![Patch button]({{site.baseurl}}/images/gitbucket-4.20.0/download-patch.png)
+
+GitBucket can't render a large diff on the browser. Even in this case, you can confirm complete diff by downloading a patch file and seing it.
+
+## Fork and create repository are proceeded asynchronously
+
+In particular, forking large repositories were taking long time. So sometimes it was causing request timeout so far. In this release, fork and create repository became to be proceeded asynchronously to avoid request timeout.
+
+![Creating repository]({{site.baseurl}}/images/gitbucket-4.20.0/creating-repository.png)
+
+## Create new repository by copying existing git repository
+
+You can specify an existing git repository URL in the repository creation form. If the repository url has been specified, a new repository is created by copying the specified repository. All branches and tags are copied to a new repository.
+
+![Copy existing repository]({{site.baseurl}}/images/gitbucket-4.20.0/copy-existing-repository.png)
+
+## Hide overflowed repository names in the sidebar
+
+Overflowd repository names in the sidebar came to be hidden with ellipsis.
+
+![Hide overflowed repository names]({{site.baseurl}}/images/gitbucket-4.20.0/sidebar-overflow.png)
+
+## Support CreateEvent web hook
+
+Added [CreateEvent](https://developer.github.com/v3/activity/events/types/#createevent) support in web hook.
+
+## Display conflicting files if pull request can't be merged
+
+If pull requests can't be merged automatically, conflicting files are displayed in the status are of the pull request.
+
+![Conflicting files]({{site.baseurl}}/images/gitbucket-4.20.0/conflicting-files.png)
+
+In addition, this release contains some improvements and bug fixes. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.20.0) to know details.
+
+Enjoy GitBucket!
