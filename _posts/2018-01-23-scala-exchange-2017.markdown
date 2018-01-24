@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GitBucket in Scala eXchange 2017"
+title: "GitBucket at Scala eXchange 2017"
 date: 2017-12-23 00:00:00
 image: /images/scala-exchange-2017/scala-exchange-2017.jpg
 categories: gitbucket
