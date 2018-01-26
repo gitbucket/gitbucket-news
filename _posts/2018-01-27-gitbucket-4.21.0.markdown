@@ -14,6 +14,14 @@ The tags page has been replaced with the releases page. You can add a release no
 
 ![Releases page]({{site.baseurl}}/images/gitbucket-4.21.0/releases.png)
 
+## OpenID Connect support
+
+Sign-in using OpenID Connect has been supported.
+
+![OpenID Connect Settings]({{site.baseurl}}/images/gitbucket-4.21.0/openid-connect.png)
+
+See [OpenID Connect Settings](https://github.com/gitbucket/gitbucket/wiki/OpenID-Connect-Settings) to know how to configure OpenID Connect support for Google Identity Provider and Keycloak.
+
 ## New database viewer
 
 GitBucket had included H2 console to see data in the database for administrators. However it has some problems. For example, it's not integrated with GitBucket, so we had to input username, password and jdbc url of the database. Also we couldn't add our own features to it.
