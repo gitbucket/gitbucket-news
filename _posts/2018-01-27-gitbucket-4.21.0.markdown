@@ -1,0 +1,56 @@
+---
+layout: post
+title: "GitBucket 4.21.0 released!"
+date: 2018-01-27 00:00:00
+image: /images/gitbucket-4.21.0/releases.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.21.0](https://github.com/gitbucket/gitbucket/releases/tag/4.21.0)!
+
+## Releases page
+
+The tags page has been replaced with the releases page. You can add a release note and files to each tag.
+
+![Releases page]({{site.baseurl}}/images/gitbucket-4.21.0/releases.png)
+
+## OpenID Connect support
+
+Sign-in using OpenID Connect has been supported.
+
+![OpenID Connect Settings]({{site.baseurl}}/images/gitbucket-4.21.0/openid-connect.png)
+
+See [OpenID Connect Settings](https://github.com/gitbucket/gitbucket/wiki/OpenID-Connect-Settings) to know how to configure OpenID Connect support for Google Identity Provider and Keycloak.
+
+## New database viewer
+
+GitBucket had included H2 console to see data in the database for administrators. However it has some problems. For example, it's not integrated with GitBucket, so we had to input username, password and jdbc url of the database. Also we couldn't add our own features to it.
+
+In this version, H2 console has been replaced with the new database viewer whoch is fully integrated with GitBucket.
+
+![Database viewer]({{site.baseurl}}/images/gitbucket-4.21.0/database-viewer.png)
+
+If you prefer the previous H2 console, you can continue to use it by installing [gitbucket-h2console-plugin](https://github.com/takezoe/gitbucket-h2console-plugin).
+
+## Submodule links to web page
+
+In previous versions of GitBucket, submocules were linked to their git repository url, but almost they can't be shown by the browser. In this version, GitBucket links submodule to their web pages if it's possible. For example, if a submdoule is a repository on GitHub, it's linked to a repository viewer on GitHub.
+
+Currently, it supports following repositories for submodule linking:
+
+- GitBucket (on the same instance)
+- GitHub
+- BitBucket
+- GitLab.com
+
+Other repositories are linked to their git repositories as same as previous versions.
+
+## Clarify close/reopen button
+
+"Close" and "Reopen" button in the issues and the pull requests have been changed to a dropdown button to avoid clicking these buttons by mistake.
+
+![Close and Reopen button]({{site.baseurl}}/images/gitbucket-4.21.0/close-reopen-button.png)
+
+In addition, this release contains some improvements and bug fixes. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.21.0) to know details.
+
+Enjoy GitBucket!
