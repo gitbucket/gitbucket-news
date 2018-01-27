@@ -6,6 +6,9 @@ image: /images/gitbucket-4.21.0/releases.png
 categories: gitbucket
 ---
 
+> We've already released 4.21.1 because 4.21.0 had some minor bugs. Please use this version instead.
+> [https://github.com/gitbucket/gitbucket/releases/tag/4.21.1](https://github.com/gitbucket/gitbucket/releases/tag/4.21.1
+
 Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.21.0](https://github.com/gitbucket/gitbucket/releases/tag/4.21.0)!
 
 ## Releases page
