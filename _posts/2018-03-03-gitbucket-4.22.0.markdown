@@ -2,7 +2,7 @@
 layout: post
 title: "GitBucket 4.22.0 released!"
 date: 2018-03-03 00:00:00
-image: /images/gitbucket-4.21.0/releases.png
+image: /images/gitbucket-4.22.0/merge_strategy_settings.png
 categories: gitbucket
 ---
 
@@ -12,7 +12,7 @@ Today, we are pleased to announce the availability of new version of Scala based
 
 Now you can set a default merge strategy and also disable specific merge strategy in your repositories.
 
-> TODO: Image
+![Merge strategy settings]({{site.baseurl}}/images/gitbucket-4.22.0/merge_strategy_settings.png)
 
 ## Record more actions in issues and pull requests
 
@@ -24,13 +24,13 @@ Following actions have been recorded as history of issues and pull requests.
 - change milestone
 - assign
 
-> TODO: Image
+![More issue actions]({{site.baseurl}}/images/gitbucket-4.22.0/more_issue_actions.png)
 
 ## Create repository with an empty commit
 
 Added a new option to create a repository with an empty commit.
 
-> TODO: Image
+![Create repository with empty commit]({{site.baseurl}}/images/gitbucket-4.22.0/create_repository.png)
 
 ## Improve database viewer
 
@@ -39,7 +39,7 @@ A couple of features are added to the database viewer:
 - Added "Auto query" checkbox to run a query when tree items are clicked
 - Generate query to select a specific column by clicking a child item in the left tree
 
-> TODO: Image
+![Database viewer]({{site.baseurl}}/images/gitbucket-4.22.0/database_viewer.png)
 
 In addition, this release contains some improvements and bug fixes. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.22.0) to know details.
 
