@@ -1,0 +1,46 @@
+---
+layout: post
+title: "GitBucket 4.22.0 released!"
+date: 2018-03-03 00:00:00
+image: /images/gitbucket-4.21.0/releases.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.22.0](https://github.com/gitbucket/gitbucket/releases/tag/4.22.0)!
+
+## Pull request merge strategy settings
+
+Now you can set a default merge strategy and also disable specific merge strategy in your repositories.
+
+> TODO: Image
+
+## Record more actions in issues and pull requests
+
+Following actions have been recorded as history of issues and pull requests.
+
+- add label
+- delete label
+- change priority
+- change milestone
+- assign
+
+> TODO: Image
+
+## Create repository with an empty commit
+
+Added a new option to create a repository with an empty commit.
+
+> TODO: Image
+
+## Improve database viewer
+
+A couple of features are added to the database viewer:
+
+- Added "Auto query" checkbox to run a query when tree items are clicked
+- Generate query to select a specific column by clicking a child item in the left tree
+
+> TODO: Image
+
+In addition, this release contains some improvements and bug fixes. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.22.0) to know details.
+
+Enjoy GitBucket!
