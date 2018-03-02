@@ -41,6 +41,16 @@ A couple of features are added to the database viewer:
 
 ![Database viewer]({{site.baseurl}}/images/gitbucket-4.22.0/database_viewer.png)
 
+## Update maven-repository-plugin
+
+Unofficial maven-repository-plugin has been updated. Now it's possible to create arbitary repositories on the administration console, and each repository can be configured in  whether artifaces are overwritable and whether repository is visible for all users. Invisible (private, in other words) repositories require basic authentication to access.
+
+![maven-repository-plugin (1)]({{site.baseurl}}/images/gitbucket-4.22.0/maven-repository-plugin_1.png)
+
+In addition, administrators can delete artifacts in repository on the web browser. This is available for even unoverwritable repositories.
+
+![maven-repository-plugin (2)]({{site.baseurl}}/images/gitbucket-4.22.0/maven-repository-plugin_2.png)
+
 In addition, this release contains some improvements and bug fixes. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.22.0) to know details.
 
 Enjoy GitBucket!
