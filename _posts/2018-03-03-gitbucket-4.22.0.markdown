@@ -43,7 +43,7 @@ A couple of features are added to the database viewer:
 
 ## Update maven-repository-plugin
 
-Unofficial maven-repository-plugin has been updated. Now it's possible to create arbitary repositories on the administration console, and each repository can be configured in  whether artifaces are overwritable and whether repository is visible for all users. Invisible (private, in other words) repositories require basic authentication to access.
+Unofficial [maven-repository-plugin](https://github.com/takezoe/gitbucket-maven-repository-plugin) has been updated. Now it's possible to create arbitary repositories on the administration console, and each repository can be configured in  whether artifaces are overwritable and whether repository is visible for all users. Invisible (private, in other words) repositories require basic authentication to access.
 
 ![maven-repository-plugin (1)]({{site.baseurl}}/images/gitbucket-4.22.0/maven-repository-plugin_1.png)
 
