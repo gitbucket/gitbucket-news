@@ -1,0 +1,39 @@
+---
+layout: post
+title: "GitBucket 4.23.0 released!"
+date: 2018-03-31 00:00:00
+image: /images/gitbucket-4.23.0/merge_strategy_settings.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.23.0](https://github.com/gitbucket/gitbucket/releases/tag/4.23.0)!
+
+## Fix handling for tail slash in URL
+
+> TODO: Notice to plugin authors!
+
+## Display commit message of tags in the release page
+
+> TODO: Image
+
+## Enhance issue and pull request API response
+
+Added `labels` property to the response of issues and pull requests API.
+
+> TODO: An example of responses
+
+## Git authentication by personal access token
+
+Personal access token can be used for Git authentication as an alternative to password of GitBucket account. It's recommended way more than use of password in the automated Git repository access for security reasons.
+
+## CI plugin settings
+
+An unofficial gitbucket-ci-plugin now allows to configure number of max parallel builds and max stored build history.
+
+> TODO: Image
+
+In addition, this release contains some improvements and bug fixes. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.23.0) to know details.
+
+In particular, since `RELEASE` table has been renamed to `RELEASE_TAG` and also renamed an its model class, binary compatibility is broken in a lot of plugins. If you are a plugin author, please check whether your plugin works with GitBucket 4.23.0 and update if needed. If you are a plugin user and you found a binary compatibility issue, report the issue on the GitHub project of the plugin top let a plugin author know that.
+
+Enjoy GitBucket!
