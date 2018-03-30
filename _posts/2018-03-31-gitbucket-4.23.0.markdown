@@ -2,7 +2,7 @@
 layout: post
 title: "GitBucket 4.23.0 released!"
 date: 2018-03-31 00:00:00
-image: /images/gitbucket-4.23.0/merge_strategy_settings.png
+image: /images/gitbucket-4.23.0/releases.png
 categories: gitbucket
 ---
 
@@ -10,17 +10,62 @@ Today, we are pleased to announce the availability of new version of Scala based
 
 ## Fix handling for tail slash in URL
 
-> TODO: Notice to plugin authors!
+Tail slash in url has been allowed in all paths. For example, GitBucket makes same behavior for both `/owner/repos` and `/owner/repos/`. In particular, this fix improves integration with other products such as Jenkins.
 
-## Display commit message of tags in the release page
+Note for plugin developers: If you plugin has a actions which end with slash, you have to remove them because tail slash is no longer necessary
 
-> TODO: Image
+## Display commit message of tags at the releases page
+
+Commit messages of each tag have been displayed at the releases page. Also they are used as the default value of the release description when you are going to create a new release.
+
+![Commit message in the releases page]({{site.baseurl}}/images/gitbucket-4.23.0/releases.png)
 
 ## Enhance issue and pull request API response
 
 Added `labels` property to the response of issues and pull requests API.
 
-> TODO: An example of responses
+```javascript
+[
+  {
+    "number": 1,
+    "state": "open",
+    ...
+    "labels": [
+      {
+        "name": "enhancement",
+        "color": "84b6eb",
+        "url": "http://localhost:8080/api/v3/repos/root/gitbucket/labels/enhancement"
+      }
+    ],
+    ...
+  }
+]
+```
+
+## Added plugin list API
+
+A new API which returns the list of installed plugins has been added as `/api/v3/gitbucket/plugins` to make the [plugin build farm](https://github.com/kounoike/gitbucket-plugin-farm-test) in the future. This API has following response:
+
+```javascript
+[
+  {
+    "id": "maven-repository",
+    "name": "Maven Repository Plugin",
+    "version": "1.3.0",
+    "description": "Host Maven repository on GitBucket.",
+    "jarFileName": "gitbucket-maven-repository-plugin-assembly-1.3.0.jar"
+  },
+  {
+    "id": "ci",
+    "name": "CI Plugin",
+    "version": "1.4.0",
+    "description": "This plugin adds simple CI functionality to GitBucket.",
+    "jarFileName": "gitbucket-ci-plugin-assembly-1.4.0.jar"
+  }
+]
+```
+
+As you can see, `versino` is typo of `version`, this is going to be fixed in the next release.
 
 ## Git authentication by personal access token
 
@@ -30,7 +75,7 @@ Personal access token can be used for Git authentication as an alternative to pa
 
 An unofficial gitbucket-ci-plugin now allows to configure number of max parallel builds and max stored build history.
 
-> TODO: Image
+![CI plugin settings]({{site.baseurl}}/images/gitbucket-4.23.0/ci-plugin-setting.png)
 
 In addition, this release contains some improvements and bug fixes. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.23.0) to know details.
 
