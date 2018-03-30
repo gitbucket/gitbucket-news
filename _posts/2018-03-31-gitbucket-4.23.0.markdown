@@ -8,7 +8,7 @@ categories: gitbucket
 
 Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.23.0](https://github.com/gitbucket/gitbucket/releases/tag/4.23.0)!
 
-## Fix handling for tail slash in URL
+## Allow tail slash in URL
 
 Tail slash in url has been allowed in all paths. For example, GitBucket makes same behavior for both `/owner/repos` and `/owner/repos/`. In particular, this fix improves integration with other products such as Jenkins.
 
@@ -20,7 +20,7 @@ Commit messages of each tag have been displayed at the releases page. Also they 
 
 ![Commit message in the releases page]({{site.baseurl}}/images/gitbucket-4.23.0/releases.png)
 
-## Enhance issue and pull request API response
+## Add labels property to issues and pull requests API response
 
 Added `labels` property to the response of issues and pull requests API.
 
@@ -42,7 +42,7 @@ Added `labels` property to the response of issues and pull requests API.
 ]
 ```
 
-## Added plugin list API
+## Plugin list API
 
 A new API which returns the list of installed plugins has been added as `/api/v3/gitbucket/plugins` to make the [plugin build farm](https://github.com/kounoike/gitbucket-plugin-farm-test) in the future. This API has following response:
 
@@ -67,13 +67,13 @@ A new API which returns the list of installed plugins has been added as `/api/v3
 
 As you can see, `versino` is typo of `version`, this is going to be fixed in the next release.
 
-## Git authentication by personal access token
+## Git authentication with personal access token
 
 Personal access token can be used for Git authentication as an alternative to password of GitBucket account. It's recommended way more than use of password in the automated Git repository access for security reasons.
 
 ## CI plugin settings
 
-An unofficial gitbucket-ci-plugin now allows to configure number of max parallel builds and max stored build history.
+An unofficial [gitbucket-ci-plugin](https://github.com/takezoe/gitbucket-ci-plugin) now allows to configure number of max parallel builds and max stored build history.
 
 ![CI plugin settings]({{site.baseurl}}/images/gitbucket-4.23.0/ci-plugin-setting.png)
 
