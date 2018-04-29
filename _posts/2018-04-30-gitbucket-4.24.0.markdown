@@ -10,7 +10,7 @@ Today, we are pleased to announce the availability of new version of Scala based
 
 ## Diff for each review comment on pull requests
 
-In the conversation tab of pull requests, review comments for a specific line of code are grouped and diff of the location is displayed with these comments. In addition, outdated comments are foldable.
+In the conversation tab of pull requests, review comments for a specific line of code are grouped and diff of the location is shown with these comments. In addition, outdated comments are foldable.
 
 ![Pull request comments]({{site.baseurl}}/images/gitbucket-4.24.0/pull_request_comments.png)
 
@@ -25,10 +25,6 @@ Now multiple mail addresses can be registered for a user.
 Tags are shown with commits at the commit list.
 
 ![Tags of commit]({{site.baseurl}}/images/gitbucket-4.24.0/tags_of_commit.png)
-
-## Improve web hook compatibility for discord
-
-Added `id` property to web hook payload to improve compatibility with GitHub to be able to work with discord.
 
 ## Keep wrap mode of the online editor
 
