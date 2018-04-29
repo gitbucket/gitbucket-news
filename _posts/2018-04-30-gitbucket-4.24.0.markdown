@@ -8,15 +8,15 @@ categories: gitbucket
 
 Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.24.0](https://github.com/gitbucket/gitbucket/releases/tag/4.24.0)!
 
-## Diff for each review comment on pull request
+## Diff for each review comment on pull requests
 
 In the conversation tab of pull requests, review comments for a specific line of code are grouped and diff of the location is displayed with these comments. In addition, outdated comments are foldable.
 
 > TODO: Image
 
-## Extra mail address support
+## Extra mail addresses support
 
-Now multiple mail address can be registered for a user.
+Now multiple mail addresses can be registered for a user.
 
 ![Extra mail address]({{site.baseurl}}/images/gitbucket-4.24.0/extra_mail_address.png)
 
@@ -44,7 +44,7 @@ The screen layout of [gitbucket-gist-plugin](https://github.com/gitbucket/gitbuc
 
 ## Web API of gitbucket-ci-plugin
 
-[gitbucket-ci-plugin](https://github.com/takezoe/gitbucket-ci-plugin) (it's still unofficial plugin) now offers Web API to trigger build and retreive build information. These APIs have compatibiulity with [CircleCI API v1.1](https://circleci.com/docs/api/v1-reference/). Currently, following APIs are supported:
+[gitbucket-ci-plugin](https://github.com/takezoe/gitbucket-ci-plugin) (note that it's a still unofficial plugin) now offers Web API to trigger build and retreive build information. These APIs have compatibiulity with [CircleCI API v1.1](https://circleci.com/docs/api/v1-reference/). Currently, following APIs are supported:
 
 - User (`GET /api/circleci/v1.1/me`)
 - Recent Builds For a Single Project (`GET /api/circleci/v1.1/project/gitbucket/:owner/:repository`)
