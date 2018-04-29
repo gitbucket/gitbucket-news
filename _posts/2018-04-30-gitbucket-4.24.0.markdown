@@ -1,0 +1,60 @@
+---
+layout: post
+title: "GitBucket 4.24.0 released!"
+date: 2018-04-30 00:00:00
+image: /images/gitbucket-4.24.0/pull-request-comments.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.24.0](https://github.com/gitbucket/gitbucket/releases/tag/4.24.0)!
+
+## Diff for each review comment on pull request
+
+In the conversation tab of pull requests, review comments for a specific line of code are grouped and diff of the location is displayed with these comments. In addition, outdated comments are foldable.
+
+> TODO: Image
+
+## Extra mail address support
+
+Now multiple mail address can be registered for a user.
+
+![Extra mail address]({{site.baseurl}}/images/gitbucket-4.24.0/extra_mail_address.png)
+
+## Show tags at the commit list
+
+Tags are shown with commits at the commit list.
+
+![Tags of commit]({{site.baseurl}}/images/gitbucket-4.24.0/tags_of_commit.png)
+
+## Improve web hook compatibility for discord
+
+Added `id` property to web hook payload to improve compatibility with GitHub to be able to work with discord.
+
+## Keep wrap mode of the online editor
+
+When you changed wrap mode (no wrap or soft wrap) on the online editor, this setting is kept using the local storage of your browser. This setting is shared with the gist plugin as well.
+
+![Keep wrap mode]({{site.baseurl}}/images/gitbucket-4.24.0/wrap_mode.png)
+
+## Renew layout of gitbucket-gist-plugin
+
+The screen layout of [gitbucket-gist-plugin](https://github.com/gitbucket/gitbucket-gist-plugin) has been whole renewed.
+
+![Gist plugin has been renewed]({{site.baseurl}}/images/gitbucket-4.24.0/renew_gist_plugin.png)
+
+## Web API of gitbucket-ci-plugin
+
+[gitbucket-ci-plugin](https://github.com/takezoe/gitbucket-ci-plugin) (it's still unofficial plugin) now offers Web API to trigger build and retreive build information. These APIs have compatibiulity with [CircleCI API v1.1](https://circleci.com/docs/api/v1-reference/). Currently, following APIs are supported:
+
+- User (`GET /api/circleci/v1.1/me`)
+- Recent Builds For a Single Project (`GET /api/circleci/v1.1/project/gitbucket/:owner/:repository`)
+- Recent Builds For a Project Branch (`GET /api/circleci/v1.1/project/gitbucket/:owner/:repository/tree/:branch`)
+- Single Build (`GET /api/circleci/v1.1/project/gitbucket/:owner/:repository/:buildNum`)
+- Retry a Build (`POST /api/circleci/v1.1/project/gitbucket/:owner/:repository/:buildNum/retry`)
+- Cancel a Build (`POST /api/circleci/v1.1/project/gitbucket/:owner/:repository/:buildNum/cancel`)
+- Trigger a new Build (`POST /api/circleci/v1.1/project/gitbucket/:owner/:repository`)
+- Trigger a new Build with a Branch (`POST /api/circleci/v1.1/project/gitbucket/:owner/:repository/tree/:branch`)
+
+In addition, this release contains some improvements and bug fixes. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.24.0) to know details.
+
+Enjoy GitBucket!
