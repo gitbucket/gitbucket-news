@@ -2,7 +2,7 @@
 layout: post
 title: "GitBucket 4.24.0 released!"
 date: 2018-04-30 00:00:00
-image: /images/gitbucket-4.24.0/pull-request-comments.png
+image: /images/gitbucket-4.24.0/pull_request_comments.png
 categories: gitbucket
 ---
 
@@ -12,7 +12,7 @@ Today, we are pleased to announce the availability of new version of Scala based
 
 In the conversation tab of pull requests, review comments for a specific line of code are grouped and diff of the location is displayed with these comments. In addition, outdated comments are foldable.
 
-> TODO: Image
+![Pull request comments]({{site.baseurl}}/images/gitbucket-4.24.0/pull_request_comments.png)
 
 ## Extra mail addresses support
 
