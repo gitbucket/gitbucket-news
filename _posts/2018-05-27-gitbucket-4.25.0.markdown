@@ -1,0 +1,44 @@
+---
+layout: post
+title: "GitBucket 4.25.0 released!"
+date: 2018-05-27 00:00:00
+image: /images/gitbucket-4.24.0/pull_request_comments.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.25.0](https://github.com/gitbucket/gitbucket/releases/tag/4.25.0)!
+
+## Show mail address at profile page
+
+User's Mmail address can be displayed at the profile page. This can be turned on / off by system configuration.
+
+> TODO: Image
+
+## Task list on commit comment
+
+Now task list is available on commit comments as well:
+
+> TODO: Image
+
+## More detailed editing history of issues and pull requests
+
+Editing title is now recorded as the history of issues and pull requests.
+
+> TODO: Image
+
+## Donwload repository improvements
+
+Downloading repository contents now has following new abilities:
+
+- Includes LFS files as well
+- Allows to download a specific directory
+
+## Security improvements
+
+- Use PBKDF2 for password
+- Fix weakness of the securioty token
+- Thank for @KacperSzurek
+
+In addition, this release contains some improvements and bug fixes. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.25.0) to know details.
+
+Enjoy GitBucket!
