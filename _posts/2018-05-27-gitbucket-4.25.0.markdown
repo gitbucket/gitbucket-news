@@ -10,7 +10,7 @@ Today, we are pleased to announce the availability of new version of Scala based
 
 ## Security improvements
 
-Previous version of GitBucket has some security issues explained in [GitBucket 4.23.1 Unauthenticated Remote Code Execution](https://security.szurek.pl/gitbucket-unauthenticated-rce.html) by Kacper Szurek.
+Previous versions of GitBucket have some security issues explained in [GitBucket 4.23.1 Unauthenticated Remote Code Execution](https://security.szurek.pl/gitbucket-unauthenticated-rce.html) by Kacper Szurek.
 
 ![security.szurek.pl]({{site.baseurl}}/images/gitbucket-4.25.0/security.png)
 
@@ -20,7 +20,7 @@ Futhermore, for more security improvement, PBKDF2 is used for password hashing i
 
 ## Show mail address at profile page
 
-User's Mmail address can be displayed at the profile page. This can be turned on / off by system configuration.
+User's Mail address can be displayed at the profile page. This can be turned on / off by system configuration.
 
 ![Profile page]({{site.baseurl}}/images/gitbucket-4.25.0/profile.png)
 
