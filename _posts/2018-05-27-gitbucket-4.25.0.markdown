@@ -12,8 +12,6 @@ Today, we are pleased to announce the availability of new version of Scala based
 
 Previous versions of GitBucket have some security issues explained in [GitBucket 4.23.1 Unauthenticated Remote Code Execution](https://security.szurek.pl/gitbucket-unauthenticated-rce.html) by Kacper Szurek.
 
-![security.szurek.pl]({{site.baseurl}}/images/gitbucket-4.25.0/security.png)
-
 Already remote code execution vulnerability issue had been fixed in GitBucket 4.24.0, and also weakness of security token has been fixed in this release. Precended report from Kacper helped us to fix these issues quickly. Thanks for his work.
 
 Futhermore, for more security improvement, PBKDF2 is used for password hashing instead of SHA-1 since this release.
@@ -36,14 +34,18 @@ Editing title is now recorded as the history of issues and pull requests.
 
 ![Issue history]({{site.baseurl}}/images/gitbucket-4.25.0/issue_history.png)
 
+## Expose user public keys
+
+User publick keys are exposed at the new endpoint: `/{user}.keys`
+
 ## Donwload repository improvements
 
 Downloading repository contents now has following new abilities:
 
 - Includes LFS files as well
 - Allows to download a specific directory
+- Until now, the downloaded filename was like `{branch}.zip`. Now it contains a repository name and a directory name as `{repository}-{branch}-{directory}.zip`. (If you download a root directory, the filename is `{repository}-{branch}.zip`.)
 
-> TODO: Image
 
 In addition, this release contains some improvements and bug fixes. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.25.0) to know details.
 
