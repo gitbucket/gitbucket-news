@@ -16,13 +16,13 @@ Already remote code execution vulnerability issue had been fixed in GitBucket 4.
 
 Futhermore, for more security improvement, PBKDF2 is used for password hashing instead of SHA-1 since this release.
 
-## Show mail address at profile page
+## Show mail address at the profile page
 
 User's Mail address can be displayed at the profile page. This can be turned on / off by system configuration.
 
 ![Profile page]({{site.baseurl}}/images/gitbucket-4.25.0/profile.png)
 
-## Task list on commit comment
+## Task list on commit comments
 
 Now task list is available on commit comments as well:
 
@@ -38,7 +38,7 @@ Editing title is now recorded as the history of issues and pull requests.
 
 User publick keys are exposed at the new endpoint: `/{user}.keys`
 
-## Donwload repository improvements
+## Download repository improvements
 
 Downloading repository contents now has following new abilities:
 
