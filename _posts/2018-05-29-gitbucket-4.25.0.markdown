@@ -46,7 +46,6 @@ Downloading repository contents now has following new abilities:
 - Allows to download a specific directory
 - Until now, the downloaded filename was like `{branch}.zip`. Now it contains a repository name and a directory name as `{repository}-{branch}-{directory}.zip`. (If you download a root directory, the filename is `{repository}-{branch}.zip`.)
 
-
 In addition, this release contains some improvements and bug fixes. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.25.0) to know details.
 
 Enjoy GitBucket!
