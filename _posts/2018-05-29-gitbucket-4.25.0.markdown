@@ -14,7 +14,7 @@ Previous versions of GitBucket have some security issues explained in [GitBucket
 
 Already remote code execution vulnerability issue had been fixed in GitBucket 4.24.0, and also weakness of security token has been fixed in this release. Precended report from Kacper helped us to fix these issues quickly. Thanks for his work.
 
-Futhermore, for more security improvement, PBKDF2 is used for password hashing instead of SHA-1 since this release.
+Furthermore, for more security improvement, PBKDF2 is used for password hashing instead of SHA-1 since this release.
 
 ## Show mail address at the profile page
 
