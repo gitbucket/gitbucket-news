@@ -36,7 +36,7 @@ Editing title is now recorded as the history of issues and pull requests.
 
 ## Expose user public keys
 
-User publick keys are exposed at the new endpoint: `/{user}.keys`
+User public keys are exposed at the new endpoint: `/{user}.keys`
 
 ## Download repository improvements
 
