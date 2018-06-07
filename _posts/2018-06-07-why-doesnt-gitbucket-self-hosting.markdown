@@ -1,20 +1,25 @@
 ---
 layout: post
-title: "Why doesn't GitBucket self-hosting?"
+title: "Why doesn't GitBucket self-host?"
 date: 2018-06-07 00:00:00
 categories: gitbucket
 ---
 
-Nowadays, acquiring GitHub by Microsoft is making discussions about alternatives to GitHub and one contributor of GitBucket pointed [a topic at Hacker News](https://news.ycombinator.com/item?id=17241487). There was a comment which points out that not many of GitHub alternatives are eating their own dog food.
+The recent acquisition of GitHub by Microsoft sparked allot of discussions about possible alternatives to GitHub. E.g. one contributor of GitBucket made [a topic on Hacker News](https://news.ycombinator.com/item?id=17241487)  where users pointed out that not many of these GitHub alternatives are really eating their *own dog food*.
 
-That's a reasonable pointing out.
+This might be a valid point, but there are quite a few reasons why GitBucket itself isn't self-hosted, but still it’s eating it’s *own dog food*.
 
-There are some reasons in GitBucket isn't self-hosted. Money is one of them, but in my opinion, the biggest reason is the ease of contribution.
+The **main** purpose of GitBucket is to offer an extremely [easy to install](https://github.com/gitbucket/gitbucket#installation) and use Git Web based UI for **small teams and projects**, in order to be used in **intranets** or on **private servers** for the cases where existing solutions on the market are not an option.
+GitBucket fulfills this role since years and all the team members and host GitBucket for themselves or in the companies/projects where they work.
 
-I guess that it's easier to work on GitHub than other platforms for contributors because most of our contributors already have GitHub account and they are used to GitHub. It motivates contributors and we can get a lot of feedbacks from them. Staying at GitHub makes both of us and users happy.
+Other reasons why GitBucket isn't self-hosted:
+- financial resources: the team is contributing their time and energy as individuals, but for now there’s no company that could finance hosting costs at such a scale on long term.
+- ease of contribution by the community – this is the **biggest** reason.
 
-In addition, we use GitHub as a development platform of the open source project, but the main goal of GitBucket isn't to be that. It's made for in-house projects which are not able to use GitHub originally. So it's not fair to compare to GitHub as a development platform for open source projects.
+I guess it's easier to work at scale on GitHub than on other platforms for our contributors, since they already have GitHub accounts and they are also familiar with GitHub. It motivates the contributors and we can get allot more feedback this way. So using GitHub makes both of us and users happy :) . 
 
-I highly respect GitHub because I believe that they changed software development. I always enjoy development on it and GitBucket wouldn't have been born without it. GitBucket might be an alternative to GitHub, but it's not a competitor. Of course, I will keep to use GitHub for the GitBucket project in the future.
+I highly respect GitHub because I believe that it changed software development for the better. I always enjoy development on it and GitBucket wouldn't have been born without it. GitBucket might be an alternative to GitHub, but it's not a competitor. 
+
+Of course, I will keep using GitHub for the GitBucket project in the future too.
 
 Thanks for GitHub as a great software development platform.
