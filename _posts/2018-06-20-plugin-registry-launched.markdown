@@ -15,9 +15,11 @@ Therefore, we recently launched a central plugin registry that also works as an 
 This registry offers for now the following features:
 
 - Daily build check for the latest version (this means the latest tag) and development version (head of master branch) for all plugins registered.
-- Release new versions of the plugins when a new tag is added to GitBucket or to the plugins.
+- Release new versions of the plugins automatically when a new tag is added to either GitBucket or to the plugins.
 
 Since the plugins are build against each GitBucket version, the released jar filename was changed to contain the GitBucket version too, not only the plugin version, e.g.: `gitbucket-gist-plugin-gitbucket_4.25.0-4.15.0.jar`. This way it’s easier to just download the jar files that corresponds to the installed GitBucket version, so no further compatibility checks between GitBucket and plugins are needed.
+
+For plugin developers, no need to rebuild and release plugins by hand even if the GitBucket update contains binary imcompatibility. Furthermore, if there is necessity to modify source code to support the new version of GitBucket, they can know it by a notification in the daily build check.
 
 For now, only the plugins under the GitBucket organization are being registered and automatically built. However we want extend this, to be able to register and build any third-party GitBucket plugin as well. I believe this would greatly help everybody: the plugin users, the plugin the developers as well as the GitBucket team, by reducing the maintenance effort for these plugins and also by improving the convenience of plugin installation and update.
 
