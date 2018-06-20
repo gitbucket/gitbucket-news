@@ -19,7 +19,7 @@ This registry offers for now the following features:
 
 Since the plugins are build against each GitBucket version, the released jar filename was changed to contain the GitBucket version too, not only the plugin version, e.g.: `gitbucket-gist-plugin-gitbucket_4.25.0-4.15.0.jar`. This way it’s easier to just download the jar files that corresponds to the installed GitBucket version, so no further compatibility checks between GitBucket and plugins are needed.
 
-For plugin developers, no need to rebuild and release plugins by hand even if the GitBucket update contains binary imcompatibility. Furthermore, if there is necessity to modify source code to support the new version of GitBucket, they can know it by a notification in the daily build check.
+For the plugin developers, no need to rebuild and release plugins by hand even if the GitBucket update contains binary incompatibility. Furthermore, if there is necessity to modify source code to support the new version of GitBucket, they can know it by a notification in the daily build check.
 
 For now, only the plugins under the GitBucket organization are being registered and automatically built. However we want extend this, to be able to register and build any third-party GitBucket plugin as well. I believe this would greatly help everybody: the plugin users, the plugin the developers as well as the GitBucket team, by reducing the maintenance effort for these plugins and also by improving the convenience of plugin installation and update.
 
