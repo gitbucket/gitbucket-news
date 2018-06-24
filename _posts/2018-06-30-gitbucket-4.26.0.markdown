@@ -38,13 +38,13 @@ To decrease unnecessary "Compare & pull request" alerts, branches which fill all
 - A last commit of the branch is within one hour
 - The branch isn't behind of the default branch
 
-> TODO: Image
+![Pull request suggestor]({{site.baseurl}}/images/gitbucket-4.26.0/pull_request_suggestor.png)
 
 ## Keep showing incompleted task list
 
 At the pull request discussion view, comments for old commits are folded. Since this release, they keep showing if they include a task list and the list is imcompleted.
 
-> TODO: Image
+![Imcompleted task list]({{site.baseurl}}/images/gitbucket-4.26.0/imcompleted_task_list.png)
 
 ## New notification hooks
 
