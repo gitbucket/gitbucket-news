@@ -2,7 +2,7 @@
 layout: post
 title: "GitBucket 4.26.0 released!"
 date: 2018-06-30 00:00:00
-image: /images/gitbucket-4.26.0/tasklist_commit_comment.png
+image: /images/gitbucket-4.26.0/new_plugin_manager.png
 categories: gitbucket
 ---
 
@@ -12,7 +12,7 @@ Today, we are pleased to announce the availability of new version of Scala based
 
 Recently, we started the [plugin registry](https://plugins.gitbucket-community.org/). GitBucket 4.26.0 has a new plugin manager which makes possible to install and update plugins from this registry.
 
-> TODO: Image
+![New plugin manager]({{site.baseurl}}/images/gitbucket-4.26.0/new_plugin_manager.png)
 
 See the [previous article](https://gitbucket.github.io/gitbucket-news/gitbucket/2018/06/20/plugin-registry-launched.html) to know more details about the plugin registry.
 
