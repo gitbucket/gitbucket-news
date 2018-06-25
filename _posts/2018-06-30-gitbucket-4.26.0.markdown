@@ -24,9 +24,13 @@ Added "Repositories" tab to the dashboard which lists repositories which are acc
 
 Along with this enhancement, the sidebar of the dashboard has been fixed to the list of recent updated repositories even if logged-in. 
 
-## Fork dialog became the list style
+## Fork dialog enhancement
 
-The fork account choosing dialog has been changed to the list style. It's easier to find an account than the previous card style dialog because account names aren't omitted even if they have long names.
+The "Fork" button has been located to the top of the repository viewer. You can open the fork account choosing dialog by clicking this button.
+
+![Fork button]({{site.baseurl}}/images/gitbucket-4.26.0/fork_button.png)
+
+The dialog has been changed to the list style. It's easier to find an account than the previous card style dialog because account names aren't omitted even if they have long names. You can also see all forked repositories by clicking the "Show forks" button at the dialog.
 
 ![Fork dialog]({{site.baseurl}}/images/gitbucket-4.26.0/fork_dialog.png)
 
