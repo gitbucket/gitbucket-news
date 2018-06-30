@@ -1,0 +1,64 @@
+---
+layout: post
+title: "GitBucket 4.26.0 released!"
+date: 2018-06-30 00:00:00
+image: /images/gitbucket-4.26.0/new_plugin_manager.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.26.0](https://github.com/gitbucket/gitbucket/releases/tag/4.26.0)!
+
+## Installing plugins from the central registry
+
+Recently, we started the [plugin registry](https://plugins.gitbucket-community.org/). GitBucket 4.26.0 has a new plugin manager which makes possible to install and update plugins from this registry.
+
+![New plugin manager]({{site.baseurl}}/images/gitbucket-4.26.0/new_plugin_manager.png)
+
+See the [previous article](https://gitbucket.github.io/gitbucket-news/gitbucket/2018/06/20/plugin-registry-launched.html) to know more details about the plugin registry.
+
+## Repositories tab in the dashboard
+
+Added "Repositories" tab to the dashboard which lists repositories which are accessible by a logged-in user.
+
+![Repositories tab in the dashboard]({{site.baseurl}}/images/gitbucket-4.26.0/dashboard_repo_list.png)
+
+Along with this enhancement, the sidebar of the dashboard has been fixed to the list of recent updated repositories even if logged-in. 
+
+## Fork dialog enhancement
+
+The "Fork" button has been located to the top of the repository viewer. You can open the fork account choosing dialog by clicking this button.
+
+![Fork button]({{site.baseurl}}/images/gitbucket-4.26.0/fork_button.png)
+
+The dialog has been changed to the list style. It's easier to find an account than the previous card style dialog because account names aren't omitted even if they have long names. You can also see all forked repositories by clicking the "Show forks" button at the dialog.
+
+![Fork dialog]({{site.baseurl}}/images/gitbucket-4.26.0/fork_dialog.png)
+
+## Adjust pull request creation suggestor
+
+To decrease unnecessary "Compare & pull request" alerts, branches which fill all following conditions are displayed as pull request creation proposals:
+
+- A last committer of the branch is the logged-in user
+- A last commit of the branch is within one hour
+- The branch isn't behind of the default branch
+
+![Pull request suggestor]({{site.baseurl}}/images/gitbucket-4.26.0/pull_request_suggestor.png)
+
+## Keep showing incompleted task list
+
+At the pull request discussion view, comments for old commits are folded. Since this release, they keep showing if they include a task list and the list is imcompleted.
+
+![Imcompleted task list]({{site.baseurl}}/images/gitbucket-4.26.0/imcompleted_task_list.png)
+
+## New notification hooks
+
+Following two hooks have been added for plugins:
+
+- assigned
+- closedByCommitComment
+
+Upgrade [gitbucket-notification-plugin](https://github.com/gitbucket/gitbucket-notifications-plugin) to enable these notification.
+
+In addition, this release contains some improvements and bug fixes. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.26.0) to know details.
+
+Enjoy GitBucket!
