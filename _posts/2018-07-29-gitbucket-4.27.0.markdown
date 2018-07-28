@@ -1,0 +1,33 @@
+---
+layout: post
+title: "GitBucket 4.27.0 released!"
+date: 2018-07-29 00:00:00
+image: /images/gitbucket-4.27.0/add_tag.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.27.0](https://github.com/gitbucket/gitbucket/releases/tag/4.27.0)!
+
+## Create new tag on the browser
+
+The repository viewer now supports creating new tag on the browser.
+
+![Add tag]({{site.baseurl}}/images/gitbucket-4.27.0/add_tag.png)
+
+## EditorConfig support
+
+[EditorConfig](https://editorconfig.org/) is a configuration format which helps to maintain consistent coding styles between various text editors and IDEs. GitBucket's online source code viewer and editor now support following configurations of EditorConfig when `.editorconfig` is at the root of a git repository:
+
+- `indent_style`
+- `indent_size` (`tab_width`)
+- `end_of_line`
+
+## Improve issues / pull requests search
+
+Before this release, the search result of issues and pull requests were displayed on the same page, and we couldn't recognize which one is an issue or a pull request from displayed information. Now issues and pull requests were separated. Also their status (open or closed) is displayed on the list.
+
+![Search result]({{site.baseurl}}/images/gitbucket-4.27.0/search_result.png)
+
+In addition, this release contains some improvements and bug fixes. Especially, plugin installation and pull request commenting have many improvements in this release. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.27.0) to know details.
+
+Enjoy GitBucket!
