@@ -19,6 +19,6 @@ In addition, this release contains some important bug fixes like below:
 - Possible InternalServerError in the pull request creating UI when you change selection of the target or source repository
 - Possible StackOverflowError in the list of issues / pull requests at the dashboard if your account has a lot of repositories
 
-If you are facing these problems, consider upgrading to the latest version of GitBucket. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.28.0) to know all updates in this release.
+See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.28.0) to know all updates in this release. If you are facing these problems, consider upgrading to this version.
 
 Enjoy GitBucket!
