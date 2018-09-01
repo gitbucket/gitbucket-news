@@ -1,0 +1,19 @@
+---
+layout: post
+title: "GitBucket 4.28.0 released!"
+date: 2018-08-01 00:00:00
+image: /images/gitbucket-4.28.0/proxy_setting.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.28.0](https://github.com/gitbucket/gitbucket/releases/tag/4.28.0)!
+
+## Proxy support for plugin installation
+
+The plugin repository settings has been moved to "System settings" and now it supports HTTP proxy for plugin installation from the plugin repository.
+
+![Proxy setting for plugin installation]({{site.baseurl}}/images/gitbucket-4.28.0/proxy_setting.png)
+
+In addition, this release contains some improvements and bug fixes. Especially around pull requests. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.28.0) to know details.
+
+Enjoy GitBucket!
