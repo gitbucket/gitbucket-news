@@ -8,7 +8,7 @@ categories: gitbucket
 
 Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.29.0](https://github.com/gitbucket/gitbucket/releases/tag/4.29.0)!
 
-## Official Docker image is available
+## Official Docker support
 
 [Official Docker image](https://hub.docker.com/r/gitbucket/gitbucket/) is now available on DockerHub!
 
