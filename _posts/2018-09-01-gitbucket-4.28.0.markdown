@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GitBucket 4.28.0 released!"
-date: 2018-08-01 00:00:00
+date: 2018-09-01 00:00:00
 image: /images/gitbucket-4.28.0/proxy_setting.png
 categories: gitbucket
 ---

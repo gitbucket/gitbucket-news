@@ -1,0 +1,51 @@
+---
+layout: post
+title: "GitBucket 4.29.0 released!"
+date: 2018-09-29 00:00:00
+image: /images/gitbucket-4.29.0/docker.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.29.0](https://github.com/gitbucket/gitbucket/releases/tag/4.29.0)!
+
+## Official Docker image is available
+
+[Official Docker image](https://hub.docker.com/r/gitbucket/gitbucket/) is now available on DockerHub!
+
+![DockerHub]({{site.baseurl}}/images/gitbucket-4.29.0/docker.png)
+
+You can run GitBucket using `docker` command immediately:
+
+```
+$ docker run -d -p 8080:8080 gitbucket/gitbucket
+```
+
+Add `-p 29418:29418` option if you would like to enable SSH for repository access:
+
+```
+$ docker run -d -p 8080:8080 -p 29418:29418 gitbucket/gitbucket
+```
+
+You can also specify the data directory by `-v` option:
+
+```
+$ docker run -d -p 8080:8080 -v `pwd`/gitbucket:/gitbucket gitbucket/gitbucket
+```
+
+## Enhance edit button of the repository viewer
+
+In the repository viewer, direct edit button is now available for README, and edit and delete button are iconized.
+
+![Direct edit button for README]({{site.baseurl}}/images/gitbucket-4.29.0/edit-button-1.png)
+
+![Edit and delete buttons are iconized]({{site.baseurl}}/images/gitbucket-4.29.0/edit-button-2.png)
+
+## Confirm dialog for dangerous operations
+
+Before this release, GitBucket shown a confirmation dialog for only repository deletion. Now it shows for also "Transfer Ownership" and "Garbage collection" for further safety.
+
+![Confirmation dialog for dangerous operations]({{site.baseurl}}/images/gitbucket-4.29.0/confirm-dialog.png)
+
+In addition, this release contains some improvements and bug fixes. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.26.0) to know details.
+
+Enjoy GitBucket!
