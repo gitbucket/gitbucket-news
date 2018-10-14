@@ -32,7 +32,7 @@ and Excel!! This plugin makes possible to render Excel file on GitBucket. It rea
 
 ![Excel plugin]({{site.baseurl}}/images/plugins-for-project-management/excel-plugin.png)
 
-But this plugin is kind of joke. It made by a committer of GitBucket but it's still under development and not released yet. I tried to build this plugin from source code and use it yesterday, but it didn't work. :-P
+This plugin being developing by a committer of GitBucket and it's not released yet. So we can't use it at the moment, but really cool. I can't wait for the release of this plugin.
 
 Anyway, GitBucket has a lot of useful plugins in addition to the basic features. I hope you can find one which meets your requirement from them.
 
