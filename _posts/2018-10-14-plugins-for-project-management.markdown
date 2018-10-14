@@ -28,7 +28,7 @@ This plugin was made by a same author of Kanban plugin. It visualizes the milest
 
 [https://github.com/kounoike/gitbucket-xlsx-plugin](https://github.com/kounoike/gitbucket-xlsx-plugin)
 
-and Excel!! This plugin makes possible to render Excel file on GitBucket. It really useful in some kind of projects which exploits Excel for any purposes.
+and Excel!! This plugin makes possible to render Excel file on GitBucket. It really useful in some kind of projects which exploit Excel for any purposes.
 
 ![Excel plugin]({{site.baseurl}}/images/plugins-for-project-management/excel-plugin.png)
 
