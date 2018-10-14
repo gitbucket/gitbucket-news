@@ -24,7 +24,7 @@ This plugin was made by a same author of Kanban plugin. It visualizes the milest
 
 ![Gantt plugin]({{site.baseurl}}/images/plugins-for-project-management/gantt-plugin.png)
 
-## Excel viewer plugin
+## Excel plugin
 
 [https://github.com/kounoike/gitbucket-xlsx-plugin](https://github.com/kounoike/gitbucket-xlsx-plugin)
 
