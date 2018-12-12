@@ -1,0 +1,52 @@
+---
+layout: post
+title: "GitBucket 4.30.0 released!"
+date: 2018-12-15 00:00:00
+image: /images/gitbucket-4.30.0/generate_changelog.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.30.0](https://github.com/gitbucket/gitbucket/releases/tag/4.30.0)!
+
+## Automatic ChangeLog Summary generation for new Releases
+
+You can generate ChangeLog summary for a release from Git commit log between the release tag and its previous tag. By clicking "Generate ChangeLog" button at the release form, ChangeLog summary is inserted into the description of the release. Even if the previous tag isn't actual previous release, you can choose it from existing Git tags by hand.
+
+![Generate ChangeLog]({{site.baseurl}}/images/gitbucket-4.30.0/generate_changelog.png)
+
+## Web API updates
+
+A lot of Web API has been added in this release. Here is the list of them:
+
+- TODO
+- TODO
+- TODO
+- TODO
+- TODO
+
+## Group support in the Gist Plugin
+
+Gist plugin is now support groups. You can create snippets for your groups from the group account page. 
+
+> TODO: Image
+
+## Checkboxes in Markdown files in Git repositories
+
+In GitBucket, a following notation in Markdown is rendered as checkboxes but it had worked for only the description of issues and pull requests. Since this release, this rendering works for also Markdown files in Git repositories.
+
+```markdown
+- [ ] checkbox1
+- [ ] checkbox2
+```
+
+> TODO: Image
+
+## Redirection to the Release Page from the Activity Timeline
+
+> TODO
+
+Also a new extension point for plugins: `anonymousAccessiblePaths` has been added in this release. This extension point allows plugins providing public pages without any authentication if GitBucket is configured as private mode.
+
+In addition, this release contains some improvements and bug fixes. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.30.0) to know details.
+
+Enjoy GitBucket!
