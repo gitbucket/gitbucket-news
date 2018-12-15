@@ -10,7 +10,7 @@ Today, we are pleased to announce the availability of new version of Scala based
 
 ## Automatic ChangeLog Summary generation for new Releases
 
-You can generate ChangeLog summary for a release from Git commit log between the release tag and its previous tag. By clicking "Generate ChangeLog" button at the release form, ChangeLog summary is inserted into the description of the release. Even if the previous tag isn't actual previous release, you can choose it from existing Git tags by hand.
+You can generate ChangeLog summary for a release from Git commit log between the release tag and its previous tag. By clicking "Insert ChangeLog" button at the release form, ChangeLog summary is inserted into the description of the release. Even if the previous tag isn't actual previous release, you can choose it from existing Git tags by hand.
 
 ![Generate ChangeLog]({{site.baseurl}}/images/gitbucket-4.30.0/generate_changelog.png)
 
