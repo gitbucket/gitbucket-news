@@ -2,7 +2,7 @@
 layout: post
 title: "GitBucket 4.31.0 released!"
 date: 2019-03-17 00:00:00
-image: /images/gitbucket-4.31.0/generate_changelog.png
+image: /images/gitbucket-4.31.0/ci_plugin_docker_build.png
 categories: gitbucket
 ---
 
@@ -10,16 +10,38 @@ Today, we are pleased to announce the availability of new version of Scala based
 
 ## Docker support in CI plugin
 
-## Verify GPG key sign
+[gitbucket-ci-plugin](https://github.com/takezoe/gitbucket-ci-plugin) now supports docker and docker-compose.
+
+![Docker build setting]({{site.baseurl}}/images/gitbucket-4.31.0/ci_plugin_docker_setting.png)
+
+![Ducker build result]({{site.baseurl}}/images/gitbucket-4.31.0/ci_plugin_docker_build.png)
+
+If administrator enables docker / docker-compose support, users will be able to be specify Dockerfile or docker-compose.yml to build. To use this feature, docker installation is required.
+
+## Verify GPG key signed commit
+
+The result of verification of GPG signed commit is displayed in the list of commits.
+
+![Verify GPG key signed commit]({{site.baseurl}}/images/gitbucket-4.31.0/verify_gpg_signed_commit.png)
 
 ## Web API updates
 
-## OGP support
+[OAuth2 Token (sent as a parameter)](https://developer.github.com/v3/#oauth2-token-sent-as-a-parameter) authentication is now supported for Web API access. Also following APIs have been added in this release:
+
+- [Create a file](https://developer.github.com/v3/repos/contents/#create-a-file)
+- [Update a file](https://developer.github.com/v3/repos/contents/#update-a-file)
+- [Create a new group](https://developer.github.com/enterprise/2.16/v3/enterprise-admin/orgs/#create-an-organization)
+
+## OGP (Open Graph protocol) support
+
+GitBucket generates meta tags defined by [Open Graph protocol](http://ogp.me/) (e.g. `og:title`, `og:image`, etc). It's useful when you share GitBucket URL on blog, social media or chat.
 
 ## Username completion with avatars
 
-## MySQL8 support
+Username completion became to display avatar at the front of username.
 
-In addition, this release contains some improvements and bug fixes. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.31.0) to know details.
+![Username completion with avatars]({{site.baseurl}}/images/gitbucket-4.31.0/username_completion.png)
+
+In addition, this release contains some improvements like MySQL8 support and some bug fixes. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.31.0) to know details.
 
 Enjoy GitBucket!
