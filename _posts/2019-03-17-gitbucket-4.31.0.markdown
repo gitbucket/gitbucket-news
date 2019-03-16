@@ -1,0 +1,25 @@
+---
+layout: post
+title: "GitBucket 4.31.0 released!"
+date: 2019-03-17 00:00:00
+image: /images/gitbucket-4.31.0/generate_changelog.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.31.0](https://github.com/gitbucket/gitbucket/releases/tag/4.31.0)!
+
+## Docker support in CI plugin
+
+## Verify GPG key sign
+
+## Web API updates
+
+## OGP support
+
+## Username completion with avatars
+
+## MySQL8 support
+
+In addition, this release contains some improvements and bug fixes. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.31.0) to know details.
+
+Enjoy GitBucket!
