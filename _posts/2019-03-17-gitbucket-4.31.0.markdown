@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "GitBucket 4.31.0 released!"
+title: "GitBucket 4.31.0 and 4.31.1 released!"
 date: 2019-03-17 00:00:00
 image: /images/gitbucket-4.31.0/ci_plugin_docker_build.png
 categories: gitbucket
 ---
 
-Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.31.0](https://github.com/gitbucket/gitbucket/releases/tag/4.31.0)!
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.31.0](https://github.com/gitbucket/gitbucket/releases/tag/4.31.0) and [GitBucket 4.31.1](https://github.com/gitbucket/gitbucket/releases/tag/4.31.1)! 4.31.0 offers many useful features as mentioned in this article. But since 4.31.1 which is bugfix release has been already available, we highly recommend to use it.
 
 ## Docker support in CI plugin
 
-[gitbucket-ci-plugin](https://github.com/takezoe/gitbucket-ci-plugin) now supports docker and docker-compose.
+[gitbucket-ci-plugin](https://github.com/takezoe/gitbucket-ci-plugin) now supports [docker](https://www.docker.com/) and [docker-compose](https://docs.docker.com/compose/).
 
 ![Docker build setting]({{site.baseurl}}/images/gitbucket-4.31.0/ci_plugin_docker_setting.png)
 
@@ -42,6 +42,6 @@ Username completion became to display avatar at the front of username.
 
 ![Username completion with avatars]({{site.baseurl}}/images/gitbucket-4.31.0/username_completion.png)
 
-In addition, this release contains some improvements like MySQL8 support and some bug fixes. See [all closed issues in this release](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.31.0) to know details.
+In addition, this release contains some improvements like MySQL8 support and some bug fixes. See all closed issues in [4.30.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.31.0) and [4.30.1](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.31.1) to know details.
 
 Enjoy GitBucket!
