@@ -1,0 +1,66 @@
+---
+layout: post
+title: "GitBucket 4.32.0 released!"
+date: 2019-03-17 00:00:00
+image: /images/gitbucket-4.32.0/draft_pull_request_1.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.32.0](https://github.com/gitbucket/gitbucket/releases/tag/4.32.0)!
+
+## Scala 2.13.0 and Scalatra 2.7.0
+
+Since this release, GitBucket has been built using Scala 2.13.0 and Scalatra 2.7.0. This means all plugins also needed to be built using Scala 2.13 and Scalatra 2.7 due to the binary incompatibility. All of official bundled plugins, [GitBucket Community plugins](https://github.com/gitbucket-plugins) and some third-party plugins listed below already support GitBucket 4.32.0. 
+
+- [gitbucket-ci-plugin](https://github.com/takezoe/gitbucket-ci-plugin)
+- [gitbucket-maven-repository-plugin](https://github.com/takezoe/gitbucket-maven-repository-plugin)
+- [gitbucket-h2console-plugin](https://github.com/takezoe/gitbucket-h2console-plugin)
+
+Third-party plugins other than above won't work with GitBucket 4.32.0. You will have to wait upgrading GitBucket until those plugins will support GitBucket 4.32.0 if you need those plugins.
+
+Also, Scala 2.13.0 is the first GA release of Scala 2.13 series, so it may contain unknown bugs or issues caused by backward incompatibility. If you use GitBucket in your business, you should be careful on upgrading your GitBucket to this version.
+
+## Drop network installation of plugins
+
+The plugin registry has been deprecated since this release for some reason. Plugins installation via network isn't supported any more and the plugin registry will be shutdown in the near future.
+
+Official plugins below are bundled with GitBucket distribution:
+
+- [gitbucket-notifications-plugin](https://github.com/gitbucket/gitbucket-notifications-plugin)
+- [gitbucket-gist-plugin](https://github.com/gitbucket/gitbucket-gist-plugin)
+- [gitbucket-pages-plugin](https://github.com/gitbucket/gitbucket-pages-plugin)
+- [gitbucket-emoji-plugin](https://github.com/gitbucket/gitbucket-emoji-plugin)
+
+These plugins are enabled in default. But You need to install other plugins manually in GitBucket 4.32.0. 
+
+## Draft pull request
+
+You can now create a pull request as a draft pull request. Draft pull request cannot be merged.
+
+![Create draft pull request]({{site.baseurl}}/images/gitbucket-4.32.0/draft_pull_request_1.png)
+
+When the pull request became ready to merge, you can cancel the draft mode and then the pull request become to mergeable.
+
+![Cancel draft status]({{site.baseurl}}/images/gitbucket-4.32.0/draft_pull_request_2.png)
+
+## Compare view works for commit id
+
+The compare view now works for commit id, not only branch name or tag name as following form of URL: `http://localhost:8080/user/repo/compare/commitId...commitId`
+
+![Compare view]({{site.baseurl}}/images/gitbucket-4.32.0/compare_view.png)
+
+## Apply default priority to pull requests
+
+The default priority is now applied to new pull requests, not only issues.
+
+![Default priority]({{site.baseurl}}/images/gitbucket-4.32.0/default_priority.png)
+
+## Focus title after clicking issue / pull request edit button
+
+When issue / pull request edit button is clicked, the title field is now focussed on so that you can edit the title of issue / pull request immediately.
+
+![Focus on the title]({{site.baseurl}}/images/gitbucket-4.32.0/focus_on_title.gif)
+
+In addition, this release contains some improvements and bug fixes. See all closed issues in [4.32.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.32.0) to know details.
+
+Enjoy GitBucket!
