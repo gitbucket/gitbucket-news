@@ -17,7 +17,7 @@ kramdown:
 
 logo: /favicon.png
 
-gems:
+plugins:
   - jekyll-paginate
   - jemoji
 #  - jekyll-mentions
