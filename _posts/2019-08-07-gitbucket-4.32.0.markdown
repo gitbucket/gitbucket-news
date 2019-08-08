@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "GitBucket 4.32.0 released!"
-date: 2019-03-17 00:00:00
+date: 2019-08-07 00:00:00
 image: /images/gitbucket-4.32.0/draft_pull_request_1.png
 categories: gitbucket
 ---
