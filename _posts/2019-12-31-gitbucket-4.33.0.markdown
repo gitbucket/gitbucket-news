@@ -1,0 +1,46 @@
+---
+layout: post
+title: "GitBucket 4.33.0 released!"
+date: 2019-12-31 00:00:00
+image: /images/gitbucket-4.33.0/fold_pull_request_files.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.33.0](https://github.com/gitbucket/gitbucket/releases/tag/4.33.0)!
+
+## All CLI options are configurable by environmental variables
+
+For Docker use case, etc. GitBucket can be configured by the environmental variables. For example, database configuration is done in `GITBUCKET_HOME/database.conf` normally but also you can give these configurations via [environmental variables (or system properties)](https://github.com/gitbucket/gitbucket/wiki/Configure-from-command-line).
+
+In addition to them, now you can configure the following items currently they can be specified by only CLI options or the system properties.
+
+- `GITBUCKET_MAXFILEZIE`: Max size of uploaded files (bytes, default is 3MB)
+- `GITBUCKET_UPLOADTIMEOUT`: Timeout for file uploading (msec, default is 30 secs)
+- `GITBUCKET_PLUGINDIR`: Extra directory for plugins (default is undefined)
+- `GITBUCKET_VALIDATE_PASSWORD`: Whether to validate password, if false you can use any chars in password (default is true)
+
+## Folding pull request files
+
+You can now fold/unfold pull request files at the compare view. This is convenient for reviewing large pull requests.
+
+![Fold pull request files]({{site.baseurl}}/images/gitbucket-4.33.0/fold_pull_request_files_anime.gif)
+
+## WebHook security options
+
+New option to block WebHook to private addresses is now available. We can reject access to internal resources by WebHook by enabling this option. You can allow WebHook to access internal resources by IP whitelist even if you enabled this option.
+
+![Fold pull request files]({{site.baseurl}}/images/gitbucket-4.33.0/web_hook_security_options.png)
+
+## Add asignee and asignees properties to some Web APIs' response
+
+In the following Web API, `asignee` and `asignees` properties are now available in the response.
+
+- [list-issues-for-a-repository api](https://developer.github.com/v3/issues/#list-issues-for-a-repository)
+- [get-a-single-issues api](https://developer.github.com/v3/issues/#get-a-single-issue)
+- [create-an-issue api](https://developer.github.com/v3/issues/#create-an-issue)
+- [issuesevent webhook](https://developer.github.com/v3/activity/events/types/#issuesevent)
+- [issuecommentevent webhook](https://developer.github.com/v3/activity/events/types/#issuecommentevent)
+
+In addition, this release contains some improvements and bug fixes. See all closed issues in [4.33.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.33.0) to know details.
+
+Enjoy GitBucket!
