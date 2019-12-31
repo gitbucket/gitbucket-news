@@ -27,13 +27,13 @@ You can now fold/unfold pull request files at the compare view. This is convenie
 
 ## WebHook security options
 
-New option to block WebHook to private addresses is now available. We can reject access to internal resources by WebHook by enabling this option. You can allow WebHook to access internal resources by IP whitelist even if you enabled this option.
+New option to reject access to private addresses by WebHook is now available. You can allow WebHook to access internal resources by IP whitelist even if you enabled this option.
 
 ![Fold pull request files]({{site.baseurl}}/images/gitbucket-4.33.0/web_hook_security_options.png)
 
-## Add asignee and asignees properties to some Web APIs' response
+## Add assignee and assignees properties to some Web APIs' response
 
-In the following Web API, `asignee` and `asignees` properties are now available in the response.
+In the following Web API, `assignee` and `assignees` properties are now available in the response.
 
 - [list-issues-for-a-repository api](https://developer.github.com/v3/issues/#list-issues-for-a-repository)
 - [get-a-single-issues api](https://developer.github.com/v3/issues/#get-a-single-issue)
