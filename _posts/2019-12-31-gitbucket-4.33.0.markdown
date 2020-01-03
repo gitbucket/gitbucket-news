@@ -8,9 +8,9 @@ categories: gitbucket
 
 Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.33.0](https://github.com/gitbucket/gitbucket/releases/tag/4.33.0)!
 
-## All CLI options are configurable by environmental variables
+## All CLI options are configurable by environment variables
 
-For Docker use case, etc. GitBucket can be configured by the environmental variables. For example, database configuration is done in `GITBUCKET_HOME/database.conf` normally but also you can give these configurations via [environmental variables (or system properties)](https://github.com/gitbucket/gitbucket/wiki/Configure-from-command-line).
+For Docker use case, etc. GitBucket can be configured by the environment variables. For example, database configuration is done in `GITBUCKET_HOME/database.conf` normally but also you can give these configurations via [environment variables (or system properties)](https://github.com/gitbucket/gitbucket/wiki/Basic-configurations).
 
 In addition to them, now you can configure the following items currently they can be specified by only CLI options or the system properties.
 
