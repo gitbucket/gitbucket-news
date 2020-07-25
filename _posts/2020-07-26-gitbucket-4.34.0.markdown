@@ -1,0 +1,62 @@
+---
+layout: post
+title: "GitBucket 4.34.0 released!"
+date: 2020-07-26 00:00:00
+image: /images/gitbucket-4.34.0/danger-zone.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.34.0](https://github.com/gitbucket/gitbucket/releases/tag/4.34.0)!
+
+## Enhancement admin settings UI
+
+Admin settings UI has been restructued and some new setting items are available.
+
+### File upload settings
+
+Previously, the max upload file size and the upload timeout were configurable by command line options, environment variables or system properties. These parameters are now configurable in the admin settings page. Also, limitations for large files are configurable separately.
+
+![Restrict repository operations]({{site.baseurl}}/images/gitbucket-4.34.0/file-upload-settings.png)
+
+### Restrict repository operations
+
+Administrators can restrict repository operations (delete, rename, fork and transfer) in the admin settings page. Only administrators can do these operations when restricted.
+
+![Restrict repository operations]({{site.baseurl}}/images/gitbucket-4.34.0/restrict-repository-operations.png)
+
+### User-defined CSS
+
+In addition to choosing AdminLTE theme, administrators can customize the presentation of GitBucket by defining CSS which are applied to all GitBucket pages in the admin settings page.
+
+![User-defined CSS]({{site.baseurl}}/images/gitbucket-4.34.0/user-defined-css.png)
+
+## Improve repository viewer performance
+
+We improved the repository viewer performance particularly on large Git repositories by introducing in-memory cache and the skipping showing detailed information if the directory has too many files.
+
+## Persist session on disk in the standalone mode
+
+Added `--save_sessions` option which enable to persist session on the local disk in the standalone mode. You can use this option as follows:
+
+```
+$ java --save_sessions -jar gitbucket.war
+```
+
+## WebAPI updates
+
+Added [list commits API](https://developer.github.com/v3/repos/commits/#list-commits) and some APIs have been enhanced for further compatibility with GitHub API.
+
+Troubles in Jenkins integration have been reported from many GitBucket users, though we hope that these updates will contribute better integration with Jenkins and any other products which support GitHub.
+
+## Bundled Plugin updates
+
+Two of plugins bundled with GitBucket distribution by default has been updated.
+
+- [gitbucket-gist-plugin](https://github.com/gitbucket/gitbucket-gist-plugin) 4.18.0 -> 4.19.0
+  - Minor update to improve MariaDB support as same as GitBucket core
+- [gitbucket-notifications-plugin](https://github.com/gitbucket/gitbucket-notifications-plugin) 1.8.0 -> 1.9.0
+  - Suppot extra mail addresses
+
+In addition, this release contains various improvements and bug fixes like improvement of MariaDB support, activity logging and limiting the repository list in the sidebar. See all closed issues in [4.33.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.34.0) to know details.
+
+Enjoy GitBucket!
