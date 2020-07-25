@@ -8,6 +8,8 @@ categories: gitbucket
 
 Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.34.0](https://github.com/gitbucket/gitbucket/releases/tag/4.34.0)!
 
+Since this is the first release in 2020 and also the first release in 7 months, a lot of updates are included. Let's see the major ones.
+
 ## Admin settings UI enhancement
 
 Admin settings UI has been restructued and some new setting items are available.
