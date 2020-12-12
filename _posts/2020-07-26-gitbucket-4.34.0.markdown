@@ -59,6 +59,6 @@ Two of plugins bundled with GitBucket distribution by default has been updated.
 - [gitbucket-notifications-plugin](https://github.com/gitbucket/gitbucket-notifications-plugin) 1.8.0 -> 1.9.0
   - Suppot extra mail addresses
 
-In addition, this release contains various improvements and bug fixes like improvement of MariaDB support, activity logging and limiting the repository list in the sidebar. See all closed issues in [4.33.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.34.0) to know details.
+In addition, this release contains various improvements and bug fixes like improvement of MariaDB support, activity logging and limiting the repository list in the sidebar. See all closed issues in [4.34.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.34.0) to know details.
 
 Enjoy GitBucket!
