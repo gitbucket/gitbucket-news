@@ -76,45 +76,46 @@ The coverage of GitHub-compatible APIs is super-improved in this release! The fo
 
 - Issues
   - Comments
-    - [Get an issue comment]()
-    - [Update an issue comment]()
-    - [Delete an issue comment]()
+    - [Get an issue comment](https://docs.github.com/en/free-pro-team@latest/rest/reference/issues#get-an-issue-comment)
+    - [Update an issue comment](https://docs.github.com/en/free-pro-team@latest/rest/reference/issues#update-an-issue-comment)
+    - [Delete an issue comment](https://docs.github.com/en/free-pro-team@latest/rest/reference/issues#delete-an-issue-comment)
   - Milestones
-    - [List milestones]()
-    - [Create a milestone]()
-    - [Get a milestone]()
-    - [Update a milestone]()
-    - [Delete a milestone]()
+    - [List milestones](https://docs.github.com/en/free-pro-team@latest/rest/reference/issues#list-milestones)
+    - [Create a milestone](https://docs.github.com/en/free-pro-team@latest/rest/reference/issues#create-a-milestone)
+    - [Get a milestone](https://docs.github.com/en/free-pro-team@latest/rest/reference/issues#get-a-milestone)
+    - [Update a milestone](https://docs.github.com/en/free-pro-team@latest/rest/reference/issues#update-a-milestone)
+    - [Delete a milestone](https://docs.github.com/en/free-pro-team@latest/rest/reference/issues#delete-a-milestone)
 - Pull requests
-  - [Update a pull request]()
-  - [Merge a pull request]()
+  - [Update a pull request](https://docs.github.com/en/free-pro-team@latest/rest/reference/pulls#update-a-pull-request)
+  - [Merge a pull request](https://docs.github.com/en/free-pro-team@latest/rest/reference/pulls#merge-a-pull-request)
 - Repositories
-  - [List public repositories]()
-  - [List repository tags]()
+  - [List public repositories](https://developer.github.com/v3/repos/#list-public-repositories)
+  - [List repository tags](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#list-repository-tags)
   - Branches
-    - [Get branch protection]()
-    - [Delete branch protection]()
-    - [Get status checks protection]()
-    - [Get all status check contexts]()
-    - [List branches for HEAD commit]()
+    - [Get branch protection](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#get-branch-protection)
+    - [Delete branch protection](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#delete-branch-protection)
+    - [Get status checks protection](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#get-status-checks-protection)
+    - [Get all status check contexts](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#get-all-status-check-contexts)
+  - Commits
+    - [List branches for HEAD commit](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#list-branches-for-head-commit)
   - Contents
-    - [Get a repository README]()
+    - [Get a repository README](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#get-a-repository-readme)
   - Reference
-    - [Create a reference]()
-    - [Update a reference]()
-    - [Delete a reference]()
-    - [Check if a user is a repository collaborator]()
+    - [Create a reference](https://docs.github.com/en/free-pro-team@latest/rest/reference/git#create-a-reference)
+    - [Update a reference](https://docs.github.com/en/free-pro-team@latest/rest/reference/git#update-a-reference)
+    - [Delete a reference](https://docs.github.com/en/free-pro-team@latest/rest/reference/git#delete-a-reference)
   - Collaborators
-    - [Get repository permissions for a user]()
-    - [List repository webhooks]()
+    - [Check if a user is a repository collaborator](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#check-if-a-user-is-a-repository-collaborator)
+    - [Get repository permissions for a user](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#get-repository-permissions-for-a-user)
   - Webhooks
-    - [Create a repository webhook]()
-    - [Get a repository webhook]()
-    - [Update a repository webhook]()
-    - [Delete a repository webhook]()
+    - [List repository webhooks](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#list-repository-tags)
+    - [Create a repository webhook](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#create-a-repository-webhook)
+    - [Get a repository webhook](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#get-a-repository-webhook)
+    - [Update a repository webhook](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#update-a-repository-webhook)
+    - [Delete a repository webhook](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#delete-a-repository-webhook)
 
 See [Wiki](https://github.com/gitbucket/gitbucket/wiki/API-WebHook) to know all supported GitHub-compatible APIs in GitBucket.
 
-As I mentioned at the beginning of this document, this release also includes various improvements and bug fixes. See all closed issues in [4.35.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.35.0) to know details.
+As I mentioned at the beginning of this document, this release also includes various improvements and bug fixes. See all closed issues in [4.35.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.35.0) to know details. Also, for plugin developers, please note that since this release includes some incompatible changes in GitBucket core APIs, your plugins might need to be updated.
 
 Enjoy GitBucket!
