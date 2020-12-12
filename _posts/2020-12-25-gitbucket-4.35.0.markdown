@@ -1,0 +1,120 @@
+---
+layout: post
+title: "GitBucket 4.35.0 released!"
+date: 2020-12-25 00:00:00
+image: /images/gitbucket-4.34.0/danger-zone.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.35.0](https://github.com/gitbucket/gitbucket/releases/tag/4.35.0)!
+
+Since this release includes various new features, improvements and bug fixes, it's really challenging to cover all changes in this document. For now, let's see the major stuff in this release.
+
+## Editor and source viewer color theme
+
+The color theme of the online editor and the source code viewer became selectable.
+
+> TODO: Image
+
+The source code viewer can be confiregured in your account settings.
+
+> TODO: Image
+
+## Auto completion for issue number
+
+Auto completion now supports issue number.
+
+> TODO: Image
+
+## Upload image from clipboard
+
+> TODO: Image
+
+## Close multiple issues by commit comment
+
+To date, we needed to write a commit comment to close multiple issues at once.
+
+```
+fix #1, fix #2, fix #3
+```
+
+In GitBucket 4.35.0, we now can write this as follows:
+
+```
+fix #1, #2, #3
+```
+
+## Create pull request from online editor
+
+When we edit a file in Git repository using the online editor, we can create a pull request instead of commit to the branch. Even users who don't have a permission to commit to the repository can create a pull request using the online editor.
+
+> TODO: Image
+
+## Milstone page
+
+GitBucket now provides a desicated page for each milestone. This page shows all issues and pull requests that are associated with the milestone at once.
+
+> TODO: Image
+
+## Commit status at various places
+
+If you use CI integartion with GitBucket, the build status is shown but available places were very limited. In this release, the build status is shown at various places like the branch list and the commit detailed page.
+
+> TODO: Image
+
+> TODO: Image
+
+> TODO: Image
+
+Also, the status of each context is now shown in the tooltip dialog.
+
+> TODO: Image
+
+## WebAPI updates
+
+The coverage of GitHub-compatible APIs is super-improved in this release! The following APIs have been added:
+
+- Issues
+  - Comments
+    - [Get an issue comment]()
+    - [Update an issue comment]()
+    - [Delete an issue comment]()
+  - Milestones
+    - [List milestones]()
+    - [Create a milestone]()
+    - [Get a milestone]()
+    - [Update a milestone]()
+    - [Delete a milestone]()
+- Pull requests
+  - [Update a pull request]()
+  - [Merge a pull request]()
+- Repositories
+  - [List public repositories]()
+  - [List repository tags]()
+  - Branches
+    - [Get branch protection]()
+    - [Delete branch protection]()
+    - [Get status checks protection]()
+    - [Get all status check contexts]()
+    - [List branches for HEAD commit]()
+  - Contents
+    - [Get a repository README]()
+  - Reference
+    - [Create a reference]()
+    - [Update a reference]()
+    - [Delete a reference]()
+    - [Check if a user is a repository collaborator]()
+  - Collaborators
+    - [Get repository permissions for a user]()
+    - [List repository webhooks]()
+  - Webhooks
+    - [Create a repository webhook]()
+    - [Get a repository webhook]()
+    - [Update a repository webhook]()
+    - [Delete a repository webhook]()
+
+See [Wiki](https://github.com/gitbucket/gitbucket/wiki/API-WebHook) to know all supported GitHub-compatible APIs in GitBucket.
+
+As I mentioned at the beginning of this document, this release also includes various improvements and bug fixes. See all closed issues in [4.35.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.35.0) to know details.
+
+Enjoy GitBucket!
