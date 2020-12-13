@@ -28,7 +28,7 @@ Auto completion now supports issues and pull requests. You can trigger the auto 
 
 ## Upload image from clipboard
 
-GitBucket now supports uplaading images from clipboard. You can paste (`CTRL + V`) an image from clipboard whereever you can upload files on GitBucket (e.g. issues, pull requests, comments, etc).
+GitBucket now supports uploading images from clipboard. You can paste (`CTRL + V`) an image from clipboard wherever you can upload files on GitBucket (e.g. issues, pull requests, comments, etc).
 
 Please note that this feature doesn't work with legacy browsers like Internet Explorer that don't implement Clipboard API.
 
