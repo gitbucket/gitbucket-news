@@ -14,21 +14,26 @@ Since this release includes various new features, improvements and bug fixes, it
 
 The color theme of the online editor and the source code viewer became selectable.
 
-> TODO: Image
+![Color theme of the editor]({{site.baseurl}}/images/gitbucket-4.35.0/color_theme_editor.png)
 
 The source code viewer can be confiregured in your account settings.
 
-> TODO: Image
+![Color theme of the source viewer]({{site.baseurl}}/images/gitbucket-4.35.0/color_theme_viewer.png)
 
 ## Auto completion for issue number
 
 Auto completion now supports issue number.
 
-> TODO: Image
+![Auto completion for issue number]({{site.baseurl}}/images/gitbucket-4.35.0/auto_completion_issue.png)
 
 ## Upload image from clipboard
 
-> TODO: Image
+GitBucket now supports uplaading images from clipboard. You can paste (CTRL + V) an image from clipboard whereever you can upload files on GitBucket (e.g. issues, pull requests, comments, etc). We tested this features on the following environments:
+
+- Chrome and Firefox on Windows 10
+- Chrome and Firefox on MacOS Catalina
+
+This feature requires Clipboard API, so it doesn't work with legacy browsers like Internet Explorer that don't implement Clipboard API.
 
 ## Close multiple issues by commit comment
 
@@ -48,27 +53,19 @@ fix #1, #2, #3
 
 When we edit a file in Git repository using the online editor, we can create a pull request instead of commit to the branch. Even users who don't have a permission to commit to the repository can create a pull request using the online editor.
 
-> TODO: Image
+![Create pull request from the editor]({{site.baseurl}}/images/gitbucket-4.35.0/create_pull_request.png)
 
-## Milstone page
+## Milstone overview
 
-GitBucket now provides a desicated page for each milestone. This page shows all issues and pull requests that are associated with the milestone at once.
+GitBucket now provides a desicated page for the milestone overview. This page shows all issues and pull requests that are associated with the milestone at once.
 
-> TODO: Image
+![Milestone overview]({{site.baseurl}}/images/gitbucket-4.35.0/milestone.png)
 
 ## Commit status at various places
 
-If you use CI integartion with GitBucket, the build status is shown but available places were very limited. In this release, the build status is shown at various places like the branch list and the commit detailed page.
+If you use CI integartion with GitBucket, the build status is shown but available places were very limited. In this release, the build status is shown at various places like the branch list and the commit detailed page. Also, the status of each context is now shown in the tooltip dialog.
 
-> TODO: Image
-
-> TODO: Image
-
-> TODO: Image
-
-Also, the status of each context is now shown in the tooltip dialog.
-
-> TODO: Image
+![Commit Status]({{site.baseurl}}/images/gitbucket-4.35.0/commit_status.png)
 
 ## WebAPI updates
 
