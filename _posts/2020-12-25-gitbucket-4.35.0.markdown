@@ -2,7 +2,7 @@
 layout: post
 title: "GitBucket 4.35.0 released!"
 date: 2020-12-25 00:00:00
-image: /images/gitbucket-4.34.0/danger-zone.png
+image: /images/gitbucket-4.35.0/color_theme_editor.png
 categories: gitbucket
 ---
 
