@@ -60,7 +60,7 @@ GitBucket now provides a dedicated page for the milestone overview. This page sh
 
 ## Commit status at various places
 
-If you use CI integartion with GitBucket, the build status is shown but available places were very limited. In this release, the build status is shown at various places like the branch list and the commit detailed page. Also, the status of each context is now shown in the tooltip dialog.
+If you use CI integration with GitBucket, the build status is shown but available places were very limited. In this release, the build status is shown at various places like the branch list and the commit detailed page. Also, the status of each context is now shown in the tooltip dialog.
 
 ![Commit Status]({{site.baseurl}}/images/gitbucket-4.35.0/commit_status.png)
 
