@@ -52,7 +52,7 @@ When we edit a file in Git repository using the online editor, we can create a p
 
 ![Create pull request from the editor]({{site.baseurl}}/images/gitbucket-4.35.0/create_pull_request.png)
 
-## Milstone overview
+## Milestone overview
 
 GitBucket now provides a dedicated page for the milestone overview. This page shows all issues and pull requests that are associated with the milestone at once.
 
