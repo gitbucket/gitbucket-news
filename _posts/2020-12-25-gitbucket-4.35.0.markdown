@@ -16,7 +16,7 @@ The color theme of the online editor and the source code viewer became selectabl
 
 ![Color theme of the editor]({{site.baseurl}}/images/gitbucket-4.35.0/color_theme_editor.png)
 
-The source code viewer can be confiregured in your account settings.
+The source code viewer can be configured in your account settings.
 
 ![Color theme of the source viewer]({{site.baseurl}}/images/gitbucket-4.35.0/color_theme_viewer.png)
 
