@@ -8,7 +8,7 @@ categories: gitbucket
 
 Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.35.0](https://github.com/gitbucket/gitbucket/releases/tag/4.35.0)!
 
-Since this release includes various new features, improvements and bug fixes, it's really challenging to cover all changes in this document. For now, let's see the major stuff in this release.
+Since this release includes various new features, improvements, and bug fixes, it's really challenging to cover all changes in this document. For now, let's see the major stuff in this release.
 
 ## Editor and source viewer color theme
 
