@@ -54,7 +54,7 @@ When we edit a file in Git repository using the online editor, we can create a p
 
 ## Milstone overview
 
-GitBucket now provides a desicated page for the milestone overview. This page shows all issues and pull requests that are associated with the milestone at once.
+GitBucket now provides a dedicated page for the milestone overview. This page shows all issues and pull requests that are associated with the milestone at once.
 
 ![Milestone overview]({{site.baseurl}}/images/gitbucket-4.35.0/milestone.png)
 
