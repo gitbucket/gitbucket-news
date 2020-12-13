@@ -20,15 +20,15 @@ The source code viewer can be confiregured in your account settings.
 
 ![Color theme of the source viewer]({{site.baseurl}}/images/gitbucket-4.35.0/color_theme_viewer.png)
 
-## Auto completion for issue number
+## Auto completion for issues and pull requests
 
-Auto completion now supports issue number.
+Auto completion now supports issues and pull requests. You can trigger the auto completion by typing `#`.
 
-![Auto completion for issue number]({{site.baseurl}}/images/gitbucket-4.35.0/auto_completion_issue.png)
+![Auto completion for issues and pull requests]({{site.baseurl}}/images/gitbucket-4.35.0/auto_completion_issue.png)
 
 ## Upload image from clipboard
 
-GitBucket now supports uplaading images from clipboard. You can paste (CTRL + V) an image from clipboard whereever you can upload files on GitBucket (e.g. issues, pull requests, comments, etc).
+GitBucket now supports uplaading images from clipboard. You can paste (`CTRL + V`) an image from clipboard whereever you can upload files on GitBucket (e.g. issues, pull requests, comments, etc).
 
 Please note that this feature doesn't work with legacy browsers like Internet Explorer that don't implement Clipboard API.
 
