@@ -1,0 +1,115 @@
+---
+layout: post
+title: "GitBucket 4.35.0 released!"
+date: 2020-12-25 00:00:00
+image: /images/gitbucket-4.35.0/color_theme_editor.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.35.0](https://github.com/gitbucket/gitbucket/releases/tag/4.35.0)!
+
+Since this release includes various new features, improvements, and bug fixes, it's really challenging to cover all changes in this document. For now, let's see the major stuff in this release.
+
+## Editor and source viewer color theme
+
+The color theme of the online editor and the source code viewer became selectable.
+
+![Color theme of the editor]({{site.baseurl}}/images/gitbucket-4.35.0/color_theme_editor.png)
+
+The source code viewer can be configured in your account settings.
+
+![Color theme of the source viewer]({{site.baseurl}}/images/gitbucket-4.35.0/color_theme_viewer.png)
+
+## Auto completion for issues and pull requests
+
+Auto completion now supports issues and pull requests. You can trigger the auto completion by typing `#`.
+
+![Auto completion for issues and pull requests]({{site.baseurl}}/images/gitbucket-4.35.0/auto_completion_issue.png)
+
+## Upload image from clipboard
+
+GitBucket now supports uploading images from clipboard. You can paste (`CTRL + V`) an image from clipboard wherever you can upload files on GitBucket (e.g. issues, pull requests, comments, etc).
+
+Please note that this feature doesn't work with legacy browsers like Internet Explorer that don't implement Clipboard API.
+
+## Close multiple issues by commit comment
+
+To date, we needed to write a commit comment to close multiple issues at once.
+
+```
+fix #1, fix #2, fix #3
+```
+
+In GitBucket 4.35.0, we now can write this as follows:
+
+```
+fix #1, #2, #3
+```
+
+## Create pull request from online editor
+
+When we edit a file in Git repository using the online editor, we can create a pull request instead of commit to the branch. Even users who don't have a permission to commit to the repository can create a pull request using the online editor.
+
+![Create pull request from the editor]({{site.baseurl}}/images/gitbucket-4.35.0/create_pull_request.png)
+
+## Milestone overview
+
+GitBucket now provides a dedicated page for the milestone overview. This page shows all issues and pull requests that are associated with the milestone at once.
+
+![Milestone overview]({{site.baseurl}}/images/gitbucket-4.35.0/milestone.png)
+
+## Commit status at various places
+
+If you use CI integration with GitBucket, the build status is shown but available places were very limited. In this release, the build status is shown at various places like the branch list and the commit detailed page. Also, the status of each context is now shown in the tooltip dialog.
+
+![Commit Status]({{site.baseurl}}/images/gitbucket-4.35.0/commit_status.png)
+
+## WebAPI updates
+
+The coverage of GitHub-compatible APIs is super-improved in this release! The following APIs have been added:
+
+- Issues
+  - Comments
+    - [Get an issue comment](https://docs.github.com/en/free-pro-team@latest/rest/reference/issues#get-an-issue-comment)
+    - [Update an issue comment](https://docs.github.com/en/free-pro-team@latest/rest/reference/issues#update-an-issue-comment)
+    - [Delete an issue comment](https://docs.github.com/en/free-pro-team@latest/rest/reference/issues#delete-an-issue-comment)
+  - Milestones
+    - [List milestones](https://docs.github.com/en/free-pro-team@latest/rest/reference/issues#list-milestones)
+    - [Create a milestone](https://docs.github.com/en/free-pro-team@latest/rest/reference/issues#create-a-milestone)
+    - [Get a milestone](https://docs.github.com/en/free-pro-team@latest/rest/reference/issues#get-a-milestone)
+    - [Update a milestone](https://docs.github.com/en/free-pro-team@latest/rest/reference/issues#update-a-milestone)
+    - [Delete a milestone](https://docs.github.com/en/free-pro-team@latest/rest/reference/issues#delete-a-milestone)
+- Pull requests
+  - [Update a pull request](https://docs.github.com/en/free-pro-team@latest/rest/reference/pulls#update-a-pull-request)
+  - [Merge a pull request](https://docs.github.com/en/free-pro-team@latest/rest/reference/pulls#merge-a-pull-request)
+- Repositories
+  - [List public repositories](https://developer.github.com/v3/repos/#list-public-repositories)
+  - [List repository tags](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#list-repository-tags)
+  - Branches
+    - [Get branch protection](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#get-branch-protection)
+    - [Delete branch protection](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#delete-branch-protection)
+    - [Get status checks protection](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#get-status-checks-protection)
+    - [Get all status check contexts](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#get-all-status-check-contexts)
+  - Commits
+    - [List branches for HEAD commit](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#list-branches-for-head-commit)
+  - Contents
+    - [Get a repository README](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#get-a-repository-readme)
+  - Reference
+    - [Create a reference](https://docs.github.com/en/free-pro-team@latest/rest/reference/git#create-a-reference)
+    - [Update a reference](https://docs.github.com/en/free-pro-team@latest/rest/reference/git#update-a-reference)
+    - [Delete a reference](https://docs.github.com/en/free-pro-team@latest/rest/reference/git#delete-a-reference)
+  - Collaborators
+    - [Check if a user is a repository collaborator](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#check-if-a-user-is-a-repository-collaborator)
+    - [Get repository permissions for a user](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#get-repository-permissions-for-a-user)
+  - Webhooks
+    - [List repository webhooks](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#list-repository-tags)
+    - [Create a repository webhook](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#create-a-repository-webhook)
+    - [Get a repository webhook](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#get-a-repository-webhook)
+    - [Update a repository webhook](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#update-a-repository-webhook)
+    - [Delete a repository webhook](https://docs.github.com/en/free-pro-team@latest/rest/reference/repos#delete-a-repository-webhook)
+
+See [Wiki](https://github.com/gitbucket/gitbucket/wiki/API-WebHook) to know all supported GitHub-compatible APIs in GitBucket.
+
+As I mentioned at the beginning of this document, this release also includes various improvements and bug fixes. See all closed issues in [4.35.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.35.0) to know details. Also, for plugin developers, please note that since this release includes some incompatible changes in GitBucket core APIs, your plugins might need to be updated.
+
+Enjoy GitBucket!
