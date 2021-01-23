@@ -6,7 +6,7 @@ image: /images/gitbucket-4.35.0/color_theme_editor.png
 categories: gitbucket
 ---
 
-> GitBucket 4.35.0 has a database migration issue which happens if webhook has been configured, and a binary compatibility issue in the bundled notifications plugin. Please use [4.35.2](https://github.com/gitbucket/gitbucket/releases/tag/4.35.2) instead.
+> GitBucket 4.35.0 has a database migration issue which happens if webhook has been configured, and a binary compatibility issue in the bundled notifications plugin. Please use [4.35.3](https://github.com/gitbucket/gitbucket/releases/tag/4.35.3) instead.
 
 Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.35.0](https://github.com/gitbucket/gitbucket/releases/tag/4.35.0)!
 
