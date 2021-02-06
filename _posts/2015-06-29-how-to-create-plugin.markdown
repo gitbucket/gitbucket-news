@@ -49,7 +49,7 @@ class Plugin extends gitbucket.core.plugin.Plugin {
 }
 ```
 
-## Controller implementation
+## Implement Controller
 
 Then, create `HelloWorldController` which extends `gitbucket.core.controller.ControllerBase` under `/src/main/io/github/gitbucket/helloworld/controller`. It's a typical Scalatra controller servlet.
 
