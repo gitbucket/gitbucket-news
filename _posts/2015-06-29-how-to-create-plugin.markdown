@@ -71,9 +71,9 @@ In this example, `HelloWorldController` returns a plain text response. Of course
 
 Run `sbt assembly` and copy generated `/target/scala-2.13/gitbucket-helloworld-plugin-1.0.0.jar` to `~/.gitbucket/plugins` (If this directory does not exist, create by hand).
 
-Or you can do this process by just running `sbt install`. This sbt task generates a plugin jat file and copy it to GitBucket plugin directory.
+Or you can just run `sbt install` to generate the plugin jat file and copy it to GitBucket plugin directory at once.
 
-Then, start GitBucket and access to http://localhost:8080/helloworld by your web browser, you will see `Hello World!` response.
+After copying the plugin jar file, start GitBucket and access to http://localhost:8080/helloworld by your web browser, you will see `Hello World!` response. Note that if you copy the plugin jar file again, the plugin is reloaded automatically so that you don't need to restart GitBucket when you updated plugins.
 
 ## Next step
 
