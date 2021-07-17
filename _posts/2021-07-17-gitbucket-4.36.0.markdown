@@ -1,0 +1,39 @@
+---
+layout: post
+title: "GitBucket 4.36.0 released!"
+date: 2021-07-17 00:00:00
+image: /images/gitbucket-4.36.0/tag_selector.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.36.0](https://github.com/gitbucket/gitbucket/releases/tag/4.36.0)!
+
+## Tag selector in the repository viewer
+
+You can now select even tags in the branch selector of the repository viewer.
+
+![Tag selector]({{site.baseurl}}/images/gitbucket-4.36.0/tag_selector.png)
+
+## Link issues/pull requests of other repositories
+
+Previously, a notation like `#123` is rendered as a link to the issue/pull request in the same repository, but now `user/repo#123` is also rendered as link to the issue/pull request in the different repository.
+
+![Link issue in the diffrenet repository]({{site.baseurl}}/images/gitbucket-4.36.0/link_issue_in_different_repo.png)
+
+## Files and lines can be linked in the diff view
+
+Each file in the diff view now has an identifier can be linked as follows:
+
+![Link to file in the diff view]({{site.baseurl}}/images/gitbucket-4.36.0/diff_view_link_1.png)
+
+![Link to line in the diff view]({{site.baseurl}}/images/gitbucket-4.36.0/diff_view_link_2.png)
+
+## Option to disable XSS protection
+
+A new repository-wide option to disable XSS protection has been introduced. GitBucket doesn't render some types of files (e.g. *.svg) on the repository viewer by default to prevent XSS. By disable this protection, GitBucket can render any types of files. This feature is useful if you want to put such an image stored in the repository on your document or website. Please don't disable this XSS protection in the public environment.
+
+![Disable XSS protection]({{site.baseurl}}/images/gitbucket-4.36.0/disable_xss_protection.png)
+
+This release also includes various improvements and bug fixes. See all closed issues in [4.36.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.36.0) to know details.
+
+Enjoy GitBucket!
