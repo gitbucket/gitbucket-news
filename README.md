@@ -3,17 +3,25 @@ GitBucket News
 
 GitBucket News is hosted by Jekyll on GitHub Pages.
 
-## Add new entry
+## Setup Jekyll on your machine
 
-You can add a new blog entry by adding a markdown file into `_post` directory.
+After install Ruby environment, you can install jekyll as follows:
 
-To confirm actual presentation, run jekyll as below at the root directory of this branch and access to http://localhost:4000/ by your web browser.
+```
+gem install bundler jekyll jekyll-paginate jemoji jekyll-sitemap jekyll-feed jekyll-seo-tag jekyll-redirect-from
+```
+
+Then, you can run jekyll as below at the root directory of this branch and access to http://localhost:4000/ by your web browser.
 
 ```
 jekyll server --baseurl '' --watch --future
 ```
 
 You can stop jekyll by CTRL+C.
+
+## Add new entry
+
+You can add a new blog entry by adding a markdown file into `_post` directory.
 
 ## Add images
 
