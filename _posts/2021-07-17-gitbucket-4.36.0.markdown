@@ -22,7 +22,7 @@ Previously, a notation like `#123` is rendered as a link to the issue/pull reque
 
 ## Files and lines can be linked in the diff view
 
-Each file in the diff view now have an identifier can be linked as follows:
+Each file in the diff view now has an identifier can be linked as follows:
 
 ![Link to file in the diff view]({{site.baseurl}}/images/gitbucket-4.36.0/diff_view_link_1.png)
 
