@@ -30,7 +30,7 @@ Each file in the diff view now have an identifier can be linked as follows:
 
 ## Option to disable XSS protection
 
-A new repository-wide option to disable XSS protection has been introduced. GitBucket doesn't render some types of files (e.g. *.svg) on the repository viewer by default to prevent XSS. By disable this protection, GitBucket can render any types of files. This feature is useuful if you want to put such a image stored in the repository on your document or wesite. Please don't disable this XSS protection in the public environment.
+A new repository-wide option to disable XSS protection has been introduced. GitBucket doesn't render some types of files (e.g. *.svg) on the repository viewer by default to prevent XSS. By disable this protection, GitBucket can render any types of files. This feature is useful if you want to put such an image stored in the repository on your document or website. Please don't disable this XSS protection in the public environment.
 
 ![Disable XSS protection]({{site.baseurl}}/images/gitbucket-4.36.0/disable_xss_protection.png)
 
