@@ -20,9 +20,9 @@ By upgrading apaceh-sshd and bouncycastle-java, GitBucket now supports EDDSA key
 
 ## Relax some text length limitations
 
-Relaxed the following configuration limitations:
+Relaxed the following text length limitations:
 
-- Password length (20 -> 40)
+- Password (20 -> 40)
 - WebHook URL (200 -> 400)
 
 ## Web API enhancements
