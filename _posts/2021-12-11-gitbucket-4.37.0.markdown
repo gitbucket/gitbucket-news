@@ -1,0 +1,38 @@
+---
+layout: post
+title: "GitBucket 4.37.0 released!"
+date: 2021-12-11 00:00:00
+image: /images/gitbucket-4.37.0/custom_ssh_url.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.37.0](https://github.com/gitbucket/gitbucket/releases/tag/4.37.0)!
+
+## Custom SSH URL
+
+In case you have a proxy server for SSH access in front of GitBucket, you can now configure SSH URL at the system settings page.
+
+![Custom SSH URL]({{site.baseurl}}/images/gitbucket-4.37.0/custom_ssh_url.png)
+
+## EDDSA key support for signed commit verification
+
+By upgrading apaceh-sshd and bouncycastle-java, GitBucket now supports EDDSA keys for signed commit verification.
+
+## Relax some text length limitations
+
+Relaxed the following configuration limitations:
+
+- Password length (20 -> 40)
+- WebHook URL (200 -> 400)
+
+## Web API enhancements
+
+The followig enhancements regarding Web APIs have been implemented in this version. Especially, Git Reference APIs enhancements would improve Jenkins integration:
+
+- Enhance Git Reference APIs
+- Add milestone data to issue list API
+- Support "all" in issue list API
+
+This release also includes various improvements and bug fixes. See all closed issues in [4.37.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.37.0) to know details.
+
+Enjoy GitBucket!
