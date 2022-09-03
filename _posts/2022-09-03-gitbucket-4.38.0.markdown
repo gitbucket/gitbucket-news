@@ -44,6 +44,6 @@ Markdown rendering has been improved to show a horizontal scroll bar for too wid
 
 New command line option `--jetty_idle_timeout` has been added to configure Jetty idle timeout configuration in standalone mode. The defauly value is 300000 = 5 min.
 
-This release also includes various improvements and bug fixes. See all closed issues in [4.37.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.38.0) to know details.
+This release also includes various improvements and bug fixes. See all closed issues in [4.38.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.38.0) to know details.
 
 Enjoy GitBucket!
