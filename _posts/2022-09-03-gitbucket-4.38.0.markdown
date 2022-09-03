@@ -1,0 +1,49 @@
+---
+layout: post
+title: "GitBucket 4.38.0 released!"
+date: 2022-09-03 00:00:00
+image: /images/gitbucket-4.38.0/custom_fields_1.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based Git centric software development platform [GitBucket 4.38.0](https://github.com/gitbucket/gitbucket/releases/tag/4.38.0)!
+
+## Custom fields for Issues and Pull requests
+
+Issues and Pull requests have a big improvement in this version that is custom fields!
+
+![Custiom fields]({{site.baseurl}}/images/gitbucket-4.38.0/custom_fields_1.png)
+
+You can add additional fields to Issues and Pull requests at the reporitory settings.
+
+![Adding cuatom fields]({{site.baseurl}}/images/gitbucket-4.38.0/custom_fields_2.png)
+
+## Multiple assignees for Issues and Pull requests
+
+Another improvenemnt in Issues and Pull requests is that multiple assignees is now supported.
+
+![Multiple assignees]({{site.baseurl}}/images/gitbucket-4.38.0/multiple_assignees.png)
+
+Of course, SMTP must be configured to use this feature as email will be sent when users request a password reset.
+
+## Reset password by users
+
+Users can reset password by themselves if they forget it or when necessary for other reasons.
+
+![Reset password]({{site.baseurl}}/images/gitbucket-4.38.0/reset_password.png)
+
+This feature is disabled by default. GitBucket admin can enable the future at the system settings.
+
+## Horizontal scroll for too wide tables in Markdown
+
+Markdown rendering has been improved to show a horizontal scroll bar for too wide tables.
+
+![Horizontal scroll for too wide tables in Markdown]({{site.baseurl}}/images/gitbucket-4.38.0/markdown_wide_table.png)
+
+## Jetty idle timeout configuration in standalone mode
+
+New command line option `--jetty_idle_timeout` has been added to configure Jetty idle timeout configuration in standalone mode. The defauly value is 300000 = 5 min.
+
+This release also includes various improvements and bug fixes. See all closed issues in [4.37.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.38.0) to know details.
+
+Enjoy GitBucket!
