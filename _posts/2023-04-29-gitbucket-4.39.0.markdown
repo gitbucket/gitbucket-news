@@ -1,0 +1,40 @@
+---
+layout: post
+title: "GitBucket 4.39.0 released!"
+date: 2023-04-29 00:00:00
+image: /images/gitbucket-4.39.0/custom_field_enum_2.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based self-hosting Git server [GitBucket 4.39.0](https://github.com/gitbucket/gitbucket/releases/tag/4.39.0)!
+
+Here are major new features in this version.
+
+## Enum support in custom fields
+
+Custom field for Issues and Pull requests have been supported since GitBucket 4.38.0 and enum type is now supported.
+
+![Define enum field]({{site.baseurl}}/images/gitbucket-4.39.0/custom_fields_enum_1.png)
+
+You can define enum field with comma-separated values so users can select one of these values from the pulldown list when create or edit issues or pull requests.
+
+![Select value for enum field]({{site.baseurl}}/images/gitbucket-4.39.0/custom_fields_enum_2.png)
+
+## Hide large diff by default
+
+GitBucket has an issue that it takes very long time to render very large diff. In this version, such large diffs that have more than 1000 lines are hidden by default. You can see these diffs by clicking "Show diff" link.
+
+![Hide large diff by default]({{site.baseurl}}/images/gitbucket-4.39.0/hide_large_diff.png)
+
+## New options to run GitBucket using multiple machines
+
+The following new experimental options are added in this version. These options can be used if you want to run GitBucket using multiple clusters for high availability or load balancing.
+
+- `--disable_news_feed`
+- `--disable_cache`
+
+Note that these options are experimental and still GitBucket doesn't support running using multiple machines officially. You can try it at your own risk.
+
+This release also includes many bugfixes mainly regarding Web APIs. See all closed issues in [4.39.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.39.0) to know details.
+
+Enjoy GitBucket!
