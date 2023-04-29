@@ -14,11 +14,11 @@ Here are major new features in this version.
 
 Custom field for Issues and Pull requests have been supported since GitBucket 4.38.0 and enum type is now supported.
 
-![Define enum field]({{site.baseurl}}/images/gitbucket-4.39.0/custom_fields_enum_1.png)
+![Define enum field]({{site.baseurl}}/images/gitbucket-4.39.0/custom_field_enum_1.png)
 
 You can define enum field with comma-separated values so users can select one of these values from the pulldown list when create or edit issues or pull requests.
 
-![Select value for enum field]({{site.baseurl}}/images/gitbucket-4.39.0/custom_fields_enum_2.png)
+![Select value for enum field]({{site.baseurl}}/images/gitbucket-4.39.0/custom_field_enum_2.png)
 
 ## Hide large diff by default
 
