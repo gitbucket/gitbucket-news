@@ -1,0 +1,47 @@
+---
+layout: post
+title: "GitBucket 4.40.0 released!"
+date: 2023-10-22 00:00:00
+image: /images/gitbucket-4.40.0/search_by_custom_fields.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based self-hosting Git server [GitBucket 4.40.0](https://github.com/gitbucket/gitbucket/releases/tag/4.40.0)!
+
+Here are major changes and new features in this version.
+
+## Configurable default branch name
+
+The default branch can be now configurable though the default branch name is still `master`. Chaning the default branch name to `main` will be considered in the future version.
+
+![Default branch name setting]({{site.baseurl}}/images/gitbucket-4.40.0/default_branch_setting.png)
+
+## Support custom fields of issues and pull requests in search condition
+
+You can use custom fields in the search condition of issues and pull requests.
+
+![Search issues / pull requests by custom fields]({{site.baseurl}}/images/gitbucket-4.40.0/search_by_custom_fields.png)
+
+Search expressions like `field_name=value`, `field_name<value`, etc. can be used in the search box for issues and pull requests.
+
+## Create pull request from default branch of forked repositories
+
+Creating a pull request from the default branch of forked repositories hasn't been allowed historically, but it's possible in this version.
+
+![Create pull request from the default branch of forked repository]({{site.baseurl}}/images/gitbucket-4.40.0/pull_request_from_default_branch.png)
+
+## News feed shows activities of all visible repositories
+
+In the new feed, only activities of owned repositories have been shown until this version. Now activities of all visible repositories are shown in the news feed which means even collaboators can see activities on repositories.
+
+## Drop Java 8 support
+
+Java 8 support is no longer supported. You need to upgrade your Java installation if your GitBucket is running on Java 8.
+
+## Improve git push performance
+
+The prformance of `git push` is improved in this version though it may not be enough for very large repositories. We will continue looking for another opportinity of imporving the performance more.
+
+This release also includes many bugfixes mainly regarding Web APIs. See all closed issues in [4.40.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.40.0) to know details.
+
+Enjoy GitBucket!
