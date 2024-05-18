@@ -1,0 +1,41 @@
+---
+layout: post
+title: "GitBucket 4.41.0 released!"
+date: 2024-05-18 00:00:00
+image: /images/gitbucket-4.41.0/pull_request_ui_1.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based self-hosting Git server [GitBucket 4.41.0](https://github.com/gitbucket/gitbucket/releases/tag/4.41.0)!
+
+Here are major changes and new features in this version.
+
+## Simplify pull request UI
+
+Merge action in the pull request UI is simplified a little.
+
+![Simplified pull request UI]({{site.baseurl}}/images/gitbucket-4.41.0/pull_request_ui_1.png)
+
+![Simplified pull request UI]({{site.baseurl}}/images/gitbucket-4.41.0/pull_request_ui_2.png)
+
+## Integrate keyword search with filtering in the search box
+
+Keyword search is supported in the search box of issues and pull requests view. If you search by keyword, it's redirected to the keyword serach results.
+
+![Keyword search]({{site.baseurl}}/images/gitbucket-4.41.0/keyword_search_1.png)
+
+![Keyword search]({{site.baseurl}}/images/gitbucket-4.41.0/keyword_search_2.png)
+
+## Make max files and lines limit in showing diff configurable
+
+Large diff could make the browser very heavy as it's rendered by JavaScript. You can avoid it by configuraing max files and lines limit in showing diff at the system settings.
+
+![Diff settings]({{site.baseurl}}/images/gitbucket-4.41.0/diff_settings.png)
+
+## Adjust the default branch automatically when cloning external repo
+
+The default branch is now automatically chosen from either `main` or `master` when creating a repository by cloning an external repository.
+
+This release also includes some bugfixes, performance improvements, and internal library updates. See all closed issues in [4.41.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.41.0) to know details.
+
+Enjoy GitBucket!
