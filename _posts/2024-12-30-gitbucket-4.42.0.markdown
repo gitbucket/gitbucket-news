@@ -1,0 +1,39 @@
+---
+layout: post
+title: "GitBucket 4.42.0 released!"
+date: 2024-12-30 00:00:00
+image: /images/gitbucket-4.42.0/pull-request-creation-error.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based self-hosting Git server [GitBucket 4.42.0](https://github.com/gitbucket/gitbucket/releases/tag/4.42.0)!
+
+Here are major changes in this version.
+
+## Increase max branch name length 100 -> 255
+
+While Git accepts long branch names, GitBucket has its own max branch name length limit when creating pull request and configurating branch protection.
+
+Until the previous version, the max length was 100 chars but it's now 255 chars. In addition, error message is properly shown in the pull request creation form when pull request can't be created.
+
+![Pull request creation error]({{site.baseurl}}/images/gitbucket-4.42.0/pull-request-creation-error.png)
+
+## Fix some GitHub incompatible Web APIs
+
+Fixed response of list-repository-tags API and payload of webhook which were not compatible with GitHub.
+
+## Apply user-defined CSS after all plugins
+
+Some plugins insert CSS dynamically using JavaScript and it's can override user-defined CSS.
+
+In this version, user-defined CSS is applied after plugin's JavaScript to prevent overriding by plugins.
+
+## Improve performance of listing commit logs
+
+Improve GitBucket's internal implementation which would gain the performance of listing commit logs in many places in GitBucket when the target repository has many commits.
+
+Even when pushing a branch, GitBucket intenally lists existing commits to identify new commits. The performance of this kind of processes would be also improved.
+
+This release also includes some bugfixes, improvements, and internal library updates. See all closed issues in [4.42.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.42.0) to know details.
+
+Enjoy GitBucket!
