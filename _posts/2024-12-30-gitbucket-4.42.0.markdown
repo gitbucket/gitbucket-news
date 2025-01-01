@@ -34,6 +34,10 @@ Improve GitBucket's internal implementation which would gain the performance of 
 
 Even when pushing a branch, GitBucket intenally lists existing commits to identify new commits. The performance of this kind of processes would be also improved.
 
+## Java 17 is now required
+
+Java 11 support is dropped in this version to support newer version of Jetty. Java 17 is now required to run GitBucket.
+
 This release also includes some bugfixes, improvements, and internal library updates. See all closed issues in [4.42.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.42.0) to know details.
 
 Enjoy GitBucket!
