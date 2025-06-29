@@ -1,0 +1,26 @@
+---
+layout: post
+title: "GitBucket 4.43.0 released!"
+date: 2025-06-29 00:00:00
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based self-hosting Git server [GitBucket 4.43.0](https://github.com/gitbucket/gitbucket/releases/tag/4.43.0)!
+
+This release is mainly for upgrading H2 from 1.x series to 2.x series. Note that you have to migrate your H2 database manually because H2 1.x and 2.x don't have compatibility in the date file format if you use it.
+
+Below is an example of the migration steps. Please do not forget taking a backup before the migration.
+
+```shell
+# Export database using the current version of H2
+$ curl -O https://repo1.maven.org/maven2/com/h2database/h2/1.4.199/h2-1.4.199.jar
+$ java -cp h2-1.4.199.jar org.h2.tools.Script -url "jdbc:h2:~/.gitbucket/data" -user sa -password sa -script dump.sql
+
+# Recreate database using the new version of H2
+$ curl -O https://repo1.maven.org/maven2/com/h2database/h2/2.3.232/h2-2.3.232.jar
+$ java -cp h2-2.3.232.jar org.h2.tools.RunScript -url "jdbc:h2:~/.gitbucket/data" -user sa -password sa -script dump.sql
+```
+
+This release also includes some bugfixes, improvements, and internal library updates. See all closed issues in [4.43.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.43.0) to know details.
+
+Enjoy GitBucket!
