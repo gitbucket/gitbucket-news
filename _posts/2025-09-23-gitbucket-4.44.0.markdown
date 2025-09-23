@@ -12,7 +12,7 @@ Here are major changes and new features in this version.
 
 ## Enhanced branch protection
 
-In previous versions, GitBucket's branch protection only supported the following restrictions, and the standard functionality can't prevent direct pushes to branches.
+In previous versions, GitBucket's branch protection only supported the following restrictions, and the standard functionality couldn't prevent direct pushes to branches.
 
 - Prevent force pushes to and deleting specified branches
 - Prevent PRs that have not passed the status check from being merged
