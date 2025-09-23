@@ -1,0 +1,33 @@
+---
+layout: post
+title: "GitBucket 4.44.0 released!"
+date: 2025-09-23 00:00:00
+image: /images/gitbucket-4.44.0/branch_protection.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based self-hosting Git server [GitBucket 4.44.0](https://github.com/gitbucket/gitbucket/releases/tag/4.44.0)!
+
+Here are major changes and new features in this version.
+
+## Enhanced branch protection
+
+In previous versions, GitBucket's branch protection only supported the following restrictions, and the standard functionality couldn't prevent direct pushes to branches.
+
+- Prevent force pushes to and deleting specified branches
+- Prevent PRs that have not passed the status check from being merged
+
+This version enhances branch protection and supports the following settings:
+
+- Prevent pushes from non-allowed users
+- Whether to apply restrictions to administrator users as well
+
+![Enhanced branch protection]({{site.baseurl}}/images/gitbucket-4.44.0/branch_protection.png)
+
+## Improve logging for initialization errors
+
+In previous versions, even if an error occurred during startup, the log would not be displayed, making it appear as if it had frozen. However, we have improved the logging so that even initialization errors are properly logged, which would be helpful when you encounter troubles in setting up GitBucket.
+
+This release also includes many bugfixes and improvements. See all closed issues in [4.44.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.44.0) for details.
+
+Enjoy GitBucket!
