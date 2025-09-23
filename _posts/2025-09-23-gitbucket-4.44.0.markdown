@@ -26,7 +26,7 @@ This version enhances branch protection and supports the following settings:
 
 ## Improve logging for initialization errors
 
-In previous versions, even if an error occurred during startup, the log would not be displayed, making it appear as if it had frozen. However, we have improved the logging so that even initialization errors are properly logged which would be helpful when you encounter troubles in setting up GitBucket.
+In previous versions, even if an error occurred during startup, the log would not be displayed, making it appear as if it had frozen. However, we have improved the logging so that even initialization errors are properly logged, which would be helpful when you encounter troubles in setting up GitBucket.
 
 This release also includes many bugfixes and improvements. See all closed issues in [4.44.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.44.0) for details.
 
