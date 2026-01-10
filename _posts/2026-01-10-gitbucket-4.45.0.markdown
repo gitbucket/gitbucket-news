@@ -31,7 +31,7 @@ This release also includes many bugfixes and improvements. See all closed issues
 We are also announcing the deprecation of [GitBucket Community Plugins](https://gitbucket-plugins.github.io/) web site.
 
 To reduce maintenance costs and improve sustainability of the project, we stopped maintaining the dedicated web site and moved the list of community plugins to a wiki page in the GitBucket's repository:
-https://github.com/gitbucket/gitbucket/wiki/Community-Plugins
+[https://github.com/gitbucket/gitbucket/wiki/Community-Plugins](https://github.com/gitbucket/gitbucket/wiki/Community-Plugins)
 
 Anyone can edit this web page, so please add plugins yourself when you developped new ones. We are really looking forward to seeing new plugins there!
 
