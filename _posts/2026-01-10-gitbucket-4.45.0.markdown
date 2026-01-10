@@ -1,0 +1,38 @@
+---
+layout: post
+title: "GitBucket 4.45.0 released!"
+date: 2026-01-10 00:00:00
+image: /images/gitbucket-4.45.0/display_fullname_1.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based self-hosting Git server [GitBucket 4.45.0](https://github.com/gitbucket/gitbucket/releases/tag/4.45.0)!
+
+Here are major changes and new features in this version.
+
+## New option to display full username on UI
+
+GitBucket only displayed username on its UI. However, there have been multiple reports that it's not conveient when LDAP integration is used and username managed by LDAP is not human readable.
+
+In this version, we added new option to show fullname of users along with username. This option can be enabled at the system settings.
+
+![Confgure displaying fullname]({{site.baseurl}}/images/gitbucket-4.45.0/display_fullname_1.png)
+
+![Display fullname on UI]({{site.baseurl}}/images/gitbucket-4.45.0/display_fullname_2.png)
+
+## Support render plugin in issues, pull requests, etc
+
+GitBucket provides a mechanism to add file renderers to plugins. Plugins can extend even the markdown render using this mechanism but it wasn't applied to issues, pull requests, wiki, commit comments, etc. The alternative markdown render added by a plugin is now applied to those contents.
+
+This release also includes many bugfixes and improvements. See all closed issues in [4.45.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.45.0) for details.
+
+## Migration of GitBucket Community Plugins Web Site
+
+We are also announcing the deprecation of [GitBucket Community Plugins](https://gitbucket-plugins.github.io/) web site.
+
+To reduce maintenance costs and improve sustainability of the project, we stopped maintaining the dedicated web site and moved the list of community plugins to a wiki page in the GitBucket's repository:
+https://github.com/gitbucket/gitbucket/wiki/Community-Plugins
+
+Anyone can edit this web page, so please add plugins yourself when you developped new ones. We are really looking forward to seeing new plugins there!
+
+Enjoy GitBucket!
