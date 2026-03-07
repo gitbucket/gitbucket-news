@@ -1,0 +1,48 @@
+---
+layout: post
+title: "GitBucket 4.46.0 released!"
+date: 2026-03-07 00:00:00
+image: /images/gitbucket-4.46.0/text_completion_in_ace_editor.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of new version of Scala based self-hosting Git server [GitBucket 4.46.0](https://github.com/gitbucket/gitbucket/releases/tag/4.46.0)!
+
+Here are major changes and new features in this version.
+
+## Support for reverting pull requests
+
+You can now revert a merged pull request directly from the pull request page. This makes it much easier to undo changes introduced by a pull request without manually creating a revert commit.
+
+![Revert pull request]({{site.baseurl}}/images/gitbucket-4.46.0/revert_pull_request.png)
+
+## Markdown toolbar
+
+A markdown toolbar has been added to the issue / pull request comment editor as well as other markdown editing areas. The toolbar provides quick-access buttons for common formatting operations, making it easier to write markdown content in GitBucket.
+
+![Markdown toolbar]({{site.baseurl}}/images/gitbucket-4.46.0/markdown_toolbar.png)
+
+## Text completion in Ace editor
+
+Text completion using a suggestion provider has been added to editors. This helps you write content more efficiently by offering suggestions as you type.
+
+![Text completion in Ace editor]({{site.baseurl}}/images/gitbucket-4.46.0/text_completion_in_ace_editor.png)
+
+## Ace Editor for Wiki editing
+
+The Ace Editor is now used for Wiki page editing, bringing syntax highlighting, customizable keybindings (e.g. Vim, Emacs), and a better overall editing experience to the Wiki.
+
+![Ace Editor for Wiki editing]({{site.baseurl}}/images/gitbucket-4.46.0/ace_editor_for_wiki.png)
+
+## SHA-256 webhook signatures
+
+WebHook requests now include the `X-Hub-Signature-256` header in addition to the existing SHA-1 signature. This allows webhook consumers to verify payloads using the more secure SHA-256 algorithm.
+
+## UTF-8 BOM preservation in web editor
+
+When editing a file that contains a UTF-8 BOM (Byte Order Mark) through the browser, the BOM is now correctly preserved on save. Previously the BOM was silently stripped, which caused problems for files that require it.
+
+This release also includes some other improvements. See all closed issues in [4.46.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.46.0) for details.
+
+Enjoy GitBucket!
+
