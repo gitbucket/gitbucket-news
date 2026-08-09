@@ -1,0 +1,41 @@
+---
+layout: post
+title: "GitBucket 4.47.0 released!"
+date: 2026-08-09 00:00:00
+image: /images/gitbucket-4.47.0/disable_creating_repository_by_cloning.png
+categories: gitbucket
+---
+
+Today, we are pleased to announce the availability of the new version of the Scala-based self-hosting Git server [GitBucket 4.47.0](https://github.com/gitbucket/gitbucket/releases/tag/4.47.0)!
+
+Note that this release includes a large database migration affecting core tables such as `REPOSITORY` and `ACCOUNT`. We strongly recommend backing up your database before upgrading to GitBucket 4.47.0.
+
+Here are the major changes and new features in this version.
+
+## More securiry for repository creation by cloning
+
+GitBucket now provides additional controls for creating repositories by cloning an external repository. Administrators can disable this operation entirely when it is not needed. Also, private addresses blocking are applied to cloning, helping to prevent GitBucket from accessing internal network services through a clone URL.
+
+![Disable creating repostory by cloning]({{site.baseurl}}/images/gitbucket-4.47.0/disable_creating_repository_by_cloning.png)
+
+## Configurable password reset link expiration
+
+Administrators can now configure how long password reset links remain valid. This setting is available from the system settings page and allows each installation to choose an expiration period appropriate for its security policy.
+
+![Password reset link expiration]({{site.baseurl}}/images/gitbucket-4.47.0/password_reset_link_expiration.png)
+
+## Improved GitHub API compatibility and fork management
+
+GitBucket now assigns repositories a unique numeric ID to improve compatibility with the GitHub API. Fork management has also been improved, including handling relationships between parent repositories and forks when repositories are renamed, transferred, or deleted.
+
+Additionally, auther and comitter icnluded in API repsonses become null when the user is not registered in GitBucket, following the GitHub API's behavior.
+
+## Markdown code formatting improvement
+
+The markdown formatting actions in the text editor have been improved. Previously, there are separate buttons for block code formatting and inline code formatting, but they are now merged.
+
+![Markdown code formatting button]({{site.baseurl}}/images/gitbucket-4.47.0/markdown_code_formatting_button.png)
+
+This release also includes other improvements and bug fixes. See all closed issues in [4.47.0](https://github.com/gitbucket/gitbucket/issues?q=is%3Aclosed+milestone%3A4.47.0) for details.
+
+Enjoy GitBucket!
